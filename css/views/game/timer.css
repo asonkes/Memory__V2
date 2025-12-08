@@ -1,0 +1,29 @@
+/** Propriétés pour le timer*/
+.timerParent {
+  display: none;
+
+  &.active {
+    display: block;
+    width: var(--width_full);
+    font-family: var(--font_primary);
+    font-size: var(--fontSize_reg);
+    padding-bottom: var(--padding_xxxxl);
+  }
+
+  h2 {
+    padding: var(--padding_md);
+  }
+
+  .timer {
+    justify-content: space-around;
+
+    .counter {
+      font-family: var(--font_secondary);
+      font-size: var(--fontSize_xxl);
+      padding: var(--padding_reg);
+      margin: 0 var(--margin_reg);
+      border-radius: 10px;
+      border: 2px solid rgba(46, 64, 87, 0.6);
+    }
+  }
+}

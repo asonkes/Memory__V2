@@ -1,0 +1,174 @@
+/** Propriétés pour les cards */
+.game_card {
+  &.active {
+    max-width: var(--width_full);
+    min-height: var(--heightVH);
+    background-image: url("/images/background/site/background_paper.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card_wrapper {
+    height: 0;
+    opacity: 0;
+
+    &.active {
+      position: relative;
+      height: var(--height_full);
+      opacity: 1;
+      padding: var(--padding_xxxxl);
+      transition: all 1s ease-in-out;
+    }
+
+    .card {
+      height: 0;
+
+      &.active {
+        position: relative;
+        width: var(--width_full);
+        height: var(--height_full);
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 20px;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 2rem;
+        padding: var(--padding_xxxxl);
+        border: 2px solid var(--color_secondary);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+        @media (max-width: 500px) {
+          gap: 1rem;
+        }
+      }
+
+      &.finish {
+        filter: blur(1.5rem);
+        transition: all 1s ease;
+      }
+
+      .cardBlock {
+        position: absolute;
+        background-color: var(--color_secondary);
+        width: 130px;
+        height: 130px;
+        border-radius: 20px;
+        border: 1px solid rgba(46, 64, 87, 0.6);
+
+        &.active {
+          position: relative;
+          display: flex;
+          /* perspective se met sur les enfants */
+          transform-style: preserve-3d;
+          transition: all 0.5s ease-in-out;
+        }
+
+        &.returnCard {
+          transform: rotateY(180deg);
+        }
+
+        .cardFront,
+        .cardBack {
+          position: absolute;
+          max-width: var(--width_full);
+          width: var(--width_full);
+          height: var(--height_full);
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
+          border-radius: 20px;
+        }
+
+        .cardBack {
+          transform: rotateY(180deg);
+          background-color: var(--color_secondary);
+        }
+
+        .cover {
+          object-fit: cover;
+        }
+
+        .contain {
+          object-fit: contain;
+        }
+      }
+    }
+
+    .textFinish {
+      position: absolute;
+      top: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--font_primary);
+      font-size: var(--fontSize_xxl);
+      font-weight: bold;
+      background-color: rgba(46, 64, 87, 0.8);
+      color: var(--color_secondary);
+      margin-top: -80px;
+      padding: var(--padding_xxl);
+      border-radius: 10px;
+
+      img {
+        max-width: 100px;
+        width: 100px;
+        object-fit: cover;
+      }
+
+      p {
+        font-size: var(--fontSize_md);
+        padding: var(--padding_xs);
+      }
+    }
+  }
+
+  .buttonParent {
+    height: 0;
+    opacity: 0;
+
+    &.active {
+      height: 100%;
+      opacity: 1;
+      transition: all 1s ease-in-out;
+      margin: var(--margin_reg);
+
+      @media (max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: var(--margin_reg);
+      }
+    }
+
+    .replay,
+    .scores {
+      width: 200px;
+      font-family: var(--font_primary);
+      font-size: var(--fontSize_s);
+      font-weight: bold;
+      background-color: var(--color_primary);
+      margin: var(--margin_s);
+      border-radius: 15px;
+      border: none;
+      transition: all 1s ease-in-out;
+      cursor: pointer;
+
+      @media (max-width: 680px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        color: var(--color_secondary);
+        text-decoration: none;
+        padding: var(--padding_reg);
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+#home_slider {
+  max-width: var(--width_full);
+
+  h2 {
+    width: fit-content;
+    margin: var(--margin_reg) auto 0 auto;
+    padding: var(--padding_md);
+    color: var(--color_primary);
+    font-family: var(--font_primary);
+    font-size: var(--fontSize_md_xl);
+    border-radius: 20px;
+
+    i {
+      padding: var(--padding_xs);
+    }
+  }
+}
+
+/* fonctionnalité slider */
+.slider {
+  max-width: var(--width_full);
+  padding: var(--padding_xxl) 0;
+  gap: 1rem;
+  overflow: hidden;
+
+  @media (max-width: 680px) {
+    gap: 0.5rem;
+  }
+
+  /* fonctionnalité imageParent */
+  .width--60 {
+    width: 60%;
+
+    @media (max-width: 959px) {
+      width: 55%;
+    }
+  }
+
+  .height--50 {
+    height: 50vh;
+  }
+
+  /* fonctionnalité image */
+  .img {
+    max-width: var(--width_full);
+    width: var(--width_full);
+    height: var(--height_full);
+    object-fit: cover;
+
+    &:hover {
+      transform: scale(1.005);
+    }
+  }
+
+  /* fonctionnalités icone */
+  .icon {
+    font-size: var(--fontSize_md);
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  /* fonctionnalités pour l'opacité */
+  .opacity {
+    opacity: 0.5;
+  }
+
+  /* fonctionnalités pour les border */
+  .border_blue {
+    border: 10px solid #2e4057;
+  }
+}

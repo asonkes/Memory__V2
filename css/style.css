@@ -1,0 +1,129 @@
+/* import de la page des variables */
+@import "./variables/variables.css";
+
+/* import de la page du header */
+@import "./partials/header.css";
+
+/* import de la page du footer */
+@import "./partials/footer.css";
+
+/* import de la page home (section introduction) */
+@import "./views/home/home.css";
+
+/* import de la page home (section slider) */
+@import "./views/home/slider.css";
+
+/* import de la page home (personnages) */
+@import "./views/home/personnages.css";
+
+/* import de la page game */
+@import "./views/game/game.css";
+
+/* import pour le choix des modes */
+@import "./views/game/button_mode.css";
+
+/* import page game bouton play */
+@import "./views/game/button_play.css";
+
+/* import page game, pour les cards */
+@import "./views/game/cards.css";
+
+/* import page game, pour le timer */
+@import "./views/game/timer.css";
+
+/* import page scores*/
+@import "./views/trophy/trophy.css";
+
+/* import page contact */
+@import "./views/contact/contact.css";
+
+/* import page home bouton 'mute' */
+@import "./views/game/button_mute.css";
+
+/*******************************************/
+/* Lien vers fichiers fonts dans le projet */
+/*******************************************/
+
+/* Cinzel Decorative */
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url("/fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url("/fonts/Cinzel_Decorative/CinzelDecorative-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url("/fonts/Cinzel_Decorative/CinzelDecorative-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Acme";
+  src: url("/fonts/acme/Acme-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: var(--width_full);
+  min-height: var(--heightVH);
+}
+
+main {
+  max-width: var(--width_full);
+  min-height: var(--heightVH);
+  padding-top: 65px;
+}
+
+.container {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex_center {
+  justify-content: center;
+}
+
+.flex_between {
+  justify-content: space-between;
+}
+
+.flex_shrink {
+  flex-shrink: 0;
+}
+
+.align_center {
+  align-items: center;
+}
+
+.direction_column {
+  flex-direction: column;
+}
+
+.text_center {
+  text-align: center;
+}

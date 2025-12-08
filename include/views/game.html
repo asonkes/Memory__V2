@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Cinzel+Decorative:wght@400;700;900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="../../css/style.css" />
+
+    <!-- Lien vers le fichier JS -->
+    <script src="/js/main.js" type="module" defer></script>
+    <script src="/js/slider/slider.js" type="module" defer></script>
+    <script src="/js/mode/chooseMode.js" type="module" defer></script>
+    <script src="/js/mode/chooseTheme.js" type="module" defer></script>
+    <script src="/js/mode/playGame.js" type="module" defer></script>
+    <script src="/js/utils/returnCards.js" type="module" defer></script>
+    <script src="/js/utils/timer.js" type="module" defer></script>
+    <script src="/js/utils/playSound.js" type="module" defer></script>
+
+    <!-- Lien vers 'fontawesome' -->
+    <script src="https://kit.fontawesome.com/2cbf82340f.js" crossorigin="anonymous"></script>
+
+    <!-- Lien vers 'favicon' -->
+    <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon" />
+
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <header class="flex flex_center"></header>
+
+    <main id="main_game">
+      <section class="section_game">
+        <!-- Permet d'afficher la photo de fond d'écran -->
+        <div class="game_image"></div>
+        <div class="container">
+          <h1 class="text_center" id="title">À toi de jouer : facile, moyen ou difficile ?</h1>
+          <div class="chooseMode flex flex_center">
+            <button class="button_mode" id="easy">Facile</button>
+            <button class="button_mode" id="medium">Moyen</button>
+            <button class="button_mode" id="hard">Difficile</button>
+          </div>
+        </div>
+        <div class="game_card flex">
+          <!-- Partie pour les cards -->
+          <div class="card_wrapper container flex flex_center direction_column align_center">
+            <!-- partie pour le timer -->
+            <div class="timerParent">
+              <h2 class="text_center" aria-label="chronomètre">
+                Jouez, attention le chronomètre commence ⏳​⏳​⏳​ !!!
+              </h2>
+
+              <div class="timer flex">
+                <!-- Bouton mute pour arrêter le son si carte les mêmes ok -->
+                <div class="button_sound"></div>
+
+                <div class="counter" id="counter">00 : 00 : 00</div>
+
+                <!-- Bouton mute pour arrêter le son si carte les mêmes ok -->
+                <div class="button_mute"></div>
+              </div>
+            </div>
+
+            <!-- Ici se sont les cards -->
+            <div class="card flex align_center flex_center"></div>
+
+            <!-- Ici se sont les boutons qui appraissent qd partie terminée -->
+            <div class="buttonParent">
+              <button class="replay" id="replay">
+                <a href="/index.html">Rejouer</a>
+              </button>
+              <button class="scores" id="scores">
+                <a href="/include/views/trophy.html">Voir vos scores</a>
+              </button>
+            </div>
+            <button id="button"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,568 @@
+{
+  "cards": {
+    "patPatrouille": [
+      {
+        "id": 0,
+        "nom": "Capitaine Turbo",
+        "image": "/images/cards/patPatrouille/capt_turbo.png",
+        "alt": "Image de Capitaine Turbo dans pat Patrouille",
+        "description": "Biologiste marin qui aide ses amis avec son bateau.",
+        "phrase_culte": null,
+        "role": "Aide ses amis dans les aventures maritimes.",
+        "particularite": "Amateur de biscuits au poisson et de calamar séché."
+      },
+      {
+        "id": 1,
+        "nom": "Chase",
+        "image": "/images/cards/patPatrouille/chase.png",
+        "alt": "Image de Chase dans pat Patrouille.",
+        "description": "Chien policier et chef des opérations.",
+        "phrase_culte": "Chase est sur le coup",
+        "role": "Sécuriser les zones et coordonner les interventions.",
+        "particularite": "Allergique aux chats et aux plumes."
+      },
+      {
+        "id": 2,
+        "nom": "Everest",
+        "image": "/images/cards/patPatrouille/everest.png",
+        "alt": "Image d'Everest dans pat Patrouille.",
+        "description": "Husky sauveteur des neiges.",
+        "phrase_culte": "La neige, c'est mon domaine !",
+        "role": "Expertise en missions en milieu neigeux.",
+        "particularite": "Vit dans une station de ski."
+      },
+      {
+        "id": 3,
+        "nom": "La fermière Rumi",
+        "image": "/images/cards/patPatrouille/fermiere_rumi.png",
+        "alt": "Image de la fermière Rumi dans pat Patrouille.",
+        "description": "Fermière dévouée de la Grande Vallée.",
+        "phrase_culte": null,
+        "role": "Aide dans les missions en pleine nature.",
+        "particularite": "A toujours une carotte dans la poche."
+      },
+      {
+        "id": 4,
+        "nom": "Jake",
+        "image": "/images/cards/patPatrouille/jake.png",
+        "alt": "Image de jake dans pat Patrouille.",
+        "description": "Vit avec Everest dans la station de ski.",
+        "phrase_culte": null,
+        "role": "Secourt les personnes en difficulté dans la neige.",
+        "particularite": "Collectionne les cailloux en forme d’animaux."
+      },
+      {
+        "id": 5,
+        "nom": "Mr Le Maire Hollinger",
+        "image": "/images/cards/patPatrouille/m_le_maire_hollinger.png",
+        "alt": "Image de Mr Hollinger dans pat Patrouille.",
+        "description": "Maire autoproclamé de Foggy Bottom.",
+        "phrase_culte": null,
+        "role": "Invente des plans pour surpasser la Grande Vallée.",
+        "particularite": "Range ses médailles par ordre de brillance."
+      },
+      {
+        "id": 6,
+        "nom": "Marcus",
+        "image": "/images/cards/patPatrouille/marcus.png",
+        "alt": "Image de Marcus dans pat Patrouille.",
+        "description": "Dalmatien pompier et médecin secouriste.",
+        "phrase_culte": "Je suis tout fleu, tout flamme !",
+        "role": "Éteint les incendies et apporte les premiers soins.",
+        "particularite": "Se cogne souvent, ce qui amuse ses amis."
+      },
+      {
+        "id": 7,
+        "nom": "Maurice",
+        "image": "/images/cards/patPatrouille/maurice.png",
+        "alt": "Image de maurice dans pat Patrouille.",
+        "description": "Le morse ami de Capitaine Turbo.",
+        "phrase_culte": "Hou hou !",
+        "role": "Aide dans les missions sous-marines.",
+        "particularite": "Adore jouer avec son ballon et faire des blagues."
+      },
+      {
+        "id": 8,
+        "nom": "Mme La Maire Goodway",
+        "image": "/images/cards/patPatrouille/mme_la_maire_goodway.png",
+        "alt": "Image de la Maire Goodway dans pat Patrouille.",
+        "description": "Amicale mais souvent source de catastrophes.",
+        "phrase_culte": null,
+        "role": "Veille sur la ville et appelle la Pat Patrouille au besoin.",
+        "particularite": "Parle à sa poule comme à une conseillère officielle."
+      },
+      {
+        "id": 9,
+        "nom": "Galinetta",
+        "image": "/images/cards/patPatrouille/poule_gallinetta.png",
+        "alt": "Image de Galinetta dans pat Patrouille.",
+        "description": "Fidèle poule de Mme Goodway.",
+        "phrase_culte": "Cot cot !",
+        "role": "Mascotte involontaire de la Grande Vallée.",
+        "particularite": "Cause souvent des situations cocasses."
+      },
+      {
+        "id": 10,
+        "nom": "Rex",
+        "image": "/images/cards/patPatrouille/rex.png",
+        "alt": "Image de Rex dans pat Patrouille.",
+        "description": "Bouvier bernois expert en dinosaures.",
+        "phrase_culte": null,
+        "role": "Communique avec les dinosaures.",
+        "particularite": "Connaît le nom de tous les dinos par cœur."
+      },
+      {
+        "id": 11,
+        "nom": "Chien Robot",
+        "image": "/images/cards/patPatrouille/robot.png",
+        "alt": "Image de Chien Robot dans pat Patrouille.",
+        "description": "Allié technologique de la Pat Patrouille.",
+        "phrase_culte": null,
+        "role": "Aide au pilotage et à la réparation.",
+        "particularite": "Ajoute toujours une touche d'humour."
+      },
+      {
+        "id": 12,
+        "nom": "Rocky",
+        "image": "/images/cards/patPatrouille/rocky.png",
+        "alt": "Image de Rocky dans pat Patrouille.",
+        "description": "Croisé terrier bricoleur.",
+        "phrase_culte": "Ne gaspille rien, recycle tout !",
+        "role": "Répare les machines et invente des gadgets.",
+        "particularite": "Déteste l'eau et se met parfois en difficulté."
+      },
+      {
+        "id": 13,
+        "nom": "Romy",
+        "image": "/images/cards/patPatrouille/romy.png",
+        "alt": "Image de Romy dans pat Patrouille.",
+        "description": "Chienne pleine d'énergie.",
+        "phrase_culte": "On fonce, les amis !",
+        "role": "Aide avec enthousiasme dans les missions.",
+        "particularite": "Toujours de bonne humeur et curieuse."
+      },
+      {
+        "id": 14,
+        "nom": "Ruben",
+        "image": "/images/cards/patPatrouille/ruben.png",
+        "alt": "Image de Ruben dans pat Patrouille.",
+        "description": "Bouledogue anglais, ingénieur en chef.",
+        "phrase_culte": "C'est du gâteau pour Ruben !",
+        "role": "Renforce les structures et prépare le terrain.",
+        "particularite": "Adore la boue et manger des biscuits."
+      },
+      {
+        "id": 15,
+        "nom": "Ryder",
+        "image": "/images/cards/patPatrouille/ryder.png",
+        "alt": "Image de Ryder dans pat Patrouille.",
+        "description": "Chef et fondateur de la Pat Patrouille.",
+        "phrase_culte": "Aucune mission n'est trop dure, car mes amis, ils assurent !",
+        "role": "Analyse chaque situation et attribue les missions.",
+        "particularite": "Démonte tout pour comprendre comment ça marche."
+      },
+      {
+        "id": 16,
+        "nom": "Stella",
+        "image": "/images/cards/patPatrouille/stella.png",
+        "alt": "Image de Stella dans pat Patrouille.",
+        "description": "Cocker experte en vol et reconnaissance aérienne.",
+        "phrase_culte": "Prête pour un petit tour dans les airs !",
+        "role": "Surveille depuis les airs et aide lors des missions aériennes.",
+        "particularite": "Adore les figures acrobatiques."
+      },
+      {
+        "id": 17,
+        "nom": "Zuma",
+        "image": "/images/cards/patPatrouille/zuma.png",
+        "alt": "Image de Zuma dans pat Patrouille.",
+        "description": "Labrador expert en sauvetage aquatique.",
+        "phrase_culte": "Prêt à plonger !",
+        "role": "Secourt dans l'eau et les missions maritimes.",
+        "particularite": "Adore faire des blagues et rire."
+      }
+    ],
+    "dora": [
+      {
+        "id": 0,
+        "nom": "Alicia",
+        "image": "/images/cards/dora/alicia.png",
+        "alt": "Image d'Alicia dans Dora.",
+        "description": "Sœur de Diego, experte en informatique et secours animaliers.",
+        "phrase_culte": null,
+        "role": "Assiste Diego dans ses missions de sauvetage des animaux.",
+        "particularite": "Ne sort jamais sans son carnet de notes."
+      },
+      {
+        "id": 1,
+        "nom": "Babouche",
+        "image": "/images/cards/dora/babouche.png",
+        "alt": "Image de Babouche dans Dora.",
+        "description": "Singe parlant et compagnon d'aventure de Dora.",
+        "phrase_culte": null,
+        "role": "Aide Dora dans toutes ses missions.",
+        "particularite": "Grimpe aux arbres plus vite que son ombre."
+      },
+      {
+        "id": 2,
+        "nom": "Bebe Jaguar",
+        "image": "/images/cards/dora/bebe-jaguar.png",
+        "alt": "Image de bebe Jaguar dans Dora.",
+        "description": "Petit jaguar ami de Dora et Diego.",
+        "phrase_culte": null,
+        "role": "Participe aux aventures et apprend de Dora et Diego.",
+        "particularite": "Fait des siestes dans les endroits les plus improbables."
+      },
+      {
+        "id": 3,
+        "nom": "Chipeur",
+        "image": "/images/cards/dora/chipeur.png",
+        "alt": "Image de Chipeur dans Dora.",
+        "description": "Renard considéré comme le 'méchant' de la série.",
+        "phrase_culte": "Oh mince, il est trop tard !",
+        "role": "Passe son temps à voler des objets aux autres.",
+        "particularite": "Ne peut s’empêcher de tester les objets des autres."
+      },
+      {
+        "id": 4,
+        "nom": "Diego",
+        "image": "/images/cards/dora/diego.png",
+        "alt": "Image de Diego dans Dora.",
+        "description": "Demi-cousin de Dora.",
+        "phrase_culte": null,
+        "role": "Participe aux missions de sauvetage des animaux.",
+        "particularite": "Adore grimper aux arbres pour observer la nature."
+      },
+      {
+        "id": 5,
+        "nom": "Dora",
+        "image": "/images/cards/dora/dora.png",
+        "alt": "Image de Dora.",
+        "description": "Aventurière curieuse qui explore le monde avec ses amis.",
+        "phrase_culte": null,
+        "role": "Guide les enfants, résout des missions et utilise son sac et sa carte.",
+        "particularite": "Bilingue anglais/espagnol."
+      },
+      {
+        "id": 6,
+        "nom": "Grandma",
+        "image": "/images/cards/dora/grandma.png",
+        "alt": "Image de Grandma dans Dora.",
+        "description": "Grand-mère de Dora.",
+        "phrase_culte": null,
+        "role": "Aide Dora et Babouche dans leurs aventures.",
+        "particularite": "Fait toujours des cookies pour ses amis."
+      },
+      {
+        "id": 7,
+        "nom": "La Carte",
+        "image": "/images/cards/dora/la-carte.png",
+        "alt": "Image de la Carte dans Dora.",
+        "description": "Carte magique indiquant le chemin à Dora.",
+        "phrase_culte": "Dis carte !",
+        "role": "Guide Dora pour atteindre sa destination.",
+        "particularite": "Se perd jamais, même sans GPS."
+      },
+      {
+        "id": 8,
+        "nom": "Le Grand Poulet Rouge",
+        "alt": "Image du Grand Poulet Rouge dans Dora.",
+        "image": "/images/cards/dora/le-grand-poulet-rouge.png",
+        "description": "Grand poulet rouge qui parle anglais.",
+        "phrase_culte": null,
+        "role": "Aide Dora et Babouche en donnant des indices.",
+        "particularite": "Pond des œufs géants à l’occasion."
+      },
+      {
+        "id": 9,
+        "nom": "Le Train Bleu",
+        "image": "/images/cards/dora/le-train-bleu.png",
+        "alt": "Image du Train Bleu dans Dora.",
+        "description": "Train qui transporte Dora et ses amis.",
+        "phrase_culte": null,
+        "role": "Permet de voyager rapidement pendant les aventures.",
+        "particularite": "Chante quand il roule sur les rails."
+      },
+      {
+        "id": 10,
+        "nom": "Le Trio Fiesta",
+        "image": "/images/cards/dora/le-trio-fiesta.png",
+        "alt": "Image du Trio Fiesta dans Dora.",
+        "description": "Trois petits animaux : une sauterelle, un escargot et une grenouille.",
+        "phrase_culte": null,
+        "role": "Félicitent Dora et Babouche après une mission.",
+        "particularite": "Fait toujours la fête où qu’ils aillent."
+      },
+      {
+        "id": 11,
+        "nom": "Les Etoiles",
+        "image": "/images/cards/dora/les-etoiles.png",
+        "alt": "Image des Etoiles dans Dora.",
+        "description": "Étoiles lumineuses, masculines et féminines.",
+        "phrase_culte": null,
+        "role": "Chacune a un rôle comme scintiller ou posséder un outil.",
+        "particularite": "Brillent même quand il fait nuageux."
+      },
+      {
+        "id": 12,
+        "nom": "Le Lutin Grognon",
+        "image": "/images/cards/dora/lutin-grognon.png",
+        "alt": "Image du Lutin Grognon dans Dora.",
+        "description": "Lutin jaune, toujours de mauvaise humeur.",
+        "phrase_culte": null,
+        "role": "Vit sous un pont et pose des énigmes pour laisser passer.",
+        "particularite": "Râle pour un rien, mais reste adorable."
+      },
+      {
+        "id": 13,
+        "nom": "Mister Toucan",
+        "image": "/images/cards/dora/mister-toucan.png",
+        "alt": "Image de mister Toucan dans Dora.",
+        "description": "Toucan parlant anglais.",
+        "phrase_culte": null,
+        "role": "Aide Dora et Babouche en donnant des indices.",
+        "particularite": "Guide et messager."
+      },
+      {
+        "id": 14,
+        "nom": "Sac à Dos",
+        "image": "/images/cards/dora/sac-a-dos.png",
+        "alt": "Image de Sac à Dos dans Dora.",
+        "description": "Sac à dos mauve de Dora.",
+        "phrase_culte": "Dis sac à dos !",
+        "role": "Aide Dora à résoudre les épreuves avec ses objets.",
+        "particularite": "Contient toujours plus qu’il n’y paraît."
+      },
+      {
+        "id": 15,
+        "nom": "Tico",
+        "image": "/images/cards/dora/tico.png",
+        "alt": "Image de Tico dans Dora.",
+        "description": "Écureuil violet ami de Dora, parle espagnol.",
+        "phrase_culte": null,
+        "role": "Conduit souvent différents véhicules pour les missions.",
+        "particularite": "Peut piloter voiture, hélicoptère, bateau‑véhicule."
+      },
+      {
+        "id": 16,
+        "nom": "Totor",
+        "image": "/images/cards/dora/totor.png",
+        "alt": "Image de Totor dans Dora.",
+        "description": "Taureau bleu, bourru mais gentil.",
+        "phrase_culte": null,
+        "role": "Personnage fort et un peu grognon du dessin animé.",
+        "particularite": "Allergique au pollen."
+      },
+      {
+        "id": 17,
+        "nom": "Vera",
+        "image": "/images/cards/dora/vera.png",
+        "alt": "Image de Vera dans Dora.",
+        "description": "Iguane verte, coquette et naïve.",
+        "phrase_culte": null,
+        "role": "A souvent besoin de Dora et Babouche pour l'aider.",
+        "particularite": "A toujours une solution pour chaque problème."
+      }
+    ],
+    "dino": [
+      {
+        "id": 0,
+        "nom": "Allosaurus",
+        "image": "/images/cards/dinosaures/allosaurus.png",
+        "alt": "Image du dinosaure Allosaurus.",
+        "description": "Prédateur bipède possédant de grandes mâchoires et des griffes acérées.",
+        "phrase_culte": null,
+        "role": "Prédateur",
+        "particularite": "Considéré comme le principal prédateur avant le T-Rex."
+      },
+      {
+        "id": 1,
+        "nom": "Ankylosaurus",
+        "image": "/images/cards/dinosaures/ankylosaurus.png",
+        "alt": "Image du dinosaure Ankylosaurus.",
+        "description": "Dinosaure cuirassé doté d'une massue osseuse au bout de la queue.",
+        "phrase_culte": null,
+        "role": "Herbivore",
+        "particularite": "Sa carapace le protégeait des plus grands prédateurs."
+      },
+      {
+        "id": 2,
+        "nom": "Apatosaurus",
+        "image": "/images/cards/dinosaures/apatosaurus.png",
+        "alt": "Image du dinosaure Apatosaurus",
+        "description": "Grand sauropode à long cou et à queue puissante.",
+        "phrase_culte": null,
+        "role": "Herbivore",
+        "particularite": "Son nom signifie 'lézard trompeur'."
+      },
+      {
+        "id": 3,
+        "nom": "Archaeopteryx",
+        "image": "/images/cards/dinosaures/archaeopteryx.png",
+        "alt": "Image du dinosaure Archaeopteryx.",
+        "description": "Fossile de transition entre les dinosaures et les oiseaux.",
+        "phrase_culte": null,
+        "role": "Carnivore (petits animaux et insectes)",
+        "particularite": "Premier animal connu à avoir des plumes."
+      },
+      {
+        "id": 4,
+        "nom": "Brachiosaurus",
+        "image": "/images/cards/dinosaures/brachiosaurus.png",
+        "alt": "Image du dinosaure Brachiosaurus.",
+        "description": "Immense dinosaure à long cou, l’un des plus grands animaux terrestres connus.",
+        "phrase_culte": null,
+        "role": "Herbivore",
+        "particularite": "Ses pattes avant étaient plus longues que les arrières."
+      },
+      {
+        "id": 5,
+        "nom": "Dakosaurus",
+        "image": "/images/cards/dinosaures/dakosaurus.png",
+        "alt": "Image du dinosaure Dakosaurus.",
+        "description": "Reptile marin prédateur au corps fuselé.",
+        "phrase_culte": null,
+        "role": "Carnivore (poissons, autres reptiles marins)",
+        "particularite": "Surnommé le 'Godzilla du Jurassique' pour sa mâchoire puissante."
+      },
+      {
+        "id": 6,
+        "nom": "Dilophosaurus",
+        "image": "/images/cards/dinosaures/dilophosaurus.png",
+        "alt": "Image du dinosaure Dilophosaurus.",
+        "description": "Dinosaure carnivore à deux crêtes osseuses sur la tête.",
+        "phrase_culte": null,
+        "role": "Carnivore",
+        "particularite": "Ses crêtes servaient probablement à l’intimidation."
+      },
+      {
+        "id": 7,
+        "nom": "Liopleurodon",
+        "image": "/images/cards/dinosaures/liopleurodon.png",
+        "alt": "Image du dinosaure Liopleurodon.",
+        "description": "Reptile marin au corps massif et aux puissantes mâchoires.",
+        "phrase_culte": null,
+        "role": "Carnivore (poissons, reptiles marins)",
+        "particularite": "Redoutable prédateur des mers du Jurassique."
+      },
+      {
+        "id": 8,
+        "nom": "Metriohynchus",
+        "image": "/images/cards/dinosaures/metriohynchus.png",
+        "alt": "Image du dinosaure Metriohyncus.",
+        "description": "Proche des crocodiles modernes.",
+        "phrase_culte": null,
+        "role": "Carnivore (poissons, céphalopodes)",
+        "particularite": "Vivait en mer mais pouvait aussi se déplacer sur la terre ferme."
+      },
+      {
+        "id": 9,
+        "nom": "Parasaurolophus",
+        "image": "/images/cards/dinosaures/parasaurolophus.png",
+        "alt": "Image du dinosaure Parasaurolophus.",
+        "description": "Dinosaure herbivore à longue crête tubulaire sur le crâne.",
+        "phrase_culte": null,
+        "role": "Herbivore",
+        "particularite": "Sa crête servait à produire des sons graves pour communiquer."
+      },
+      {
+        "id": 10,
+        "nom": "Plesiosaurus",
+        "image": "/images/cards/dinosaures/plesiosaurus.png",
+        "alt": "Image du dinosaure Plesiosaurus.",
+        "description": "Reptile marin au long cou et aux nageoires puissantes.",
+        "phrase_culte": null,
+        "role": "Carnivore (poissons et ammonites)",
+        "particularite": "A inspiré la légende du monstre du Loch Ness."
+      },
+      {
+        "id": 11,
+        "nom": "Pterosaur",
+        "image": "/images/cards/dinosaures/pterosaur.png",
+        "alt": "Image du dinosaure Pterosaur.",
+        "description": "Reptile volant, premier vertébré connu capable de voler activement.",
+        "phrase_culte": null,
+        "role": "Carnivore",
+        "particularite": "Ses ailes étaient formées d'une membrane de peau tendue entre le corps et un doigt allongé."
+      },
+      {
+        "id": 12,
+        "nom": "Rhamphorynchus",
+        "image": "/images/cards/dinosaures/rhamphorynchus.png",
+        "alt": "Image du dinosaure Rhamphorunchus.",
+        "description": "Petit ptérosaure avec des dents pointues.",
+        "phrase_culte": null,
+        "role": "Carnivore",
+        "particularite": "Sa longue queue terminée par un losange lui servait de gouvernail en vol."
+      },
+      {
+        "id": 13,
+        "nom": "Spinosaurus",
+        "image": "/images/cards/dinosaures/spinosaurus.png",
+        "alt": "Image du dinosaure Spinosaurus.",
+        "description": "Grand dinosaure semi-aquatique avec une voile dorsale distinctive.",
+        "phrase_culte": null,
+        "role": "Carnivore",
+        "particularite": "C’est le plus grand carnivore terrestre connu."
+      },
+      {
+        "id": 14,
+        "nom": "Stegosaurus",
+        "image": "/images/cards/dinosaures/stegosaurus.png",
+        "alt": "Image du dinosaure Stegosaurus.",
+        "description": "Il avait des plaques osseuses le long du dos et une queue défensive.",
+        "phrase_culte": null,
+        "role": "Herbivore",
+        "particularite": "Ses plaques dorsales pouvaient servir à la régulation thermique et à l'intimidation."
+      },
+      {
+        "id": 15,
+        "nom": "Tyrannosaurus Rex",
+        "image": "/images/cards/dinosaures/t-rex.png",
+        "alt": "Image du dinosaure Tyrannosaurus Rex.",
+        "description": "Prédateur massif à la mâchoire surpuissante et aux bras courts.",
+        "phrase_culte": null,
+        "role": "Carnivore",
+        "particularite": "L’un des plus célèbres dinosaures de tous les temps."
+      },
+      {
+        "id": 16,
+        "nom": "Triceratops",
+        "image": "/images/cards/dinosaures/triceratops.png",
+        "alt": "Image du dinosaure Triceratops.",
+        "description": "Dinosaure herbivore à trois cornes et collerette osseuse.",
+        "phrase_culte": null,
+        "role": "Herbivore",
+        "particularite": "Ses cornes servaient à se défendre contre les prédateurs."
+      },
+      {
+        "id": 17,
+        "nom": "Velociraptor",
+        "image": "/images/cards/dinosaures/velociraptors.png",
+        "alt": "Image du dinosaure Velociraptor.",
+        "description": "Petit dinosaure agile et rapide, doté de griffes redoutables.",
+        "phrase_culte": null,
+        "role": "Carnivore",
+        "particularite": "Il chassait probablement en groupe."
+      }
+    ]
+  },
+  "messages": [
+    {
+      "id": "da8d",
+      "name": "sonkes",
+      "lastname": "audrey",
+      "email": "audrey.sonkes@gmail.com",
+      "password": "jardin",
+      "message": "Bonjour la compagnie !"
+    },
+    {
+      "id": "416f",
+      "name": "sonkes",
+      "lastname": "audrey",
+      "email": "audrey.sonkes@gmail.com",
+      "password": "hello",
+      "message": "Bonjour !"
+    }
+  ]
+}

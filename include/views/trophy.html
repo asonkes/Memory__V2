@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Cinzel+Decorative:wght@400;700;900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="../../css/style.css" />
+
+    <!-- Lien vers le fichier JS -->
+    <script src="/js/main.js" type="module"></script>
+    <script src="/js/scores/scores.js" type="module"></script>
+
+    <!-- Lien vers 'fontawesome' -->
+    <script src="https://kit.fontawesome.com/2cbf82340f.js" crossorigin="anonymous"></script>
+
+    <!-- Lien vers 'favicon' -->
+    <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon" />
+
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <header class="flex flex_center"></header>
+
+    <main class="flex" id="main_trophy">
+      <div class="container">
+        <div class="trophy">
+          <h1 class="text_center">Découvrez vos scores !</h1>
+          <div class="trophy_dora flex direction_column">
+            <p class="title">Thème Dora :</p>
+            <p>
+              <span aria-label="victoire" id="winDora">🎉​🎉​🎉​ Nombre de partie(s) gagnée(s) :</span>
+              <span class="scores scoreDora">0</span>
+            </p>
+            <p>
+              <span aria-label="médaille de bronze">🥉​🥉​🥉​Mode facile :</span>
+              <span>0</span>
+            </p>
+            <p>
+              <span aria-label="médaille d'argent">🥈​🥈​🥈​​Mode Moyen :</span>
+              <span>0</span>
+            </p>
+            <p>
+              <span aria-label="médaille de bronze">🥇​🥇​🥇​​Mode Difficile :</span>
+              <span>0</span>
+            </p>
+          </div>
+          <div class="trophy_patPatrouille flex direction_column">
+            <p class="title">Thème Pat Patrouille :</p>
+            <p>
+              <span aria-label="victoire" id="winPatPatrouille">🎉​🎉​🎉​ Nombre de partie(s) gagnée(s) :</span>
+              <span class="scores scorePatPatrouille">0</span>
+            </p>
+            <p>
+              <span aria-label="médaille de bronze">🥉​🥉​🥉​Mode facile :</span>
+              <span>0</span>
+            </p>
+            <p>
+              <span aria-label="médaille d'argent">🥈​🥈​🥈​​Mode Moyen :</span>
+              <span>0</span>
+            </p>
+            <p>
+              <span aria-label="médaille de bronze">🥇​🥇​🥇​​Mode Difficile :</span>
+              <span>0</span>
+            </p>
+          </div>
+          <div class="trophy_dino flex direction_column">
+            <p class="title">Thème Dinosaures :</p>
+            <p>
+              <span aria-label="victoire" id="winDino">🎉​🎉​🎉​Nombre de partie(s) gagnée(s) :</span>
+              <span class="scores scoreDino">0</span>
+            </p>
+            <p>
+              <span aria-label="médaille de bronze">🥉​🥉​🥉​Mode facile :</span>
+              <span>0</span>
+            </p>
+            <p>
+              <span aria-label="médaille d'argent">🥈​🥈​🥈​​Mode Moyen :</span>
+              <span>0</span>
+            </p>
+            <p>
+              <span aria-label="médaille de bronze">🥇​🥇​🥇​​Mode Difficile :</span>
+              <span>0</span>
+            </p>
+          </div>
+
+          <div class="button flex direction_column align_center">
+            <button id="buttonScore">Réinitialiser</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+/* Page des variables pour pouvoir les réutiliser dans le site */
+
+:root {
+  /* font-family */
+  --font_primary: "Cinzel Decorative", serif;
+  --font_secondary: "Acme", sans-serif;
+
+  /* color */
+  --color_primary: #2e4057;
+  --color_secondary: #ffffff;
+  --color_tertiary: #3e72b2;
+  --color_quaternary: #eebfa5;
+  --color_quinary: #a90000;
+
+  /* font-size (en rem) */
+  --fontSize_xxl: 2rem; /* 32px */
+  --fontSize_xl: 1.75rem; /* 28px*/
+  --fontSize_l: 1.625rem; /* 26px*/
+  --fontSize_md_xl: 1.5rem; /* 24px */
+  --fontSize_md: 1.25rem; /* 20px */
+  --fontSize_reg: 1.125rem; /* 18px */
+  --fontSize_s: 1rem; /* 16px */
+  --fontSize_xs: 0.875rem; /* 14px */
+
+  /* width en % */
+  --width_full: 100%;
+  --width_medium: 70%;
+  --width_reg: 50%;
+
+  /* height */
+  --heightVH: 100vh;
+  --height_full: 100%;
+
+  /* padding */
+  --padding_xxxxl: 5rem; /* 80px */
+  --padding_xxxl: 3.75rem; /* 60px */
+  --padding_xxl: 2.5rem; /* 40px */
+  --padding_md: 1.25rem; /* 20px */
+  --padding_reg: 1rem; /* 16px */
+  --padding_s: 0.625rem; /* 10px */
+  --padding_xs: 0.313rem; /* 5px */
+
+  /* margin */
+  --margin_med: 2.5rem; /* 40px */
+  --margin_reg: 1.25rem; /* 20px */
+  --margin_s: 0.625rem; /* 10px */
+}

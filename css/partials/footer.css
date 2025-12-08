@@ -1,0 +1,33 @@
+footer {
+  max-width: var(--width_full);
+  background-color: var(--color_primary);
+
+  @media (prefers-color-scheme: light) {
+    background-color: var(--color_secondary);
+    border: 2px solid var(--color_primary);
+  }
+
+  p {
+    padding: var(--padding_s);
+    color: var(--color_secondary);
+    font-family: var(--font_primary);
+    font-size: var(--fontSize_xs);
+
+    @media (prefers-color-scheme: light) {
+      color: var(--color_primary);
+      font-weight: bold;
+    }
+  }
+}
+
+/* Thème light */
+
+body.light footer {
+  background-color: var(--color_secondary);
+  border: 2px solid var(--color_primary);
+
+  p {
+    color: var(--color_primary);
+    font-weight: bold;
+  }
+}

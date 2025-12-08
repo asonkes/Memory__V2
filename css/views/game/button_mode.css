@@ -1,0 +1,67 @@
+/* propriétés choix des boutons */
+.chooseMode {
+  max-width: var(--width_full);
+  padding: var(--padding_xxl) 0;
+
+  @media (max-width: 680px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &.active {
+    display: none;
+  }
+
+  #easy,
+  #medium,
+  #hard {
+    max-width: var(--width_full);
+    width: 200px;
+    font-family: var(--font_primary);
+    font-size: var(--fontSize_s);
+    font-weight: bold;
+    background-color: var(--color_primary);
+    color: var(--color_secondary);
+    margin: 0 var(--margin_reg);
+    padding: var(--padding_reg);
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+
+    @media (prefers-color-scheme: light) {
+      background-color: var(--color_secondary);
+      color: var(--color_primary);
+      border: 2px solid var(--color_primary);
+    }
+
+    &:hover {
+      background-color: var(--color_tertiary);
+      transform: scale(1.02);
+
+      @media (prefers-color-scheme: light) {
+        background-color: rgba(62, 114, 178, 0.4);
+      }
+    }
+
+    @media (max-width: 680px) {
+      margin: var(--margin_reg) 0;
+    }
+  }
+}
+
+/* Thème Light */
+
+body.light .chooseMode {
+  #easy,
+  #medium,
+  #hard {
+    background-color: var(--color_secondary);
+    color: var(--color_primary);
+    border: 2px solid var(--color_primary);
+
+    &:hover {
+      background-color: rgba(62, 114, 178, 0.4);
+    }
+  }
+}

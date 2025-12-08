@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Cinzel+Decorative:wght@400;700;900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Lien vers le fichier JS -->
+    <script src="./js/main.js" type="module" defer></script>
+    <script src="/js/slider/slider.js" type="module" defer></script>
+    <script src="/js/mode/chooseTheme.js" type="module" defer></script>
+    <script src="/js/personnages/personnages.js" type="module" defer></script>
+
+    <!-- Lien vers 'fontawesome' -->
+    <script src="https://kit.fontawesome.com/2cbf82340f.js" crossorigin="anonymous"></script>
+
+    <!-- Lien vers 'favicon' -->
+    <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon" />
+
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <header class="flex flex_center"></header>
+
+    <main id="main_home">
+      <section>
+        <div class="home_image">
+          <div class="home_title flex">
+            <img
+              class="home_title--img1"
+              src="/images/background/site/garcon_ordi.png"
+              alt="Petit garçon qui a un ordinateur en main" />
+            <h1 class="home_title--text text_center">Jeu Memory : C'est Parti !!!</h1>
+            <img
+              class="home_title--img2"
+              src="/images/background/site/fille_ordi.png"
+              alt="Petite fille qui a un ordinateur en main" />
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="home_description text_center">
+            <p class="home_description--text">Bienvenue dans notre jeu de Memory !</p>
+            <p class="home_description--text">
+              Le principe est simple : retrouvez toutes les paires de cartes identiques.
+            </p>
+            <p class="home_description--text">
+              Facile, dites-vous? Détrompez-vous... Certains pièges viendront pimenter la partie.
+            </p>
+            <p class="home_description--text">
+              Un petit indice, mais pas plus, gardez un oeil sur le temps... Il pourrait bien jouer contre vous. Ou vous
+              donner un coup de pouce.
+            </p>
+            <p class="home_description--text">Bonne chance, vous en savez déjà trop.</p>
+          </div>
+        </div>
+      </section>
+      <section id="home_slider container">
+          <h2 class="text_center flex direction_column">
+            Choisis ton thème pour commencer à jouer !
+            <i class="fa-solid fa-arrow-down"></i>
+          </h2>
+      </section>
+      <section>
+        <div class="slider flex flex_center">
+            <div class="flex_shrink width--60 height--50">
+              <img
+                class="img opacity border_blue slider_image"
+                src="images/background/dora/background_dora2.avif"
+                alt="Image de Dora et de Babouche"
+                id="img1" />
+            </div>
+            <div class="icon icon1 flex align_center">
+              <i class="fa-solid fa-angle-left" id="iconLeft"></i>
+            </div>
+            <div class="flex_shrink width--60 height--50">
+              <a href="./include/views/game.html">
+                <img
+                  class="img border_blue slider_image"
+                  src="images/background/patPatrouille/background_patPatrouille.avif"
+                  alt="Image de toute l'équipe de PatPatrouille"
+                  id="img2" />
+              </a>
+            </div>
+            <div class="icon icon2 flex align_center">
+              <i class="fa-solid fa-angle-right" id="iconRight"></i>
+            </div>
+            <div class="flex_shrink width--60 height--50">
+              <img
+                class="img opacity border_blue slider_image"
+                src="images/background/dinosaures/background_dino.avif"
+                alt="Image de plusieurs dinosaures"
+                id="img3" />
+            </div>
+      </section>
+      <section id="home_personnages">
+        <h2 class="text_center">
+          <span class="title1">Venez découvrir les personnages du thème :</span>
+          <span class="title2"></span>
+        </h2>
+        <div class="container">
+          <div class="personnagesParent flex flex_center direction_column">
+            <div class="persoContainer flex flex_center align_center"></div>
+            <button id="button_perso">Voir plus de personnages</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

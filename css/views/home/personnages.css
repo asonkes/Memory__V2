@@ -1,0 +1,114 @@
+#home_personnages {
+  max-width: var(--width_full);
+  min-height: var(--heightVH);
+  padding: 65px 0 40px 0;
+
+  h2 {
+    font-family: var(--font_primary);
+    color: var(--color_primary);
+    padding: var(--padding_md);
+
+    .title1 {
+      text-decoration: underline;
+    }
+  }
+
+  .personnagesParent {
+    max-width: var(--width_full);
+    padding: var(--padding_md);
+
+    .persoContainer {
+      width: var(--width_full);
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 60px 0;
+
+      .perso {
+        width: 250px;
+        min-height: 325px;
+        border: 1px solid rgba(46, 64, 87, 0.2);
+        border-radius: 20px;
+
+        .block_image {
+          width: 55%;
+          margin: auto;
+          padding: var(--padding_s);
+
+          img {
+            width: var(--width_full);
+            max-width: var(--width_full);
+            object-fit: contain;
+            display: flex;
+          }
+        }
+
+        .block_text {
+          width: var(--width_full);
+          min-height: var(--height_full);
+          font-family: var(--font_secondary);
+          font-size: var(--fontSize_xs);
+          padding: var(--padding_s);
+
+          p,
+          span {
+            padding: var(--padding_xs) 0;
+          }
+
+          span:first-child {
+            text-decoration: underline;
+            color: var(--color_tertiary);
+          }
+
+          span:nth-last-of-type(1) {
+            color: var(--color_primary);
+          }
+        }
+      }
+    }
+
+    button {
+      align-self: center;
+      font-family: var(--font_primary);
+      font-size: var(--fontSize_xs);
+      font-weight: bold;
+      background-color: var(--color_primary);
+      color: var(--color_secondary);
+      padding: var(--padding_reg);
+      border-radius: 15px;
+      border: none;
+      cursor: pointer;
+
+      @media (prefers-color-scheme: light) {
+        background-color: var(--color_secondary);
+        color: var(--color_primary);
+        border: 2px solid var(--color_primary);
+      }
+
+      &:hover {
+        background-color: var(--color_tertiary);
+        transform: scale(1.02);
+
+        @media (prefers-color-scheme: light) {
+          background-color: rgba(62, 114, 178, 0.4);
+        }
+      }
+
+      &.active {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Thème Light */
+body.light #home_personnages {
+  button {
+    background-color: var(--color_secondary);
+    color: var(--color_primary);
+    border: 2px solid var(--color_primary);
+
+    &:hover {
+      background-color: rgba(62, 114, 178, 0.4);
+    }
+  }
+}

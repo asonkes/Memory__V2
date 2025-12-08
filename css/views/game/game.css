@@ -1,0 +1,37 @@
+#main_game {
+  .section_game {
+    max-width: var(--width_full);
+
+    /* propriétés pour changer le background, en fonction des thèmes */
+    .game_image {
+      max-width: var(--width_full);
+      height: 50vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    [data-id="img1"] {
+      background-image: url("/images/background/dora/background_dora.avif");
+
+      @media (max-width: 959px) {
+        background-image: url("/images/background/dora/background_dora2.avif");
+      }
+    }
+
+    [data-id="img2"] {
+      background-image: url("/images/background/patPatrouille/background_patPatrouille.avif");
+    }
+
+    [data-id="img3"] {
+      background-image: url("/images/background/dinosaures/background_dino.avif");
+    }
+
+    h1 {
+      font-family: var(--font_primary);
+      font-size: var(--fontSize_md_xl);
+      color: var(--color_primary);
+      padding: var(--padding_xxxl) 0 var(--padding_xxl) 0;
+    }
+  }
+}
