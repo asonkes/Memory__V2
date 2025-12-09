@@ -26,7 +26,7 @@ const sliderText = [
   "Image de plusieurs dinosaures",
 ];
 /** On récupère l'id */
-const sliderId = ["img1", "img2", "img3"];
+const sliderId = ["theme1", "theme2", "theme3"];
 
 // const slider = [
 //        { id : "img1", url : "", txt : "" },

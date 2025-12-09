@@ -11,7 +11,7 @@
       background-position: center;
     }
 
-    [data-id="img1"] {
+    [data-id="theme1"] {
       background-image: url("/images/background/dora/background_dora.avif");
 
       @media (max-width: 959px) {
@@ -19,11 +19,11 @@
       }
     }
 
-    [data-id="img2"] {
+    [data-id="theme2"] {
       background-image: url("/images/background/patPatrouille/background_patPatrouille.avif");
     }
 
-    [data-id="img3"] {
+    [data-id="theme3"] {
       background-image: url("/images/background/dinosaures/background_dino.avif");
     }
 

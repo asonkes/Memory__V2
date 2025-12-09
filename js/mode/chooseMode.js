@@ -8,18 +8,14 @@ import { stopPlaySound, reactiveSound } from "/js/utils/playSound.js";
 /******* En fonction du mode, quantité de cards ******/
 /*****************************************************/
 
-/** Tableau facile */
-let tabEasy = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6];
-
-/** Tableau medium */
-let tabMedium = [
-  1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12,
-];
 /** Tableau difficile */
-let tabHard = [
+let tab = [
   1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12,
-  13, 13, 14, 14, 15, 15, 16, 16, 17, 17, 18, 18,
+  13, 13, 14, 14, 15, 15, 16, 16, 17, 17, 18, 18
 ];
+
+/** Ici on va utiliser un objet (car ordre n'a pas d'importance, valeur = identifiant précis) */
+const modeSizes = { easy: 12, medium: 24, hard: 36};
 
 /** On sélectionne tous les boutons */
 const buttonsMode = document.querySelectorAll(".button_mode");
@@ -27,6 +23,8 @@ const buttonsMode = document.querySelectorAll(".button_mode");
 const chooseMode = document.querySelector(".chooseMode");
 /** On va intiailiser le container */
 const cardWrapper = document.querySelector(".card_wrapper");
+/** On récupère le bouton */
+const button = document.getElementById("button");
 /** On va initialiser le parent de la liste 'card' */
 const card = document.querySelector(".card"); 
 
@@ -34,69 +32,40 @@ const card = document.querySelector(".card");
 /*** On rassemble les choses que l'on répète */
 /******************************************* */
 buttonsMode.forEach(element => {
+
   element.addEventListener("click", () => {
     /** Ajout de classes pour l'affichage des différentes pop-up */
     chooseMode.classList.add("active");
     cardWrapper.classList.add("active");
     button.classList.add("active");
+
+    // On récupère combien de cartes pour ce mode
+    const mode = element.dataset.mode;
+    const size = modeSizes[mode];
+    const array = tab.slice(0, size);
+
+    mixCards(array);
+    array.forEach(creationList);
   })
-})
-
-/*********************************************/
-/*** Evenements au click sur chaque bouton****/
-/*********************************************/
-
-/** Pour le bouton facile */
-const buttonEasy = document.getElementById("easy");
-/** Pour le bouton moyen */
-const buttonMedium = document.getElementById("medium");
-/** Pour le bouton difficle */
-const buttonHard = document.getElementById("hard");
-
-buttonEasy.addEventListener("click", () => {
-  /** On va donc mélanger les éléments */
-  let arrayEasy = tabEasy;
-  mixCards(arrayEasy);
-
-  /** Pour chaque élément du tableau */
-  for (let i = 0; i < arrayEasy.length; i++) {
-    creationList(arrayEasy[i]);
-  }
-}) 
-
-buttonMedium.addEventListener("click", () => {
-    /** On va donc mélanger les éléments */
-  let arrayMedium = tabMedium;
-  mixCards(arrayMedium);
-  console.log(arrayMedium);
-
-  /** Pour chaque élément du tableau */
-  for (let i = 0; i < arrayMedium.length; i++) {
-    creationList(arrayMedium[i]);
-  }
-})
-
-buttonHard.addEventListener("click", () => {
-  /** On va donc mélanger les éléments */
-  let arrayHard = tabHard;
-  mixCards(arrayHard);
-  console.log(arrayHard);
-
-  /** Pour chaque élément du tableau */
-  for (let i = 0; i < arrayHard.length; i++) {
-    creationList(arrayHard[i]);
-  }
 })
 
 /*********************************/
 /** Evenement sur le bouton PLAY */
 /*********************************/
-/** On récupère le bouton */
-const button = document.getElementById("button");
 
 /** Evenement au click sur le bouton 'GO' */
 if (button) {
   button.addEventListener("click", () => {
+    /** On reprend le h1 */
+    const title = document.getElementById("title");
+    /** On supprime le titre */
+    title.remove();
+
+    /** On récupère le background */
+    const gameImage = document.querySelector(".game_image");
+    /** On supprime cette partie pour enlever le background */
+    gameImage.remove();
+
     /** Permet de faire disparaitre le bouton */
     button.classList.remove("active");
     /** On va ajouter le parent */
@@ -165,16 +134,13 @@ async function creationList(value) {
 
   /** Ici on récupère le thème pour de recto des cards */
   let idImage = localStorage.getItem("backgroundId");
-  if(idImage && cardFront && cardBack) {
-    creationBgCards(cardFront, cardBack, idImage);
-  }
+  if(!idImage) return;
+  
+  creationBgCards(cardFront, cardBack, idImage);
 
-  /** Ici on récupère le thème pour de recto des cards */
-  if(idImage) {
-    /** Ici on s'occupe du back des cards */
-    const backCards = await creationBackCards(idImage);
-    /** On fait '-1' pour partir de '0' */
-    cardBack.src = backCards.tab[value - 1];
-    cardBack.alt = backCards.alt[value - 1];
-  }
+  /** Ici on récupère le thème pour de verso des cards */
+  const backCards = await creationBackCards(idImage);
+  /** On fait '-1' pour partir de '0' */
+  cardBack.src = backCards.cardImage[value - 1];
+  cardBack.alt = backCards.cardText[value - 1];
 }

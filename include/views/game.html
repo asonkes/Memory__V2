@@ -20,7 +20,6 @@
     <script src="/js/slider/slider.js" type="module" defer></script>
     <script src="/js/mode/chooseMode.js" type="module" defer></script>
     <script src="/js/mode/chooseTheme.js" type="module" defer></script>
-    <script src="/js/mode/playGame.js" type="module" defer></script>
     <script src="/js/utils/returnCards.js" type="module" defer></script>
     <script src="/js/utils/timer.js" type="module" defer></script>
     <script src="/js/utils/playSound.js" type="module" defer></script>
@@ -43,9 +42,9 @@
         <div class="container">
           <h1 class="text_center" id="title">À toi de jouer : facile, moyen ou difficile ?</h1>
           <div class="chooseMode flex flex_center">
-            <button class="button_mode" id="easy">Facile</button>
-            <button class="button_mode" id="medium">Moyen</button>
-            <button class="button_mode" id="hard">Difficile</button>
+            <button class="button_mode" data-mode="easy" id="easy">Facile</button>
+            <button class="button_mode" data-mode="medium" id="medium">Moyen</button>
+            <button class="button_mode" data-mode="hard" id="hard">Difficile</button>
           </div>
         </div>
         <div class="game_card flex">
@@ -73,12 +72,8 @@
 
             <!-- Ici se sont les boutons qui appraissent qd partie terminée -->
             <div class="buttonParent">
-              <button class="replay" id="replay">
-                <a href="/index.html">Rejouer</a>
-              </button>
-              <button class="scores" id="scores">
-                <a href="/include/views/trophy.html">Voir vos scores</a>
-              </button>
+              <a class="replay" href="/index.html" id="replay">Rejouer</a>
+              <a class="scores" href="/include/views/trophy.html" id="scores">Voir vos scores</a>
             </div>
             <button id="button"></button>
           </div>

@@ -54,17 +54,17 @@ export function returnCards() {
 
       /** On va lancer les différents sons par thème */
       /** Si thème Dora */
-      if (theme === "img1") {
+      if (theme === "theme1") {
         startPlaySound("/sounds/dora_sound.wav");
       }
 
       /** Si thème Pat Patrouille */
-      if (theme === "img2") {
+      if (theme === "theme2") {
         startPlaySound("/sounds/patPatrouille_sound.wav");
       }
 
       /** Si thème Dinosaures */
-      if (theme === "img3") {
+      if (theme === "theme3") {
         startPlaySound("/sounds/dino_sound.mp3");
       }
 
@@ -84,7 +84,7 @@ export function returnCards() {
         stopTimer();
 
         /** Si thème = Dora */
-        if (theme === "img1") {
+        if (theme === "theme1") {
           /** On va ajouter une image en fonction du texte */
           const img = document.createElement("img");
           img.src = `/images/cards/dora/dora.png`;
@@ -109,7 +109,7 @@ export function returnCards() {
         }
 
         /** Si theme = pat Patrouille */
-        if (theme === "img2") {
+        if (theme === "theme2") {
           /** On va ajouter une image en fonction du texte */
           const img = document.createElement("img");
           img.src = `/images/cards/patPatrouille/chase.png`;
@@ -136,7 +136,7 @@ export function returnCards() {
         }
 
         /** Si thème est Dinosaures */
-        if (theme === "img3") {
+        if (theme === "theme3") {
           /** On va ajouter une image en fonction du texte */
           const img = document.createElement("img");
           img.src = `/images/cards/dinosaures/triceratops.png`;

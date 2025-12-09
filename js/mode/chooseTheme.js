@@ -4,7 +4,6 @@
 
 /** Différentes images du slider */ 
 const imagesSlider = document.querySelectorAll(".slider_image");
-
 /** Injection de différentes classes pour afficher thème choisit */
 const gameImage = document.querySelector(".game_image");
 
