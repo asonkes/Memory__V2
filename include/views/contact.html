@@ -33,23 +33,23 @@
     <main class="flex" id="main_contact">
       <div class="container">
         <div class="contact flex direction_column align_center">
-          <h1 class="text_center">Contactez-nous !!!</h1>
+          <h1 class="text_center">Contactez-nous.</h1>
           <!-- novalidate => permet de désactiver la validation native pour contrôler les champs et afficher un message d'erreur -->
           <form action="/" method="post" id="form" novalidate>
             <div class="block1 flex">
               <div class="name flex direction_column">
                 <label for="name">Nom :</label>
-                <input name="name" id="name" type="text" placeholder="nom" required="true" />
+                <input name="name" id="name" type="text" placeholder="nom" />
               </div>
               <div class="lastname flex direction_column">
                 <label for="lastname">Prénom :</label>
-                <input name="lastname" id="lastname" type="text" placeholder="prénom" required="true" />
+                <input name="lastname" id="lastname" type="text" placeholder="prénom" />
               </div>
             </div>
             <div class="block2 flex">
               <div class="email flex direction_column">
                 <label for="email">E-mail :</label>
-                <input name="email" id="email" type="email" placeholder="e-mail" required="true" autocomplete="off" />
+                <input name="email" id="email" type="email" placeholder="e-mail" autocomplete="off" />
               </div>
               <div class="password flex direction_column">
                 <label for="password">Mot de passe :</label>
@@ -58,16 +58,15 @@
                   id="password"
                   type="password"
                   placeholder="mot de passe"
-                  required="true"
                   autocomplete="new-password" />
               </div>
             </div>
             <div class="message flex direction_column align_center">
               <label for="message">Message :</label>
-              <textarea name="message" id="message" rows="10" placeholder="message" required="true"></textarea>
+              <textarea name="message" id="message" rows="10" placeholder="message"></textarea>
             </div>
             <div class="button flex flex_center">
-              <button type="submit" form="form" id="button_form">Envoyer</button>
+              <button type="submit" id="button_form">Envoyer</button>
             </div>
           </form>
         </div>
