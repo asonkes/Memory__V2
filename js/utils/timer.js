@@ -2,10 +2,6 @@
 /**************  Permet de faire le timer  ***********/
 /*****************************************************/
 
-/** Normalement le timer se lancera qd on cliquera sur le bouton 'play' ==> voir avec Raph ===> je suis occupée */
-
-/** Le timer s'arretera qd la partie est finie (pas nécessaire d'avoir un bouton "stop") */
-
 /** On récupère les variables dont on a besoin */
 const counter = document.getElementById("counter");
 
@@ -76,7 +72,7 @@ function isGoingTime() {
   /** On veut que 'isGoingTime' se déclenche toutes les secondes(1000ms) */
   setTimeout(isGoingTime, 1000);
 
-  // autre façon de faire
+  // autre façon de faire (si je veux rajouter un compte à rebours ==> devra être modifié)
   // Avoir juste un total de scondes écoulées
   // Ne calculer les heures, minutes et secondes qu'au moment de l'affichage
   // minutes = Math.floor(totalSecondes / 60)

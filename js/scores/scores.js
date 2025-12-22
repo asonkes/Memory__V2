@@ -3,37 +3,23 @@
 /*********************************************************/
 
 function scores() {
-  /** On récupère le nombre de parties gagnées Dora*/
-  let gameDora = localStorage.getItem("scoreDora");
-  /** On récupère le nombre de parties gagnées pat Patrouille*/
-  let gamePatPatrouille = localStorage.getItem("scorePatrouille");
-  /** On récupère le nombre de parties gagnées Dino*/
-  let gameDino = localStorage.getItem("scoreDino");
 
-  /** On récupère le span Dora*/
-  let winScoreDora = document.querySelector(".scoreDora");
-  /** On récupère le span Pat Patrouille*/
-  let winScorePatPatrouille = document.querySelector(".scorePatPatrouille");
-  /** Création d'un autre span */
-  let winScoreDino = document.querySelector(".scoreDino");
+  // key = la clé utilisée dans le localStorage pour récupérer la donnée
+  // selector = pour récupérer le 'span' dans lequel on doit aller mettre le score 
+  const scoresConfig = [
+    {key: "theme1", selector: ".scoreDora"},
+    {key: "theme2", selector: ".scorePatPatrouille"},
+    {key: "theme3", selector: ".scoreDino"}
+  ]
 
-  if (!gameDora) {
-    winScoreDora.textContent = `0`;
-  } else {
-    winScoreDora.textContent = `${gameDora}`;
-  }
+  scoresConfig.forEach(({key, selector}) => {
+    const value = localStorage.getItem(key) || 0;
+    const span = document.querySelector(selector);
 
-  if (!gamePatPatrouille) {
-    winScorePatPatrouille.textContent = `0`;
-  } else {
-    winScorePatPatrouille.textContent = ` ${gamePatPatrouille}`;
-  }
-
-  if (!gameDino) {
-    winScoreDino.textContent = `0`;
-  } else {
-    winScoreDino.textContent = `${gameDino}`;
-  }
+    if(span) {
+      span.textContent = value;
+    }
+  })
 
   /** On récupère le bouton */
   const buttonScore = document.getElementById("buttonScore");

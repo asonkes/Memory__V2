@@ -19,12 +19,12 @@ export function returnCards() {
   let isCardValid = 0;
   /** On va définir le thème */
   let theme = localStorage.getItem("backgroundId");
-  /** Récupération du score de Dora */
-  let scoreDora = localStorage.getItem("scoreDora");
-  /** Récupération du score de patPatrouille */
-  let scorePatPatrouille = localStorage.getItem("scorePatrouille");
-  /** Récupération du score de Dino */
-  let scoreDino = localStorage.getItem("scoreDino");
+
+  const themes = [
+    {id: "theme1", sound: "/sounds/dora_sound.wav", src: "/images/cards/dora/dora.png", alt: "Image de Dora."},
+    {id: "theme2", sound: "/sounds/patPatrouille_sound.wav", src: "/images/cards/patPatrouille/chase.png", alt: "Image de chase dans Pat Patrouille"},
+    {id: "theme3", sound: "/sounds/dino_sound.mp3", src: "/images/cards/dinosaures/triceratops.png", alt: "Image d'un triceratops."}
+  ]
 
   function flipCard(element) {
     /** lockBoard return, on sort du jeu */
@@ -52,20 +52,12 @@ export function returnCards() {
       /** On rajoute +1 au nombre de paire trouvée */
       isCardValid++;
 
-      /** On va lancer les différents sons par thème */
-      /** Si thème Dora */
-      if (theme === "theme1") {
-        startPlaySound("/sounds/dora_sound.wav");
-      }
-
-      /** Si thème Pat Patrouille */
-      if (theme === "theme2") {
-        startPlaySound("/sounds/patPatrouille_sound.wav");
-      }
-
-      /** Si thème Dinosaures */
-      if (theme === "theme3") {
-        startPlaySound("/sounds/dino_sound.mp3");
+      /** On va trouver les éléments en fonction du thème */
+      const currentTheme = themes.find(element => element.id === theme);
+      
+      if(currentTheme) {
+        /** On démarre le son */
+        startPlaySound(currentTheme.sound);
       }
 
       /** Quand le nombre de cartes trouvées = nombre de cartes existantes / 2 */
@@ -83,12 +75,12 @@ export function returnCards() {
         /** On arrête le timer quand toutes les cartes sont trouvées */
         stopTimer();
 
-        /** Si thème = Dora */
-        if (theme === "theme1") {
+        /** On détermine en fonciton du thème */
+        if (currentTheme) {
           /** On va ajouter une image en fonction du texte */
           const img = document.createElement("img");
-          img.src = `/images/cards/dora/dora.png`;
-          img.alt = `Image de Dora.`;
+          img.src = currentTheme.src;
+          img.alt = currentTheme.alt;
 
           const text = document.createElement("p");
           text.textContent = `Tu viens de remporter une partie🏆​ !!!`;
@@ -99,65 +91,12 @@ export function returnCards() {
 
           /** Partie gagnées +1 */
           isWin++;
+
           /** S'il y a déjà un nombre enregistré en localstorage pour ce thème */
-          if (scoreDora) {
-            /** On reprend ce nombre et on rajoute +1 */
-            scoreDora = localStorage.getItem("scoreDora") + isWin++;
-          }
-          /** Et on envoie la nouvelle valeur */
-          scoreDora = localStorage.setItem("scoreDora", isWin);
-        }
-
-        /** Si theme = pat Patrouille */
-        if (theme === "theme2") {
-          /** On va ajouter une image en fonction du texte */
-          const img = document.createElement("img");
-          img.src = `/images/cards/patPatrouille/chase.png`;
-          img.alt = `Image de chase dans Pat Patrouille`;
-
-          const text = document.createElement("p");
-          text.textContent = `Tu viens de remporter une partie🏆​ !!!`;
-
-          const text2 = document.createElement("p");
-          text2.textContent = `Tu es une(e) véritable champion(ne) 🌟​.`;
-
-          textFinish.append(img, text, text2);
-
-          /** Partie gagnées +1 */
-          isWin++;
-          /** S'il y a déjà un nombre enregistré en localstorage pour ce thème */
-          if (scorePatPatrouille) {
-            /** On reprend ce nombre et on rajoute +1 */
-            scorePatPatrouille =
-              localStorage.getItem("scorePatrouille") + isWin++;
-          }
-          /** Et on envoie la nouvelle valeur */
-          scorePatPatrouille = localStorage.setItem("scorePatrouille", isWin);
-        }
-
-        /** Si thème est Dinosaures */
-        if (theme === "theme3") {
-          /** On va ajouter une image en fonction du texte */
-          const img = document.createElement("img");
-          img.src = `/images/cards/dinosaures/triceratops.png`;
-          img.alt = `Image d'un triceratops.`;
-
-          const text = document.createElement("p");
-          text.textContent = `Tu viens de remporter une partie🏆​ !!!`;
-
-          const text2 = document.createElement("p");
-          text2.textContent = `Tu es une(e) véritable champion(ne) 🌟​.`;
-          textFinish.append(img, text, text2);
-
-          /** Partie gagnées +1 */
-          isWin++;
-          /** S'il y a déjà un nombre enregistré en localstorage pour ce thème */
-          if (scoreDino) {
-            /** On reprend ce nombre et on rajoute +1 */
-            scoreDino = localStorage.getItem("scoreDino") + isWin++;
-          }
-          /** Et on envoie la nouvelle valeur */
-          scoreDino = localStorage.setItem("scoreDino", isWin);
+          // On transforme en 'nombre' car localStorage stocke sous forme de 'string' 
+          let score = Number(localStorage.getItem(theme)) || 0;
+          // Et donc on peut faire 1 + 1 ==> puisque nombre
+          localStorage.setItem(theme, score + 1);
         }
 
         /** On récupère le bouton pour rejouer pour le faire apparaitre */

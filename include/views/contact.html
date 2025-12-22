@@ -39,17 +39,17 @@
             <div class="block1 flex">
               <div class="name flex direction_column">
                 <label for="name">Nom :</label>
-                <input name="name" id="name" type="text" placeholder="nom" />
+                <input name="name" id="name" type="text" placeholder="nom" required />
               </div>
               <div class="lastname flex direction_column">
                 <label for="lastname">Prénom :</label>
-                <input name="lastname" id="lastname" type="text" placeholder="prénom" />
+                <input name="lastname" id="lastname" type="text" placeholder="prénom" required />
               </div>
             </div>
             <div class="block2 flex">
               <div class="email flex direction_column">
                 <label for="email">E-mail :</label>
-                <input name="email" id="email" type="email" placeholder="e-mail" autocomplete="off" />
+                <input name="email" id="email" type="email" placeholder="e-mail" autocomplete="off" required />
               </div>
               <div class="password flex direction_column">
                 <label for="password">Mot de passe :</label>
@@ -63,7 +63,7 @@
             </div>
             <div class="message flex direction_column align_center">
               <label for="message">Message :</label>
-              <textarea name="message" id="message" rows="10" placeholder="message"></textarea>
+              <textarea name="message" id="message" rows="10" placeholder="message" required></textarea>
             </div>
             <div class="button flex flex_center">
               <button type="submit" id="button_form">Envoyer</button>

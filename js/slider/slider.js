@@ -13,26 +13,11 @@ const iconRight = document.getElementById("iconRight");
 /** On récupère les images */
 const imagesSliderDOM = document.querySelectorAll(".slider_image");
 
-/** On récupère le chemin des images */
-const sliderImage = [
-  "images/background/dora/background_dora2.avif",
-  "images/background/patPatrouille/background_patPatrouille.avif",
-  "images/background/dinosaures/background_dino.avif",
+const slider = [
+  {id: "theme1", src: "images/background/dora/background_dora2.avif", alt: "Image de Dora et de Babouche"},
+  {id: "theme2", src: "images/background/patPatrouille/background_patPatrouille.avif", alt: "Image de toute l'équipe de PatPatrouille"},
+  {id: "theme3", src: "images/background/dinosaures/background_dino.avif", alt: "Image de plusieurs dinosaures"}
 ];
-/** On récupère le texte dans 'alt' */
-const sliderText = [
-  "Image de Dora et de Babouche",
-  "Image de toute l'équipe de PatPatrouille",
-  "Image de plusieurs dinosaures",
-];
-/** On récupère l'id */
-const sliderId = ["theme1", "theme2", "theme3"];
-
-// const slider = [
-//        { id : "img1", url : "", txt : "" },
-//        { id : "img2", url : "", txt : ""},
-//        { id : "img3", url : "", txt : ""}
-// ]
 
 /*****************************************************/
 /********** Affichage différents personnages *********/
@@ -90,10 +75,10 @@ function refreshCarousel(direction) {
   numero += direction;
 
   /** Si + petit que 0, image + élevée du tableau s'affiche */
-  if (numero < 0) numero = sliderImage.length - 1;
+  if (numero < 0) numero = slider.length - 1;
 
   /** Si + grand que le nombre d'image du tableau, image 0 apparait */
-  if (numero > sliderImage.length - 1) numero = 0;
+  if (numero > slider.length - 1) numero = 0;
 
   /** Permet de mettre (numero - 1) dans une variable */
   let previousIndex = numero - 1;
@@ -101,17 +86,19 @@ function refreshCarousel(direction) {
   let nextIndex = numero + 1;
 
   /** Permet que si previousNext + petit que 0, image + élevée du tableau s'affiche  */
-  if (previousIndex < 0) previousIndex = sliderImage.length - 1;
+  if (previousIndex < 0) previousIndex = slider.length - 1;
 
   /** Permet que si nextIndex + grand que nombre d'images du tableau, on affiche l'image avec index 0 */
-  if (nextIndex > sliderImage.length - 1) nextIndex = 0;
+  if (nextIndex > slider.length - 1) nextIndex = 0;
 
   const indices = [previousIndex, numero, nextIndex];
 
   imagesSliderDOM.forEach((element, index) => {
-    element.src = sliderImage[indices[index]]; //slider[indices[index]].url
-    element.alt = sliderText[indices[index]]; //slider[indices[index]].txt
-    element.id = sliderId[indices[index]]; //slider[indices[index]].id
+    const data = slider[indices[index]];
+
+    element.id = data.id; //slider[indices[index]].id
+    element.src = data.src; //slider[indices[index]].url
+    element.alt = data.alt; //slider[indices[index]].txt
   });
 
   /** On choisit les perso à afficher */
