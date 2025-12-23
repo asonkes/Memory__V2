@@ -1,21 +1,25 @@
 #home_personnages {
   max-width: var(--width_full);
   min-height: var(--heightVH);
-  padding: 65px 0 40px 0;
+  padding: 85px 0 40px 0;
+  border: 4px solid orange;
 
   h2 {
     font-family: var(--font_primary);
     color: var(--color_primary);
-    padding: var(--padding_md);
+    padding: var(--padding_xxl);
+    border: 4px solid red;
 
     .title1 {
       text-decoration: underline;
+      border: 4px solid yellow;
     }
   }
 
   .personnagesParent {
     max-width: var(--width_full);
     padding: var(--padding_md);
+    border: 4px solid fuchsia;
 
     .persoContainer {
       width: var(--width_full);
@@ -25,12 +29,11 @@
 
       .perso {
         width: 250px;
-        min-height: 325px;
+        min-height: 600px;
         border: 1px solid rgba(46, 64, 87, 0.2);
         border-radius: 20px;
 
         .block_image {
-          width: 55%;
           margin: auto;
           padding: var(--padding_s);
 
@@ -46,7 +49,7 @@
           width: var(--width_full);
           min-height: var(--height_full);
           font-family: var(--font_secondary);
-          font-size: var(--fontSize_xs);
+          font-size: var(--fontSize_reg);
           padding: var(--padding_s);
 
           p,
@@ -61,6 +64,13 @@
 
           span:nth-last-of-type(1) {
             color: var(--color_primary);
+          }
+
+          .description,
+          .particularite,
+          .role {
+            display: flex;
+            flex-direction: column;
           }
         }
       }

@@ -1,4 +1,4 @@
-#home_slider {
+#home_slider--text {
   max-width: var(--width_full);
 
   h2 {
@@ -7,11 +7,11 @@
     padding: var(--padding_md);
     color: var(--color_primary);
     font-family: var(--font_primary);
-    font-size: var(--fontSize_md_xl);
-    border-radius: 20px;
+    font-size: var(--fontSize_xl);
 
     i {
-      padding: var(--padding_xs);
+      align-self: center;
+      padding: var(--padding_reg);
     }
   }
 }
@@ -19,7 +19,7 @@
 /* fonctionnalité slider */
 .slider {
   max-width: var(--width_full);
-  padding: var(--padding_xxl) 0;
+  padding: var(--padding_xxxxl) 0;
   gap: 1rem;
   overflow: hidden;
 
@@ -54,9 +54,14 @@
 
   /* fonctionnalités icone */
   .icon {
-    font-size: var(--fontSize_md);
+    align-self: center;
+    font-size: var(--fontSize_xxl);
     font-weight: bold;
     cursor: pointer;
+
+    &:hover {
+      color: white;
+    }
   }
 
   /* fonctionnalités pour l'opacité */
@@ -67,5 +72,18 @@
   /* fonctionnalités pour les border */
   .border_blue {
     border: 10px solid #2e4057;
+  }
+}
+
+#home_slider--images {
+  background-image: url("/images/background/site/home/triangle_pattern_019.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center;
+
+  .slider__img2 {
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 20px, rgba(255, 255, 255, 0.3) 0px 16px 56px,
+      rgba(255, 255, 255, 0.4) -5px 24px 40px;
   }
 }
