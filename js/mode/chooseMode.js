@@ -143,4 +143,14 @@ async function creationList(value) {
   /** On fait '-1' pour partir de '0' */
   cardBack.src = backCards.cardImage[value - 1];
   cardBack.alt = backCards.cardText[value - 1];
+  
+  const bgRgb = backCards.cardBg[value - 1];
+  /** Et ici on définit un rgba de 0.4 */
+  cardBack.style.background = rgbToRgba(bgRgb, 0.4);
+}
+
+// On va remplacer la valeur attendue de la db.json
+// Et on transforme le 'rgb' en 'rgba'
+function rgbToRgba(rgb, alpha) {
+  return rgb.replace("rgb(", "rgba(").replace(")", `, ${alpha})`);
 }

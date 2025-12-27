@@ -40,6 +40,12 @@ const tabTitlePerso = ["Dora", "Pat Patrouille", "Dinosaures"];
 const buttonPerso = document.getElementById("button_perso");
 /** On va modifier le titre pour les persos */
 const title = document.querySelector(".title2");
+/** On déclare le nombre minimum */
+let min = 0;
+/** On déclare le nombre moyen */
+let moyen = 9;
+/** On déclare le nombre maximum */
+let max = 18;
 
 /** Permet d'afficher le thème par défaut */
 let persoAAfficher = tabPatPatrouille;
@@ -51,11 +57,11 @@ if (persoContainer) {
   persoContainer.innerHTML = "";
 }
 /** On fait la fonction pour afficher les 9 premiers éléments */
-createPersonnages(persoAAfficher, 0, 9);
+createPersonnages(persoAAfficher, min, moyen);
 /** Et ici, c'est s'il y a le bouton */
 if (buttonPerso) {
   buttonPerso.addEventListener("click", () => {
-    createPersonnages(persoAAfficher, 9, 18);
+    createPersonnages(persoAAfficher, moyen, max);
     buttonPerso.classList.add("active");
   });
 }
@@ -109,5 +115,5 @@ function refreshCarousel(direction) {
   title.textContent = tabTitlePerso[numero];
   buttonPerso.classList.remove("active");
   // On crée une carte pour chaque perso
-  createPersonnages(persoAAfficher, 0, 9);
+  createPersonnages(persoAAfficher, min, moyen);
 }

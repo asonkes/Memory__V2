@@ -3,7 +3,7 @@
   &.active {
     max-width: var(--width_full);
     min-height: var(--heightVH);
-    background-image: url("/images/background/site/background_paper.avif");
+    background-image: url("/images/background/site/game/background_game.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -31,7 +31,7 @@
         width: var(--width_full);
         height: var(--height_full);
         opacity: 1;
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.7);
         border-radius: 20px;
         flex-wrap: wrap;
         list-style: none;
@@ -52,7 +52,6 @@
 
       .cardBlock {
         position: absolute;
-        background-color: var(--color_secondary);
         width: 130px;
         height: 130px;
         border-radius: 20px;
@@ -83,7 +82,6 @@
 
         .cardBack {
           transform: rotateY(180deg);
-          background-color: var(--color_secondary);
         }
 
         .cover {

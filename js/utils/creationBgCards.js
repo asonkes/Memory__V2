@@ -43,9 +43,10 @@ export async function creationBackCards(idImage) {
     /** On extrait les infos */
     const cardImage = backCards.map(element => element.image);
     const cardText = backCards.map(element => element.alt);
+    const cardBg = backCards.map(element => element.background_color);
 
     /** Obligé de faire ça, quand on veut retourner 2 valeurs en JS */
-    return { cardImage, cardText };
+    return { cardImage, cardText, cardBg };
 }
 
 

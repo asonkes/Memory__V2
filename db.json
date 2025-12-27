@@ -6,12 +6,13 @@
         "nom": "Capitaine Turbo",
         "image": "/images/cards/patPatrouille/capt_turbo.png",
         "alt": "Image de Capitaine Turbo dans pat Patrouille",
-        "description": "Biologiste marin qui aide ses amis avec son bateau.",
+        "description": "Biologiste marin qui aide avec son bateau.",
         "phrase_culte": null,
         "role": "Aide ses amis dans les aventures maritimes.",
-        "particularite": "Amateur de biscuits au poisson et de calamar séché.",
+        "particularite": "Fan de biscuits au poisson et de calamars séchés.",
         "perso_image": "/images/persos/patPatrouille/capitaine_turbot.webp",
-        "perso_alt": "Image de Capitaine Turbo tenant un coquillage"
+        "perso_alt": "Image de Capitaine Turbo tenant un coquillage",
+        "background_color": "rgb(221, 195, 24)"
       },
       {
         "id": 1,
@@ -23,7 +24,8 @@
         "role": "Sécuriser les zones et coordonner les interventions.",
         "particularite": "Allergique aux chats et aux plumes.",
         "perso_image": "/images/persos/patPatrouille/chase.webp",
-        "perso_alt": "Image de Chase qui sourit avec un fond bleu foncé"
+        "perso_alt": "Image de Chase qui sourit avec un fond bleu foncé",
+        "background_color": "rgb(5, 117, 207)"
       },
       {
         "id": 2,
@@ -35,7 +37,8 @@
         "role": "Expertise en missions en milieu neigeux.",
         "particularite": "Vit dans une station de ski.",
         "perso_image": "/images/persos/patPatrouille/everest.webp",
-        "perso_alt": "Image d'Everest avec un fond mauve."
+        "perso_alt": "Image d'Everest avec un fond mauve.",
+        "background_color": "rgb(8, 171, 151)"
       },
       {
         "id": 3,
@@ -47,7 +50,8 @@
         "role": "Aide dans les missions en pleine nature.",
         "particularite": "A toujours une carotte dans la poche.",
         "perso_image": "/images/persos/patPatrouille/fermiere_rumi.webp",
-        "perso_alt": "Image de la fermière Rumi dans sa ferme"
+        "perso_alt": "Image de la fermière Rumi dans sa ferme",
+        "background_color": "rgb(145, 188, 45)"
       },
       {
         "id": 4,
@@ -59,7 +63,8 @@
         "role": "Secourt les personnes en difficulté dans la neige.",
         "particularite": "Collectionne les cailloux en forme d’animaux.",
         "perso_image": "/images/persos/patPatrouille/jake.webp",
-        "perso_alt": "Image de Jake avec comme fond un ciel bleu avec quelques nuages"
+        "perso_alt": "Image de Jake avec comme fond un ciel bleu avec quelques nuages",
+        "background_color": "rgb(182, 94, 193)"
       },
       {
         "id": 5,
@@ -71,7 +76,8 @@
         "role": "Invente des plans pour surpasser la Grande Vallée.",
         "particularite": "Range ses médailles par ordre de brillance.",
         "perso_image": "/images/persos/patPatrouille/maire_hollinger.webp",
-        "perso_alt": "Image de Mr Hollinger avec derrière lui des arbres"
+        "perso_alt": "Image de Mr Hollinger avec derrière lui des arbres",
+        "background_color": "rgb(88, 88, 196)"
       },
       {
         "id": 6,
@@ -83,7 +89,8 @@
         "role": "Éteint les incendies et apporte les premiers soins.",
         "particularite": "Se cogne souvent, ce qui amuse ses amis.",
         "perso_image": "/images/persos/patPatrouille/marcus.webp",
-        "perso_alt": "Image de Marcus qui lève la patte gauche et qui sourit"
+        "perso_alt": "Image de Marcus qui lève la patte gauche et qui sourit",
+        "background_color": "rgb(202, 37, 38)"
       },
       {
         "id": 7,
@@ -95,7 +102,8 @@
         "role": "Aide dans les missions sous-marines.",
         "particularite": "Adore jouer avec son ballon et faire des blagues.",
         "perso_image": "/images/persos/patPatrouille/maurice.webp",
-        "perso_alt": "Image de Maurice avec derrière lui un pont"
+        "perso_alt": "Image de Maurice avec derrière lui un pont",
+        "background_color": "rgb(151, 86, 57)"
       },
       {
         "id": 8,
@@ -104,10 +112,11 @@
         "alt": "Image de la Maire Goodway dans pat Patrouille.",
         "description": "Amicale mais souvent source de catastrophes.",
         "phrase_culte": null,
-        "role": "Veille sur la ville et appelle la Pat Patrouille au besoin.",
-        "particularite": "Parle à sa poule comme à une conseillère officielle.",
+        "role": "Appelle la Pat Patrouille au besoin pour sécuriser la ville.",
+        "particularite": "Parle à sa poule comme à sa conseillère.",
         "perso_image": "/images/persos/patPatrouille/mr_goodway.webp",
-        "perso_alt": "Image de Mme Goodway en gros plan avec un pull bleu clair"
+        "perso_alt": "Image de Mme Goodway en gros plan avec un pull bleu clair",
+        "background_color": "rgb(50, 138, 183)"
       },
       {
         "id": 9,
@@ -119,7 +128,8 @@
         "role": "Mascotte involontaire de la Grande Vallée.",
         "particularite": "Cause souvent des situations cocasses.",
         "perso_image": "/images/persos/patPatrouille/galinetta.webp",
-        "perso_alt": "Image de Galinetta avec un mini pull mauve"
+        "perso_alt": "Image de Galinetta avec un mini pull mauve",
+        "background_color": "rgb(224, 123, 21)"
       },
       {
         "id": 10,
@@ -131,7 +141,8 @@
         "role": "Communique avec les dinosaures.",
         "particularite": "Connaît le nom de tous les dinos par cœur.",
         "perso_image": "/images/persos/patPatrouille/rex.webp",
-        "perso_alt": "Image en gros plan de Rex"
+        "perso_alt": "Image en gros plan de Rex",
+        "background_color": "rgb(71, 204, 255)"
       },
       {
         "id": 11,
@@ -143,7 +154,8 @@
         "role": "Aide au pilotage et à la réparation.",
         "particularite": "Ajoute toujours une touche d'humour.",
         "perso_image": "/images/persos/patPatrouille/robotChien.webp",
-        "perso_alt": "Image de chien Robot qui se trouve sur l'herbe avec des arbres derrière lui"
+        "perso_alt": "Image de chien Robot qui se trouve sur l'herbe avec des arbres derrière lui",
+        "background_color": "rgb(236, 105, 25)"
       },
       {
         "id": 12,
@@ -155,7 +167,8 @@
         "role": "Répare les machines et invente des gadgets.",
         "particularite": "Déteste l'eau et se met parfois en difficulté.",
         "perso_image": "/images/persos/patPatrouille/rocky.webp",
-        "perso_alt": "Image de Rocky avec un fond vert"
+        "perso_alt": "Image de Rocky avec un fond vert",
+        "background_color": "rgb(78, 171, 70)"
       },
       {
         "id": 13,
@@ -167,7 +180,8 @@
         "role": "Aide avec enthousiasme dans les missions.",
         "particularite": "Toujours de bonne humeur et curieuse.",
         "perso_image": "/images/persos/patPatrouille/romy.webp",
-        "perso_alt": "Image de Romy avec un casque et habillée de mauve"
+        "perso_alt": "Image de Romy avec un casque et habillée de mauve",
+        "background_color": "rgb(118, 104, 175)"
       },
       {
         "id": 14,
@@ -179,7 +193,8 @@
         "role": "Renforce les structures et prépare le terrain.",
         "particularite": "Adore la boue et manger des biscuits.",
         "perso_image": "/images/persos/patPatrouille/rubben.webp",
-        "perso_alt": "Image de Rubben avec un fond jaune"
+        "perso_alt": "Image de Rubben avec un fond jaune",
+        "background_color": "rgb(251, 234, 38)"
       },
       {
         "id": 15,
@@ -191,7 +206,8 @@
         "role": "Analyse chaque situation et attribue les missions.",
         "particularite": "Démonte tout pour comprendre comment ça marche.",
         "perso_image": "/images/persos/patPatrouille/ryder.webp",
-        "perso_alt": "Image de Ryder qui lève la main gauche avec un fond bleu foncé"
+        "perso_alt": "Image de Ryder qui lève la main gauche avec un fond bleu foncé",
+        "background_color": "rgb(21, 151, 197)"
       },
       {
         "id": 16,
@@ -203,7 +219,8 @@
         "role": "Surveille depuis les airs et aide lors des missions aériennes.",
         "particularite": "Adore les figures acrobatiques.",
         "perso_image": "/images/persos/patPatrouille/stella.webp", 
-        "perso_alt": "Image de Stella avec un fond rose"
+        "perso_alt": "Image de Stella avec un fond rose",
+        "background_color": "rgb(216, 77, 123)"
       },
       {
         "id": 17,
@@ -215,7 +232,8 @@
         "role": "Secourt dans l'eau et les missions maritimes.",
         "particularite": "Adore faire des blagues et rire.",
         "perso_image": "/images/persos/patPatrouille/zuma.webp",
-        "perso_alt": "Image de Zuma avec un fond orange"
+        "perso_alt": "Image de Zuma avec un fond orange",
+        "background_color": "rgb(241, 100, 47)"
       }
     ],
     "dora": [
@@ -229,7 +247,8 @@
         "role": "Assiste Diego dans ses missions de sauvetage des animaux.",
         "particularite": "Ne sort jamais sans son carnet de notes.",
         "perso_image": "/images/persos/dora/alicia.webp",
-        "perso_alt": "Image d'Alicia avec un crocodile derrière elle"
+        "perso_alt": "Image d'Alicia avec un crocodile derrière elle",
+        "background_color": "rgb(227, 104, 89)"
       },
       {
         "id": 1,
@@ -241,7 +260,8 @@
         "role": "Aide Dora dans toutes ses missions.",
         "particularite": "Grimpe aux arbres plus vite que son ombre.",
         "perso_image": "/images/persos/dora/babouche.webp",
-        "perso_alt": "Image de babouche qui met sa main droite sous son menton, il réflechit"
+        "perso_alt": "Image de babouche qui met sa main droite sous son menton, il réflechit",
+        "background_color": "rgb(255, 248, 143)"
       },
       {
         "id": 2,
@@ -253,7 +273,8 @@
         "role": "Participe aux aventures et apprend de Dora et Diego.",
         "particularite": "Fait des siestes dans les endroits les plus improbables.",
         "perso_image": "/images/persos/dora/bebe_jaguar.webp",
-        "perso_alt": "Image de bébé Jaguar en fôret"
+        "perso_alt": "Image de bébé Jaguar en fôret",
+        "background_color": "rgb(156, 108, 50)"
       },
       {
         "id": 3,
@@ -265,7 +286,8 @@
         "role": "Passe son temps à voler des objets aux autres.",
         "particularite": "Ne peut s’empêcher de tester les objets des autres.",
         "perso_image": "/images/persos/dora/chipeur.webp",
-        "perso_alt": "Image de Chipeur qui court après avoir essayé de chipper quelque chose"
+        "perso_alt": "Image de Chipeur qui court après avoir essayé de chipper quelque chose",
+        "background_color": "rgb(255, 234, 139)"
       },
       {
         "id": 4,
@@ -277,7 +299,8 @@
         "role": "Participe aux missions de sauvetage des animaux.",
         "particularite": "Adore grimper aux arbres pour observer la nature.",
         "perso_image": "/images/persos/dora/diego.webp",
-        "perso_alt": "Image de Diego en fôret qui lève les 2 bras"
+        "perso_alt": "Image de Diego en fôret qui lève les 2 bras",
+        "background_color": "rgb(65, 197, 243)"
       },
       {
         "id": 5,
@@ -289,7 +312,8 @@
         "role": "Guide les enfants, résout des missions et utilise son sac et sa carte.",
         "particularite": "Bilingue anglais/espagnol.",
         "perso_image": "/images/persos/dora/dora.webp",
-        "perso_alt": "Image de Dora habillée d'un t-shirt rose avec son sac à dos"
+        "perso_alt": "Image de Dora habillée d'un t-shirt rose avec son sac à dos",
+        "background_color": "rgb(249, 162, 93)"
       },
       {
         "id": 6,
@@ -301,7 +325,8 @@
         "role": "Aide Dora et Babouche dans leurs aventures.",
         "particularite": "Fait toujours des cookies pour ses amis.",
         "perso_image": "/images/persos/dora/grandma.webp",
-        "perso_alt": "Image de Grandma en peignoir avec Dora à côté"
+        "perso_alt": "Image de Grandma en peignoir avec Dora à côté",
+        "background_color": "rgb(217, 57, 64)"
       },
       {
         "id": 7,
@@ -313,7 +338,8 @@
         "role": "Guide Dora pour atteindre sa destination.",
         "particularite": "Se perd jamais, même sans GPS.",
         "perso_image": "/images/persos/dora/la_carte.webp",
-        "perso_alt": "Image de la carte avec une fôret derrière"
+        "perso_alt": "Image de la carte avec une fôret derrière",
+        "background_color": "rgb(105, 223, 255)"
       },
       {
         "id": 8,
@@ -325,7 +351,8 @@
         "role": "Aide Dora et Babouche en donnant des indices.",
         "particularite": "Pond des œufs géants à l’occasion.",
         "perso_image": "/images/persos/dora/le_grand_poulet_rouge.webp",
-        "perso_alt": "Image de Grand Poulet Rouge avec sur son dos Babouche et Dora"
+        "perso_alt": "Image de Grand Poulet Rouge avec sur son dos Babouche et Dora",
+        "background_color": "rgb(230, 43, 47)"
       },
       {
         "id": 9,
@@ -337,7 +364,8 @@
         "role": "Permet de voyager rapidement pendant les aventures.",
         "particularite": "Chante quand il roule sur les rails.",
         "perso_image": "/images/persos/dora/le_train_bleu.webp",
-        "perso_alt": "Image du Train Bleu qui passe un pont"
+        "perso_alt": "Image du Train Bleu qui passe un pont",
+        "background_color": "rgb(4, 138, 221)"
       },
       {
         "id": 10,
@@ -349,7 +377,8 @@
         "role": "Félicitent Dora et Babouche après une mission.",
         "particularite": "Fait toujours la fête où qu’ils aillent.",
         "perso_image": "/images/persos/dora/le_trio_fiesta.webp",
-        "perso_alt": "Image du Trio Fiesta qui se trouve dans un trophé"
+        "perso_alt": "Image du Trio Fiesta qui se trouve dans un trophé",
+        "background_color": "rgb(123, 51, 123)"
       },
       {
         "id": 11,
@@ -361,7 +390,8 @@
         "role": "Chacune a un rôle comme scintiller ou posséder un outil.",
         "particularite": "Brillent même quand il fait nuageux.",
         "perso_image": "/images/persos/dora/les_etoiles.webp",
-        "perso_alt": "Image des Etoiles qui sortent du sac à dos de Dora"
+        "perso_alt": "Image des Etoiles qui sortent du sac à dos de Dora",
+        "background_color": "rgb(231, 174, 231)"
       },
       {
         "id": 12,
@@ -373,7 +403,8 @@
         "role": "Vit sous un pont et pose des énigmes pour laisser passer.",
         "particularite": "Râle pour un rien, mais reste adorable.",
         "perso_image": "/images/persos/dora/lutin_grognon.webp",
-        "perso_alt": "Image de Lutin Grognon avec derrière lui son pont"
+        "perso_alt": "Image de Lutin Grognon avec derrière lui son pont",
+        "background_color": "rgb(254, 153, 0)"
       },
       {
         "id": 13,
@@ -385,7 +416,8 @@
         "role": "Aide Dora et Babouche en donnant des indices.",
         "particularite": "Guide et messager.",
         "perso_image": "/images/persos/dora/mister_toucan.webp",
-        "perso_alt": "Image de Mister Toucan avec des confettis au-dessus de lui"
+        "perso_alt": "Image de Mister Toucan avec des confettis au-dessus de lui",
+        "background_color": "rgb(0, 124, 198)"
       },
       {
         "id": 14,
@@ -397,7 +429,8 @@
         "role": "Aide Dora à résoudre les épreuves avec ses objets.",
         "particularite": "Contient toujours plus qu’il n’y paraît.",
         "perso_image": "/images/persos/dora/sac_a_dos.webp",
-        "perso_alt": "Image de sac à dos avec autour de lui des élements qui se trouvaient à l'intérieur de lui"
+        "perso_alt": "Image de sac à dos avec autour de lui des élements qui se trouvaient à l'intérieur de lui",
+        "background_color": "rgb(165, 151, 201)"
       },
       {
         "id": 15,
@@ -409,7 +442,8 @@
         "role": "Conduit souvent différents véhicules pour les missions.",
         "particularite": "Peut piloter voiture, hélicoptère, bateau‑véhicule.",
         "perso_image": "/images/persos/dora/tico.webp",
-        "perso_alt": "Image de Tico qui tient un appareil photo dans les mains"
+        "perso_alt": "Image de Tico qui tient un appareil photo dans les mains",
+        "background_color": "rgb(171, 145, 182)"
       },
       {
         "id": 16,
@@ -421,7 +455,8 @@
         "role": "Personnage fort et un peu grognon du dessin animé.",
         "particularite": "Allergique au pollen.",
         "perso_image": "/images/persos/dora/totor.webp",
-        "perso_alt": "Image de Totor sur un cheval avec un casque de chevalier"
+        "perso_alt": "Image de Totor sur un cheval avec un casque de chevalier",
+        "background_color": "rgb(100, 180, 224)"
       },
       {
         "id": 17,
@@ -433,7 +468,8 @@
         "role": "A souvent besoin de Dora et Babouche pour l'aider.",
         "particularite": "A toujours une solution pour chaque problème.",
         "perso_image": "/images/persos/dora/vera.webp",
-        "perso_alt": "Image de Véra avec Dora et Babouche à côté d'elle"
+        "perso_alt": "Image de Véra avec Dora et Babouche à côté d'elle",
+        "background_color": "rgb(0, 171, 103)"
       }
     ],
     "dino": [
@@ -447,7 +483,8 @@
         "role": "Prédateur",
         "particularite": "Considéré comme le principal prédateur avant le T-Rex.",
         "perso_image": "/images/persos/dinosaures/allosaurus.webp",
-        "perso_alt": "Image d'un Allosaurus avec des rochers et des sapins derrière lui"
+        "perso_alt": "Image d'un Allosaurus avec des rochers et des sapins derrière lui",
+        "background_color": "rgb(130, 201, 166)"
       },
       {
         "id": 1,
@@ -459,7 +496,8 @@
         "role": "Herbivore",
         "particularite": "Sa carapace le protégeait des plus grands prédateurs.",
         "perso_image": "/images/persos/dinosaures/ankylosaurus.webp",
-        "perso_alt": "Image d'un Ankylosaurus avec des rochers et des sapins derrière lui"
+        "perso_alt": "Image d'un Ankylosaurus avec des rochers et des sapins derrière lui",
+        "background_color": "rgb(71, 73, 59)"
       },
       {
         "id": 2,
@@ -471,7 +509,8 @@
         "role": "Herbivore",
         "particularite": "Son nom signifie 'lézard trompeur'.",
         "perso_image": "/images/persos/dinosaures/apatosaurus.webp",
-        "perso_alt": "Image d'un Apatosaurus avec des rochers et des sapins derrière lui"
+        "perso_alt": "Image d'un Apatosaurus avec des rochers et des sapins derrière lui",
+        "background_color": "rgb(168, 191, 103)"
       },
       {
         "id": 3,
@@ -483,7 +522,8 @@
         "role": "Carnivore (petits animaux et insectes)",
         "particularite": "Premier animal connu à avoir des plumes.",
         "perso_image": "/images/persos/dinosaures/archaeopteryx.webp",
-        "perso_alt": "Image d'un Archaeopteryx avec des rochers et des sapins derrière lui"
+        "perso_alt": "Image d'un Archaeopteryx avec des rochers et des sapins derrière lui",
+        "background_color": "rgb(30, 115, 120)"
       },
       {
         "id": 4,
@@ -495,7 +535,8 @@
         "role": "Herbivore",
         "particularite": "Ses pattes avant étaient plus longues que les arrières.",
         "perso_image": "/images/persos/dinosaures/brachiosaurus.webp",
-        "perso_alt": "Image d'un Brachiosaurus avec des rochers et des sapins derrière lui"
+        "perso_alt": "Image d'un Brachiosaurus avec des rochers et des sapins derrière lui",
+        "background_color": "rgb(77, 108, 65)"
       },
       {
         "id": 5,
@@ -507,7 +548,8 @@
         "role": "Carnivore (poissons, autres reptiles marins)",
         "particularite": "Surnommé le 'Godzilla du Jurassique' pour sa mâchoire puissante.",
         "perso_image": "/images/persos/dinosaures/dakosaurus.webp",
-        "perso_alt": "Image d'un Dakosaurus qui ouvre la mâchoire et qui nage dans l'eau"
+        "perso_alt": "Image d'un Dakosaurus qui ouvre la mâchoire et qui nage dans l'eau",
+        "background_color": "rgb(49, 98, 109)"
       },
       {
         "id": 6,
@@ -519,7 +561,8 @@
         "role": "Carnivore",
         "particularite": "Ses crêtes servaient probablement à l’intimidation.",
         "perso_image": "/images/persos/dinosaures/dilophosaurus.webp",
-        "perso_alt": "Image d'un Dilophosaurus avec des rochers et des sapins derrière lui"
+        "perso_alt": "Image d'un Dilophosaurus avec des rochers et des sapins derrière lui",
+        "background_color": "rgb(145, 183, 121)"
       },
       {
         "id": 7,
@@ -531,7 +574,8 @@
         "role": "Carnivore (poissons, reptiles marins)",
         "particularite": "Redoutable prédateur des mers du Jurassique.",
         "perso_image": "/images/persos/dinosaures/liopleurodon.webp",
-        "perso_alt": "Image d'un Liopleurodon qui ouvre la mâchoire et qui nage dans l'eau"
+        "perso_alt": "Image d'un Liopleurodon qui ouvre la mâchoire et qui nage dans l'eau",
+        "background_color": "rgb(154, 161, 170)"
       },
       {
         "id": 8,
@@ -543,7 +587,8 @@
         "role": "Carnivore (poissons, céphalopodes)",
         "particularite": "Vivait en mer mais pouvait aussi se déplacer sur la terre ferme.",
         "perso_image": "/images/persos/dinosaures/metriohynchus.webp",
-        "perso_alt": "Image d'un Metriohynchus qui ouvre la mâchoire et qui nage dans l'eau"
+        "perso_alt": "Image d'un Metriohynchus qui ouvre la mâchoire et qui nage dans l'eau",
+        "background_color": "rgb(111, 95, 66)"
       },
       {
         "id": 9,
@@ -555,7 +600,8 @@
         "role": "Herbivore",
         "particularite": "Sa crête servait à produire des sons graves pour communiquer.",
         "perso_image": "/images/persos/dinosaures/parasaurolophus.webp",
-        "perso_alt": "Image d'un Parasaurolophus avec des rochers et des sapins derrière lui"
+        "perso_alt": "Image d'un Parasaurolophus avec des rochers et des sapins derrière lui",
+        "background_color": "rgb(140, 38, 1)"
       },
       {
         "id": 10,
@@ -567,7 +613,8 @@
         "role": "Carnivore (poissons et ammonites)",
         "particularite": "A inspiré la légende du monstre du Loch Ness.",
         "perso_image": "/images/persos/dinosaures/plesiosaurus.webp",
-        "perso_alt": "Image d'un plesiosaurus qui ouvre la mâchoire et qui nage dans l'eau"
+        "perso_alt": "Image d'un plesiosaurus qui ouvre la mâchoire et qui nage dans l'eau",
+        "background_color": "rgb(126, 177, 195)"
       },
       {
         "id": 11,
@@ -579,7 +626,8 @@
         "role": "Carnivore",
         "particularite": "Ses ailes étaient formées d'une membrane de peau tendue entre le corps et un doigt allongé.",
         "perso_image": "/images/persos/dinosaures/pterosaur.webp",
-        "perso_alt": "Image d'un Pterosaur avec des rochers et des sapins derrière lui"
+        "perso_alt": "Image d'un Pterosaur avec des rochers et des sapins derrière lui",
+        "background_color": "rgb(120, 115, 129)"
       },
       {
         "id": 12,
@@ -591,7 +639,8 @@
         "role": "Carnivore",
         "particularite": "Sa longue queue terminée par un losange lui servait de gouvernail en vol.",
         "perso_image": "/images/persos/dinosaures/rhamphorynchus.webp",
-        "perso_alt": "Image d'un Rhamphorynchus avec des rochers et des sapins derrière lui"
+        "perso_alt": "Image d'un Rhamphorynchus avec des rochers et des sapins derrière lui",
+        "background_color": "rgb(178, 122, 88)"
       },
       {
         "id": 13,
@@ -603,7 +652,8 @@
         "role": "Carnivore",
         "particularite": "C’est le plus grand carnivore terrestre connu.",
         "perso_image": "/images/persos/dinosaures/spinosaurus.webp",
-        "perso_alt": "Image d'un Sinosaurus sur un butte de sable avec de l'eau et des palmiers derrière lui"
+        "perso_alt": "Image d'un Sinosaurus sur un butte de sable avec de l'eau et des palmiers derrière lui",
+        "background_color": "rgb(251, 202, 105)"
       },
       {
         "id": 14,
@@ -615,7 +665,8 @@
         "role": "Herbivore",
         "particularite": "Ses plaques dorsales pouvaient servir à la régulation thermique et à l'intimidation.",
         "perso_image": "/images/persos/dinosaures/stegosaurus.webp",
-        "perso_alt": "Image d'un Stegosaurus avec des rochers et des sapins derrière lui"
+        "perso_alt": "Image d'un Stegosaurus avec des rochers et des sapins derrière lui",
+        "background_color": "rgb(154, 63, 34)"
       },
       {
         "id": 15,
@@ -627,7 +678,8 @@
         "role": "Carnivore",
         "particularite": "L’un des plus célèbres dinosaures de tous les temps.",
         "perso_image": "/images/persos/dinosaures/t-rex.webp",
-        "perso_alt": "Image d'un Tyrannosaurus Rex avec des rochers et des sapins derrière lui"
+        "perso_alt": "Image d'un Tyrannosaurus Rex avec des rochers et des sapins derrière lui",
+        "background_color": "rgb(142, 115, 87)"
       },
       {
         "id": 16,
@@ -639,7 +691,8 @@
         "role": "Herbivore",
         "particularite": "Ses cornes servaient à se défendre contre les prédateurs.",
         "perso_image": "/images/persos/dinosaures/triceratops.webp",
-        "perso_alt": "Image d'un Triceratops avec des rochers et des sapins derrière lui"
+        "perso_alt": "Image d'un Triceratops avec des rochers et des sapins derrière lui",
+        "background_color": "rgb(202, 140, 189)"
       },
       {
         "id": 17,
@@ -651,7 +704,8 @@
         "role": "Carnivore",
         "particularite": "Il chassait probablement en groupe.",
         "perso_image": "/images/persos/dinosaures/velociraptors.webp",
-        "perso_alt": "Image d'un Vélociraptor avec des rochers et des sapins derrière lui"
+        "perso_alt": "Image d'un Vélociraptor avec des rochers et des sapins derrière lui",
+        "background_color": "rgb(191, 158, 108)"
       }
     ]
   },

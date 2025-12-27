@@ -27,6 +27,11 @@ export function persoWrapper(element) {
     const perso = document.createElement("div");
     /** On ajoute une classe */
     perso.classList.add("perso");
+    perso.style.backgroundColor = element.background_color;
+
+    /** On ajoute une div parente de tous les éléments */
+    const persoEnfant = document.createElement("div");
+    persoEnfant.classList.add("persoEnfant");
 
     /** On va créer le titre */
     const title = document.createElement("p");
@@ -89,7 +94,9 @@ export function persoWrapper(element) {
     /** Parent de l'image */
     block_image.appendChild(img);
     /** Parent du 'block_image' et du 'block_text' */
-    perso.append(title, block_image, block_text);
+    persoEnfant.append(title, block_image, block_text);
+
+    perso.appendChild(persoEnfant);
     /** Parent de la div 'perso' */
 
     if(persoContainer) {

@@ -5,9 +5,10 @@
   &.active {
     display: block;
     width: var(--width_full);
-    font-family: var(--font_primary);
+    font-family: var(--font_secondary);
     font-size: var(--fontSize_reg);
     padding-bottom: var(--padding_xxxxl);
+    color: var(--color_secondary);
   }
 
   h2 {
@@ -19,11 +20,11 @@
 
     .counter {
       font-family: var(--font_secondary);
-      font-size: var(--fontSize_xxl);
-      padding: var(--padding_reg);
+      font-size: var(--fontSize_l);
+      padding: var(--padding_s);
       margin: 0 var(--margin_reg);
       border-radius: 10px;
-      border: 2px solid rgba(46, 64, 87, 0.6);
+      border: 2px solid var(--color_secondary);
     }
   }
 }
