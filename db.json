@@ -9,7 +9,9 @@
         "description": "Biologiste marin qui aide ses amis avec son bateau.",
         "phrase_culte": null,
         "role": "Aide ses amis dans les aventures maritimes.",
-        "particularite": "Amateur de biscuits au poisson et de calamar séché."
+        "particularite": "Amateur de biscuits au poisson et de calamar séché.",
+        "perso_image": "/images/persos/patPatrouille/capitaine_turbot.webp",
+        "perso_alt": "Image de Capitaine Turbo tenant un coquillage"
       },
       {
         "id": 1,
@@ -19,7 +21,9 @@
         "description": "Chien policier et chef des opérations.",
         "phrase_culte": "Chase est sur le coup",
         "role": "Sécuriser les zones et coordonner les interventions.",
-        "particularite": "Allergique aux chats et aux plumes."
+        "particularite": "Allergique aux chats et aux plumes.",
+        "perso_image": "/images/persos/patPatrouille/chase.webp",
+        "perso_alt": "Image de Chase qui sourit avec un fond bleu foncé"
       },
       {
         "id": 2,
@@ -29,7 +33,9 @@
         "description": "Husky sauveteur des neiges.",
         "phrase_culte": "La neige, c'est mon domaine !",
         "role": "Expertise en missions en milieu neigeux.",
-        "particularite": "Vit dans une station de ski."
+        "particularite": "Vit dans une station de ski.",
+        "perso_image": "/images/persos/patPatrouille/everest.webp",
+        "perso_alt": "Image d'Everest avec un fond mauve."
       },
       {
         "id": 3,
@@ -39,7 +45,9 @@
         "description": "Fermière dévouée de la Grande Vallée.",
         "phrase_culte": null,
         "role": "Aide dans les missions en pleine nature.",
-        "particularite": "A toujours une carotte dans la poche."
+        "particularite": "A toujours une carotte dans la poche.",
+        "perso_image": "/images/persos/patPatrouille/fermiere_rumi.webp",
+        "perso_alt": "Image de la fermière Rumi dans sa ferme"
       },
       {
         "id": 4,
@@ -49,7 +57,9 @@
         "description": "Vit avec Everest dans la station de ski.",
         "phrase_culte": null,
         "role": "Secourt les personnes en difficulté dans la neige.",
-        "particularite": "Collectionne les cailloux en forme d’animaux."
+        "particularite": "Collectionne les cailloux en forme d’animaux.",
+        "perso_image": "/images/persos/patPatrouille/jake.webp",
+        "perso_alt": "Image de Jake avec comme fond un ciel bleu avec quelques nuages"
       },
       {
         "id": 5,
@@ -59,7 +69,9 @@
         "description": "Maire autoproclamé de Foggy Bottom.",
         "phrase_culte": null,
         "role": "Invente des plans pour surpasser la Grande Vallée.",
-        "particularite": "Range ses médailles par ordre de brillance."
+        "particularite": "Range ses médailles par ordre de brillance.",
+        "perso_image": "/images/persos/patPatrouille/maire_hollinger.webp",
+        "perso_alt": "Image de Mr Hollinger avec derrière lui des arbres"
       },
       {
         "id": 6,
@@ -69,7 +81,9 @@
         "description": "Dalmatien pompier et médecin secouriste.",
         "phrase_culte": "Je suis tout fleu, tout flamme !",
         "role": "Éteint les incendies et apporte les premiers soins.",
-        "particularite": "Se cogne souvent, ce qui amuse ses amis."
+        "particularite": "Se cogne souvent, ce qui amuse ses amis.",
+        "perso_image": "/images/persos/patPatrouille/marcus.webp",
+        "perso_alt": "Image de Marcus qui lève la patte gauche et qui sourit"
       },
       {
         "id": 7,
@@ -79,7 +93,9 @@
         "description": "Le morse ami de Capitaine Turbo.",
         "phrase_culte": "Hou hou !",
         "role": "Aide dans les missions sous-marines.",
-        "particularite": "Adore jouer avec son ballon et faire des blagues."
+        "particularite": "Adore jouer avec son ballon et faire des blagues.",
+        "perso_image": "/images/persos/patPatrouille/maurice.webp",
+        "perso_alt": "Image de Maurice avec derrière lui un pont"
       },
       {
         "id": 8,
@@ -89,7 +105,9 @@
         "description": "Amicale mais souvent source de catastrophes.",
         "phrase_culte": null,
         "role": "Veille sur la ville et appelle la Pat Patrouille au besoin.",
-        "particularite": "Parle à sa poule comme à une conseillère officielle."
+        "particularite": "Parle à sa poule comme à une conseillère officielle.",
+        "perso_image": "/images/persos/patPatrouille/mr_goodway.webp",
+        "perso_alt": "Image de Mme Goodway en gros plan avec un pull bleu clair"
       },
       {
         "id": 9,
@@ -99,7 +117,9 @@
         "description": "Fidèle poule de Mme Goodway.",
         "phrase_culte": "Cot cot !",
         "role": "Mascotte involontaire de la Grande Vallée.",
-        "particularite": "Cause souvent des situations cocasses."
+        "particularite": "Cause souvent des situations cocasses.",
+        "perso_image": "/images/persos/patPatrouille/galinetta.webp",
+        "perso_alt": "Image de Galinetta avec un mini pull mauve"
       },
       {
         "id": 10,
@@ -109,7 +129,9 @@
         "description": "Bouvier bernois expert en dinosaures.",
         "phrase_culte": null,
         "role": "Communique avec les dinosaures.",
-        "particularite": "Connaît le nom de tous les dinos par cœur."
+        "particularite": "Connaît le nom de tous les dinos par cœur.",
+        "perso_image": "/images/persos/patPatrouille/rex.webp",
+        "perso_alt": "Image en gros plan de Rex"
       },
       {
         "id": 11,
@@ -119,7 +141,9 @@
         "description": "Allié technologique de la Pat Patrouille.",
         "phrase_culte": null,
         "role": "Aide au pilotage et à la réparation.",
-        "particularite": "Ajoute toujours une touche d'humour."
+        "particularite": "Ajoute toujours une touche d'humour.",
+        "perso_image": "/images/persos/patPatrouille/robotChien.webp",
+        "perso_alt": "Image de chien Robot qui se trouve sur l'herbe avec des arbres derrière lui"
       },
       {
         "id": 12,
@@ -129,7 +153,9 @@
         "description": "Croisé terrier bricoleur.",
         "phrase_culte": "Ne gaspille rien, recycle tout !",
         "role": "Répare les machines et invente des gadgets.",
-        "particularite": "Déteste l'eau et se met parfois en difficulté."
+        "particularite": "Déteste l'eau et se met parfois en difficulté.",
+        "perso_image": "/images/persos/patPatrouille/rocky.webp",
+        "perso_alt": "Image de Rocky avec un fond vert"
       },
       {
         "id": 13,
@@ -139,7 +165,9 @@
         "description": "Chienne pleine d'énergie.",
         "phrase_culte": "On fonce, les amis !",
         "role": "Aide avec enthousiasme dans les missions.",
-        "particularite": "Toujours de bonne humeur et curieuse."
+        "particularite": "Toujours de bonne humeur et curieuse.",
+        "perso_image": "/images/persos/patPatrouille/romy.webp",
+        "perso_alt": "Image de Romy avec un casque et habillée de mauve"
       },
       {
         "id": 14,
@@ -149,7 +177,9 @@
         "description": "Bouledogue anglais, ingénieur en chef.",
         "phrase_culte": "C'est du gâteau pour Ruben !",
         "role": "Renforce les structures et prépare le terrain.",
-        "particularite": "Adore la boue et manger des biscuits."
+        "particularite": "Adore la boue et manger des biscuits.",
+        "perso_image": "/images/persos/patPatrouille/rubben.webp",
+        "perso_alt": "Image de Rubben avec un fond jaune"
       },
       {
         "id": 15,
@@ -159,7 +189,9 @@
         "description": "Chef et fondateur de la Pat Patrouille.",
         "phrase_culte": "Aucune mission n'est trop dure, car mes amis, ils assurent !",
         "role": "Analyse chaque situation et attribue les missions.",
-        "particularite": "Démonte tout pour comprendre comment ça marche."
+        "particularite": "Démonte tout pour comprendre comment ça marche.",
+        "perso_image": "/images/persos/patPatrouille/ryder.webp",
+        "perso_alt": "Image de Ryder qui lève la main gauche avec un fond bleu foncé"
       },
       {
         "id": 16,
@@ -169,7 +201,9 @@
         "description": "Cocker experte en vol et reconnaissance aérienne.",
         "phrase_culte": "Prête pour un petit tour dans les airs !",
         "role": "Surveille depuis les airs et aide lors des missions aériennes.",
-        "particularite": "Adore les figures acrobatiques."
+        "particularite": "Adore les figures acrobatiques.",
+        "perso_image": "/images/persos/patPatrouille/stella.webp", 
+        "perso_alt": "Image de Stella avec un fond rose"
       },
       {
         "id": 17,
@@ -179,7 +213,9 @@
         "description": "Labrador expert en sauvetage aquatique.",
         "phrase_culte": "Prêt à plonger !",
         "role": "Secourt dans l'eau et les missions maritimes.",
-        "particularite": "Adore faire des blagues et rire."
+        "particularite": "Adore faire des blagues et rire.",
+        "perso_image": "/images/persos/patPatrouille/zuma.webp",
+        "perso_alt": "Image de Zuma avec un fond orange"
       }
     ],
     "dora": [
@@ -191,7 +227,9 @@
         "description": "Sœur de Diego, experte en informatique et secours animaliers.",
         "phrase_culte": null,
         "role": "Assiste Diego dans ses missions de sauvetage des animaux.",
-        "particularite": "Ne sort jamais sans son carnet de notes."
+        "particularite": "Ne sort jamais sans son carnet de notes.",
+        "perso_image": "/images/persos/dora/alicia.webp",
+        "perso_alt": "Image d'Alicia avec un crocodile derrière elle"
       },
       {
         "id": 1,
@@ -201,7 +239,9 @@
         "description": "Singe parlant et compagnon d'aventure de Dora.",
         "phrase_culte": null,
         "role": "Aide Dora dans toutes ses missions.",
-        "particularite": "Grimpe aux arbres plus vite que son ombre."
+        "particularite": "Grimpe aux arbres plus vite que son ombre.",
+        "perso_image": "/images/persos/dora/babouche.webp",
+        "perso_alt": "Image de babouche qui met sa main droite sous son menton, il réflechit"
       },
       {
         "id": 2,
@@ -211,7 +251,9 @@
         "description": "Petit jaguar ami de Dora et Diego.",
         "phrase_culte": null,
         "role": "Participe aux aventures et apprend de Dora et Diego.",
-        "particularite": "Fait des siestes dans les endroits les plus improbables."
+        "particularite": "Fait des siestes dans les endroits les plus improbables.",
+        "perso_image": "/images/persos/dora/bebe_jaguar.webp",
+        "perso_alt": "Image de bébé Jaguar en fôret"
       },
       {
         "id": 3,
@@ -221,7 +263,9 @@
         "description": "Renard considéré comme le 'méchant' de la série.",
         "phrase_culte": "Oh mince, il est trop tard !",
         "role": "Passe son temps à voler des objets aux autres.",
-        "particularite": "Ne peut s’empêcher de tester les objets des autres."
+        "particularite": "Ne peut s’empêcher de tester les objets des autres.",
+        "perso_image": "/images/persos/dora/chipeur.webp",
+        "perso_alt": "Image de Chipeur qui court après avoir essayé de chipper quelque chose"
       },
       {
         "id": 4,
@@ -231,7 +275,9 @@
         "description": "Demi-cousin de Dora.",
         "phrase_culte": null,
         "role": "Participe aux missions de sauvetage des animaux.",
-        "particularite": "Adore grimper aux arbres pour observer la nature."
+        "particularite": "Adore grimper aux arbres pour observer la nature.",
+        "perso_image": "/images/persos/dora/diego.webp",
+        "perso_alt": "Image de Diego en fôret qui lève les 2 bras"
       },
       {
         "id": 5,
@@ -241,7 +287,9 @@
         "description": "Aventurière curieuse qui explore le monde avec ses amis.",
         "phrase_culte": null,
         "role": "Guide les enfants, résout des missions et utilise son sac et sa carte.",
-        "particularite": "Bilingue anglais/espagnol."
+        "particularite": "Bilingue anglais/espagnol.",
+        "perso_image": "/images/persos/dora/dora.webp",
+        "perso_alt": "Image de Dora habillée d'un t-shirt rose avec son sac à dos"
       },
       {
         "id": 6,
@@ -251,7 +299,9 @@
         "description": "Grand-mère de Dora.",
         "phrase_culte": null,
         "role": "Aide Dora et Babouche dans leurs aventures.",
-        "particularite": "Fait toujours des cookies pour ses amis."
+        "particularite": "Fait toujours des cookies pour ses amis.",
+        "perso_image": "/images/persos/dora/grandma.webp",
+        "perso_alt": "Image de Grandma en peignoir avec Dora à côté"
       },
       {
         "id": 7,
@@ -261,7 +311,9 @@
         "description": "Carte magique indiquant le chemin à Dora.",
         "phrase_culte": "Dis carte !",
         "role": "Guide Dora pour atteindre sa destination.",
-        "particularite": "Se perd jamais, même sans GPS."
+        "particularite": "Se perd jamais, même sans GPS.",
+        "perso_image": "/images/persos/dora/la_carte.webp",
+        "perso_alt": "Image de la carte avec une fôret derrière"
       },
       {
         "id": 8,
@@ -271,7 +323,9 @@
         "description": "Grand poulet rouge qui parle anglais.",
         "phrase_culte": null,
         "role": "Aide Dora et Babouche en donnant des indices.",
-        "particularite": "Pond des œufs géants à l’occasion."
+        "particularite": "Pond des œufs géants à l’occasion.",
+        "perso_image": "/images/persos/dora/le_grand_poulet_rouge.webp",
+        "perso_alt": "Image de Grand Poulet Rouge avec sur son dos Babouche et Dora"
       },
       {
         "id": 9,
@@ -281,7 +335,9 @@
         "description": "Train qui transporte Dora et ses amis.",
         "phrase_culte": null,
         "role": "Permet de voyager rapidement pendant les aventures.",
-        "particularite": "Chante quand il roule sur les rails."
+        "particularite": "Chante quand il roule sur les rails.",
+        "perso_image": "/images/persos/dora/le_train_bleu.webp",
+        "perso_alt": "Image du Train Bleu qui passe un pont"
       },
       {
         "id": 10,
@@ -291,7 +347,9 @@
         "description": "Trois petits animaux : une sauterelle, un escargot et une grenouille.",
         "phrase_culte": null,
         "role": "Félicitent Dora et Babouche après une mission.",
-        "particularite": "Fait toujours la fête où qu’ils aillent."
+        "particularite": "Fait toujours la fête où qu’ils aillent.",
+        "perso_image": "/images/persos/dora/le_trio_fiesta.webp",
+        "perso_alt": "Image du Trio Fiesta qui se trouve dans un trophé"
       },
       {
         "id": 11,
@@ -301,7 +359,9 @@
         "description": "Étoiles lumineuses, masculines et féminines.",
         "phrase_culte": null,
         "role": "Chacune a un rôle comme scintiller ou posséder un outil.",
-        "particularite": "Brillent même quand il fait nuageux."
+        "particularite": "Brillent même quand il fait nuageux.",
+        "perso_image": "/images/persos/dora/les_etoiles.webp",
+        "perso_alt": "Image des Etoiles qui sortent du sac à dos de Dora"
       },
       {
         "id": 12,
@@ -311,7 +371,9 @@
         "description": "Lutin jaune, toujours de mauvaise humeur.",
         "phrase_culte": null,
         "role": "Vit sous un pont et pose des énigmes pour laisser passer.",
-        "particularite": "Râle pour un rien, mais reste adorable."
+        "particularite": "Râle pour un rien, mais reste adorable.",
+        "perso_image": "/images/persos/dora/lutin_grognon.webp",
+        "perso_alt": "Image de Lutin Grognon avec derrière lui son pont"
       },
       {
         "id": 13,
@@ -321,7 +383,9 @@
         "description": "Toucan parlant anglais.",
         "phrase_culte": null,
         "role": "Aide Dora et Babouche en donnant des indices.",
-        "particularite": "Guide et messager."
+        "particularite": "Guide et messager.",
+        "perso_image": "/images/persos/dora/mister_toucan.webp",
+        "perso_alt": "Image de Mister Toucan avec des confettis au-dessus de lui"
       },
       {
         "id": 14,
@@ -331,7 +395,9 @@
         "description": "Sac à dos mauve de Dora.",
         "phrase_culte": "Dis sac à dos !",
         "role": "Aide Dora à résoudre les épreuves avec ses objets.",
-        "particularite": "Contient toujours plus qu’il n’y paraît."
+        "particularite": "Contient toujours plus qu’il n’y paraît.",
+        "perso_image": "/images/persos/dora/sac_a_dos.webp",
+        "perso_alt": "Image de sac à dos avec autour de lui des élements qui se trouvaient à l'intérieur de lui"
       },
       {
         "id": 15,
@@ -341,7 +407,9 @@
         "description": "Écureuil violet ami de Dora, parle espagnol.",
         "phrase_culte": null,
         "role": "Conduit souvent différents véhicules pour les missions.",
-        "particularite": "Peut piloter voiture, hélicoptère, bateau‑véhicule."
+        "particularite": "Peut piloter voiture, hélicoptère, bateau‑véhicule.",
+        "perso_image": "/images/persos/dora/tico.webp",
+        "perso_alt": "Image de Tico qui tient un appareil photo dans les mains"
       },
       {
         "id": 16,
@@ -351,7 +419,9 @@
         "description": "Taureau bleu, bourru mais gentil.",
         "phrase_culte": null,
         "role": "Personnage fort et un peu grognon du dessin animé.",
-        "particularite": "Allergique au pollen."
+        "particularite": "Allergique au pollen.",
+        "perso_image": "/images/persos/dora/totor.webp",
+        "perso_alt": "Image de Totor sur un cheval avec un casque de chevalier"
       },
       {
         "id": 17,
@@ -361,7 +431,9 @@
         "description": "Iguane verte, coquette et naïve.",
         "phrase_culte": null,
         "role": "A souvent besoin de Dora et Babouche pour l'aider.",
-        "particularite": "A toujours une solution pour chaque problème."
+        "particularite": "A toujours une solution pour chaque problème.",
+        "perso_image": "/images/persos/dora/vera.webp",
+        "perso_alt": "Image de Véra avec Dora et Babouche à côté d'elle"
       }
     ],
     "dino": [
@@ -373,7 +445,9 @@
         "description": "Prédateur bipède possédant de grandes mâchoires et des griffes acérées.",
         "phrase_culte": null,
         "role": "Prédateur",
-        "particularite": "Considéré comme le principal prédateur avant le T-Rex."
+        "particularite": "Considéré comme le principal prédateur avant le T-Rex.",
+        "perso_image": "/images/persos/dinosaures/allosaurus.webp",
+        "perso_alt": "Image d'un Allosaurus avec des rochers et des sapins derrière lui"
       },
       {
         "id": 1,
@@ -383,7 +457,9 @@
         "description": "Dinosaure cuirassé doté d'une massue osseuse au bout de la queue.",
         "phrase_culte": null,
         "role": "Herbivore",
-        "particularite": "Sa carapace le protégeait des plus grands prédateurs."
+        "particularite": "Sa carapace le protégeait des plus grands prédateurs.",
+        "perso_image": "/images/persos/dinosaures/ankylosaurus.webp",
+        "perso_alt": "Image d'un Ankylosaurus avec des rochers et des sapins derrière lui"
       },
       {
         "id": 2,
@@ -393,7 +469,9 @@
         "description": "Grand sauropode à long cou et à queue puissante.",
         "phrase_culte": null,
         "role": "Herbivore",
-        "particularite": "Son nom signifie 'lézard trompeur'."
+        "particularite": "Son nom signifie 'lézard trompeur'.",
+        "perso_image": "/images/persos/dinosaures/apatosaurus.webp",
+        "perso_alt": "Image d'un Apatosaurus avec des rochers et des sapins derrière lui"
       },
       {
         "id": 3,
@@ -403,7 +481,9 @@
         "description": "Fossile de transition entre les dinosaures et les oiseaux.",
         "phrase_culte": null,
         "role": "Carnivore (petits animaux et insectes)",
-        "particularite": "Premier animal connu à avoir des plumes."
+        "particularite": "Premier animal connu à avoir des plumes.",
+        "perso_image": "/images/persos/dinosaures/archaeopteryx.webp",
+        "perso_alt": "Image d'un Archaeopteryx avec des rochers et des sapins derrière lui"
       },
       {
         "id": 4,
@@ -413,7 +493,9 @@
         "description": "Immense dinosaure à long cou, l’un des plus grands animaux terrestres connus.",
         "phrase_culte": null,
         "role": "Herbivore",
-        "particularite": "Ses pattes avant étaient plus longues que les arrières."
+        "particularite": "Ses pattes avant étaient plus longues que les arrières.",
+        "perso_image": "/images/persos/dinosaures/brachiosaurus.webp",
+        "perso_alt": "Image d'un Brachiosaurus avec des rochers et des sapins derrière lui"
       },
       {
         "id": 5,
@@ -423,7 +505,9 @@
         "description": "Reptile marin prédateur au corps fuselé.",
         "phrase_culte": null,
         "role": "Carnivore (poissons, autres reptiles marins)",
-        "particularite": "Surnommé le 'Godzilla du Jurassique' pour sa mâchoire puissante."
+        "particularite": "Surnommé le 'Godzilla du Jurassique' pour sa mâchoire puissante.",
+        "perso_image": "/images/persos/dinosaures/dakosaurus.webp",
+        "perso_alt": "Image d'un Dakosaurus qui ouvre la mâchoire et qui nage dans l'eau"
       },
       {
         "id": 6,
@@ -433,7 +517,9 @@
         "description": "Dinosaure carnivore à deux crêtes osseuses sur la tête.",
         "phrase_culte": null,
         "role": "Carnivore",
-        "particularite": "Ses crêtes servaient probablement à l’intimidation."
+        "particularite": "Ses crêtes servaient probablement à l’intimidation.",
+        "perso_image": "/images/persos/dinosaures/dilophosaurus.webp",
+        "perso_alt": "Image d'un Dilophosaurus avec des rochers et des sapins derrière lui"
       },
       {
         "id": 7,
@@ -443,7 +529,9 @@
         "description": "Reptile marin au corps massif et aux puissantes mâchoires.",
         "phrase_culte": null,
         "role": "Carnivore (poissons, reptiles marins)",
-        "particularite": "Redoutable prédateur des mers du Jurassique."
+        "particularite": "Redoutable prédateur des mers du Jurassique.",
+        "perso_image": "/images/persos/dinosaures/liopleurodon.webp",
+        "perso_alt": "Image d'un Liopleurodon qui ouvre la mâchoire et qui nage dans l'eau"
       },
       {
         "id": 8,
@@ -453,7 +541,9 @@
         "description": "Proche des crocodiles modernes.",
         "phrase_culte": null,
         "role": "Carnivore (poissons, céphalopodes)",
-        "particularite": "Vivait en mer mais pouvait aussi se déplacer sur la terre ferme."
+        "particularite": "Vivait en mer mais pouvait aussi se déplacer sur la terre ferme.",
+        "perso_image": "/images/persos/dinosaures/metriohynchus.webp",
+        "perso_alt": "Image d'un Metriohynchus qui ouvre la mâchoire et qui nage dans l'eau"
       },
       {
         "id": 9,
@@ -463,7 +553,9 @@
         "description": "Dinosaure herbivore à longue crête tubulaire sur le crâne.",
         "phrase_culte": null,
         "role": "Herbivore",
-        "particularite": "Sa crête servait à produire des sons graves pour communiquer."
+        "particularite": "Sa crête servait à produire des sons graves pour communiquer.",
+        "perso_image": "/images/persos/dinosaures/parasaurolophus.webp",
+        "perso_alt": "Image d'un Parasaurolophus avec des rochers et des sapins derrière lui"
       },
       {
         "id": 10,
@@ -473,7 +565,9 @@
         "description": "Reptile marin au long cou et aux nageoires puissantes.",
         "phrase_culte": null,
         "role": "Carnivore (poissons et ammonites)",
-        "particularite": "A inspiré la légende du monstre du Loch Ness."
+        "particularite": "A inspiré la légende du monstre du Loch Ness.",
+        "perso_image": "/images/persos/dinosaures/plesiosaurus.webp",
+        "perso_alt": "Image d'un plesiosaurus qui ouvre la mâchoire et qui nage dans l'eau"
       },
       {
         "id": 11,
@@ -483,7 +577,9 @@
         "description": "Reptile volant, premier vertébré connu capable de voler activement.",
         "phrase_culte": null,
         "role": "Carnivore",
-        "particularite": "Ses ailes étaient formées d'une membrane de peau tendue entre le corps et un doigt allongé."
+        "particularite": "Ses ailes étaient formées d'une membrane de peau tendue entre le corps et un doigt allongé.",
+        "perso_image": "/images/persos/dinosaures/pterosaur.webp",
+        "perso_alt": "Image d'un Pterosaur avec des rochers et des sapins derrière lui"
       },
       {
         "id": 12,
@@ -493,7 +589,9 @@
         "description": "Petit ptérosaure avec des dents pointues.",
         "phrase_culte": null,
         "role": "Carnivore",
-        "particularite": "Sa longue queue terminée par un losange lui servait de gouvernail en vol."
+        "particularite": "Sa longue queue terminée par un losange lui servait de gouvernail en vol.",
+        "perso_image": "/images/persos/dinosaures/rhamphorynchus.webp",
+        "perso_alt": "Image d'un Rhamphorynchus avec des rochers et des sapins derrière lui"
       },
       {
         "id": 13,
@@ -503,7 +601,9 @@
         "description": "Grand dinosaure semi-aquatique avec une voile dorsale distinctive.",
         "phrase_culte": null,
         "role": "Carnivore",
-        "particularite": "C’est le plus grand carnivore terrestre connu."
+        "particularite": "C’est le plus grand carnivore terrestre connu.",
+        "perso_image": "/images/persos/dinosaures/spinosaurus.webp",
+        "perso_alt": "Image d'un Sinosaurus sur un butte de sable avec de l'eau et des palmiers derrière lui"
       },
       {
         "id": 14,
@@ -513,7 +613,9 @@
         "description": "Il avait des plaques osseuses le long du dos et une queue défensive.",
         "phrase_culte": null,
         "role": "Herbivore",
-        "particularite": "Ses plaques dorsales pouvaient servir à la régulation thermique et à l'intimidation."
+        "particularite": "Ses plaques dorsales pouvaient servir à la régulation thermique et à l'intimidation.",
+        "perso_image": "/images/persos/dinosaures/stegosaurus.webp",
+        "perso_alt": "Image d'un Stegosaurus avec des rochers et des sapins derrière lui"
       },
       {
         "id": 15,
@@ -523,7 +625,9 @@
         "description": "Prédateur massif à la mâchoire surpuissante et aux bras courts.",
         "phrase_culte": null,
         "role": "Carnivore",
-        "particularite": "L’un des plus célèbres dinosaures de tous les temps."
+        "particularite": "L’un des plus célèbres dinosaures de tous les temps.",
+        "perso_image": "/images/persos/dinosaures/t-rex.webp",
+        "perso_alt": "Image d'un Tyrannosaurus Rex avec des rochers et des sapins derrière lui"
       },
       {
         "id": 16,
@@ -533,7 +637,9 @@
         "description": "Dinosaure herbivore à trois cornes et collerette osseuse.",
         "phrase_culte": null,
         "role": "Herbivore",
-        "particularite": "Ses cornes servaient à se défendre contre les prédateurs."
+        "particularite": "Ses cornes servaient à se défendre contre les prédateurs.",
+        "perso_image": "/images/persos/dinosaures/triceratops.webp",
+        "perso_alt": "Image d'un Triceratops avec des rochers et des sapins derrière lui"
       },
       {
         "id": 17,
@@ -543,50 +649,12 @@
         "description": "Petit dinosaure agile et rapide, doté de griffes redoutables.",
         "phrase_culte": null,
         "role": "Carnivore",
-        "particularite": "Il chassait probablement en groupe."
+        "particularite": "Il chassait probablement en groupe.",
+        "perso_image": "/images/persos/dinosaures/velociraptors.webp",
+        "perso_alt": "Image d'un Vélociraptor avec des rochers et des sapins derrière lui"
       }
     ]
   },
   "messages": [
-    {
-      "id": "da8d",
-      "name": "sonkes",
-      "lastname": "audrey",
-      "email": "audrey.sonkes@gmail.com",
-      "password": "jardin",
-      "message": "Bonjour la compagnie !"
-    },
-    {
-      "id": "416f",
-      "name": "sonkes",
-      "lastname": "audrey",
-      "email": "audrey.sonkes@gmail.com",
-      "password": "hello",
-      "message": "Bonjour !"
-    },
-    {
-      "id": "d037",
-      "name": "sonkes",
-      "lastname": "audrey",
-      "email": "audrey.sonkes@gmail.com",
-      "password": "hello",
-      "message": ""
-    },
-    {
-      "id": "48d7",
-      "name": "sonkes",
-      "lastname": "audrey",
-      "email": "audrey.sonkes@gmail.com",
-      "password": "patate",
-      "message": "dfdgs"
-    },
-    {
-      "id": "4695",
-      "name": "sonkes",
-      "lastname": "audrey",
-      "email": "audrey.sonkes@gmail.com",
-      "password": "hello",
-      "message": ""
-    }
   ]
 }

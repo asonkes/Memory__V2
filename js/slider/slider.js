@@ -50,12 +50,12 @@ if (persoContainer) {
   /** On vide persoContainer au cas où */
   persoContainer.innerHTML = "";
 }
-/** On fait la fonction pour afficher les 8 premiers éléments */
-createPersonnages(persoAAfficher, 0, 8);
+/** On fait la fonction pour afficher les 9 premiers éléments */
+createPersonnages(persoAAfficher, 0, 9);
 /** Et ici, c'est s'il y a le bouton */
 if (buttonPerso) {
   buttonPerso.addEventListener("click", () => {
-    createPersonnages(persoAAfficher, 8, 18);
+    createPersonnages(persoAAfficher, 9, 18);
     buttonPerso.classList.add("active");
   });
 }
@@ -109,5 +109,5 @@ function refreshCarousel(direction) {
   title.textContent = tabTitlePerso[numero];
   buttonPerso.classList.remove("active");
   // On crée une carte pour chaque perso
-  createPersonnages(persoAAfficher, 0, 8);
+  createPersonnages(persoAAfficher, 0, 9);
 }
