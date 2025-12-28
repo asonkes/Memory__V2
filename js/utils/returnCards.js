@@ -66,12 +66,16 @@ export function returnCards() {
         const cardBlock = document.querySelector(".card");
         cardBlock.classList.add("finish");
 
+        /** Ici on va d'abord créer une div 'parente' */
+        const textFinish_parent = document.createElement("div");
+        textFinish_parent.classList.add("textFinishParent");
+        cardBlock.insertAdjacentElement("afterend", textFinish_parent);
+
         /** Et on va ajouter un texte pour dire "bravo", vous avez gagné */
         const textFinish = document.createElement("div");
         textFinish.classList.add("textFinish");
         textFinish.textContent = `Félicitations !!!​`;
-        cardBlock.insertAdjacentElement("afterend", textFinish);
-
+      
         /** On arrête le timer quand toutes les cartes sont trouvées */
         stopTimer();
 
@@ -87,7 +91,24 @@ export function returnCards() {
 
           const text2 = document.createElement("p");
           text2.textContent = `Tu es une(e) véritable champion(ne) 🌟​.`;
+
+          // Ici se sont les boutons qui appraissent qd partie terminée
+          const buttonParent = document.createElement("div");
+          buttonParent.classList.add("buttonParent");
+
+          const replay = document.createElement("a");
+          replay.classList.add("replay");
+          replay.href = `/index.html`;
+          replay.textContent = `Rejouer`;
+
+          const scores = document.createElement("a");
+          scores.classList.add("scores");
+          scores.href = `/include/views/trophy.html`;
+          scores.textContent = `Voir les scores`;
+
+          buttonParent.append(replay, scores);
           textFinish.append(img, text, text2);
+          textFinish_parent.append(textFinish, buttonParent);
 
           /** Partie gagnées +1 */
           isWin++;
