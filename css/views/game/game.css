@@ -2,6 +2,13 @@
   .section_game {
     max-width: var(--width_full);
 
+    &.game {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 99999999999999999999999999;
+    }
+
     /* propriétés pour changer le background, en fonction des thèmes */
     .game_image {
       max-width: var(--width_full);

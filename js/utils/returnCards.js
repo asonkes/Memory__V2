@@ -27,11 +27,15 @@ export function returnCards() {
   ]
 
   function flipCard(element) {
-    /** lockBoard return, on sort du jeu */
+    /** Si carte déjà trouvée ==> on sort de la fonction */
     if (lockGame) return;
+
+    /** Si on clique sur une card qui a été trouvé, on peut plus recliquer dessus */
+    if (element.classList.contains("matched")) return;
 
     /** si on reclique sur firstCard, on sort de flipCard */
     if (element === firstCard) return;
+
     /** On ajoute la classe pour le flip */
     element.classList.add("returnCard");
 
@@ -47,10 +51,14 @@ export function returnCards() {
     /** On bloque les clics */
     lockGame = true;
 
-    /** Ca c'est la partie qd 1 carte = 1 carte (paaire de carte trouvée) */
+    /** Ca c'est la partie qd 1 carte = 1 carte (paire de carte trouvée) */
     if (firstCard.dataset.value === secondCard.dataset.value) {
       /** On rajoute +1 au nombre de paire trouvée */
       isCardValid++;
+
+      /** Ici on évuite que si les cartes correspondent, on puisse recliquer dessus */
+      firstCard.classList.add("matched");
+      secondCard.classList.add("matched");
 
       /** On va trouver les éléments en fonction du thème */
       const currentTheme = themes.find(element => element.id === theme);
@@ -79,7 +87,21 @@ export function returnCards() {
         /** On arrête le timer quand toutes les cartes sont trouvées */
         stopTimer();
 
-        /** On détermine en fonciton du thème */
+        /** On remettre la CSS comme avant (jeu finit) */
+        const card_wrapper = document.querySelector(".card_wrapper");
+        card_wrapper.classList.remove("game");
+        card_wrapper.classList.add("active");
+
+        /** On va remettre le header apparent */
+        /** On va modifier la présentation de la page où il y a 'les cards' */
+        const section_game = document.querySelector(".section_game");
+        section_game.classList.remove("game");
+
+        /** On va remettre le footer apparent (jeu est finit) */
+        const footer = document.querySelector("footer");
+        footer.classList.remove("game");
+
+        /** On détermine en fonction du thème */
         if (currentTheme) {
           /** On va ajouter une image en fonction du texte */
           const img = document.createElement("img");
@@ -92,7 +114,7 @@ export function returnCards() {
           const text2 = document.createElement("p");
           text2.textContent = `Tu es une(e) véritable champion(ne) 🌟​.`;
 
-          // Ici se sont les boutons qui appraissent qd partie terminée
+          // Ici se sont les boutons qui apparaissent qd partie terminée
           const buttonParent = document.createElement("div");
           buttonParent.classList.add("buttonParent");
 

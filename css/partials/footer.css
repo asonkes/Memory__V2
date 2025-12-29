@@ -1,6 +1,11 @@
 footer {
+  display: block;
   max-width: var(--width_full);
   background-color: var(--color_primary);
+
+  &.game {
+    display: none;
+  }
 
   @media (prefers-color-scheme: light) {
     background-color: var(--color_secondary);

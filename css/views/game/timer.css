@@ -7,18 +7,26 @@
     width: var(--width_full);
     font-family: var(--font_secondary);
     font-size: var(--fontSize_reg);
-    padding-bottom: var(--padding_xxxxl);
+    padding-bottom: var(--padding_xxl);
     color: var(--color_secondary);
   }
 
+  .buttonMuteSound,
+  .buttonBreakPlay {
+    display: flex;
+    align-items: center;
+  }
+
   h2 {
-    padding: var(--padding_md);
+    padding: var(--padding_s);
   }
 
   .timer {
     justify-content: space-around;
 
     .counter {
+      display: flex;
+      align-items: center;
       font-family: var(--font_secondary);
       font-size: var(--fontSize_l);
       padding: var(--padding_s);

@@ -1,0 +1,80 @@
+/* Fonctionnalités pour le bouton pour couper le son des cards */
+.button_mute,
+.button_exit,
+.button_break {
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: var(--color_secondary);
+  border: none;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
+  margin: 0 var(--margin_s);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.button_mute,
+.button_break {
+  opacity: 1;
+
+  &.active {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.button_sound,
+.button_play {
+  position: relative;
+  height: 0;
+  opacity: 0;
+
+  &.active {
+    position: absolute;
+    height: 100%;
+    opacity: 1;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: var(--color_secondary);
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    margin: 0 var(--margin_s);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.button_mute {
+  background-image: url("/images/bouton/button_mute.png");
+}
+
+.button_sound {
+  background-image: url("/images/bouton/button_sound.png");
+}
+
+.button_break {
+  background-image: url("/images/bouton/button_break.png");
+}
+
+.button_play {
+  background-image: url("/images/bouton/button.png");
+}
+
+.button_exit {
+  background-image: url("/images/bouton/button_exit.png");
+}

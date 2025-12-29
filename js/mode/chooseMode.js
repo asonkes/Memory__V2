@@ -1,8 +1,9 @@
 import { mixCards } from "/js/utils/mixCards.js";
 import { creationBgCards, creationBackCards} from "/js/utils/creationBgCards.js";
 import { returnCards } from "/js/utils/returnCards.js";
-import { startTimer } from "/js/utils/timer.js";
+import { startTimer, stopTimer } from "/js/utils/timer.js";
 import { stopPlaySound, reactiveSound } from "/js/utils/playSound.js";
+import { rgbToRgba } from "/js/utils/rgbToRgba.js";
 
 /*****************************************************/
 /******* En fonction du mode, quantité de cards ******/
@@ -85,23 +86,72 @@ if (button) {
     const timerParent = document.querySelector(".timerParent");
     timerParent.classList.add("active");
 
-    /** On va faire appraître le bouton "sound" et le bouton "mute" */
+    /** On va faire disparaitre le bouton "mute" et apparaitre le bouton "sound" */
     const button_mute = document.querySelector(".button_mute");
-    button_mute.classList.add("active");
     button_mute.addEventListener("click", () => {
+      button_mute.classList.add("active");
       stopPlaySound();
+
+      const button_sound = document.querySelector(".button_sound");
+      button_sound.classList.add("active");
     })
 
+    /** On va faire disparaitre le bouton "sound" et apparaitre le bouton "mute" */
     const button_sound = document.querySelector(".button_sound");
-    button_sound.classList.add("active");
     button_sound.addEventListener("click", () => {
+      button_sound.classList.remove("active");
       reactiveSound();
+
+      button_mute.classList.remove("active");
     })
+
+    /** On va faire disparaitre le bouton "pause" et apparaitre le bouton "play" */
+    const button_break = document.querySelector(".button_break");
+    button_break.addEventListener("click", () => {
+      button_break.classList.add("active");
+      stopTimer();
+
+      const cardBlocks = document.querySelectorAll(".cardBlock.active");
+      cardBlocks.forEach(element => {
+        element.classList.add("disabled");
+      })
+
+      const button_play = document.querySelector(".button_play");
+      button_play.classList.add("active");
+    });
+
+    /** On va faire disparaitre le bouton "play" et apparaitre le bouton "break" */
+    const button_play = document.querySelector(".button_play");
+    button_play.addEventListener("click", () => {
+      button_play.classList.remove("active");
+      startTimer();
+
+      const cardBlocks = document.querySelectorAll(".cardBlock.active");
+      cardBlocks.forEach(element => {
+        element.classList.remove("disabled");
+      })
+
+      const button_break = document.querySelector(".button_break");
+      button_break.classList.remove("active");
+    });
 
     returnCards();
 
     /** On va ajouter le timer */
     startTimer();
+
+    /** On va modifier la CSS des 'cards' */
+    const card_wrapper = document.querySelector(".card_wrapper");
+    card_wrapper.classList.remove("active");
+    card_wrapper.classList.add("game");
+
+    /** On va modifier la présentation de la page où il y a 'les cards' */
+    const section_game = document.querySelector(".section_game");
+    section_game.classList.add("game");
+
+    /** On va supprimer le footer */
+    const footer = document.querySelector("footer");
+    footer.classList.add("game");
   });
 }
 
@@ -147,10 +197,4 @@ async function creationList(value) {
   const bgRgb = backCards.cardBg[value - 1];
   /** Et ici on définit un rgba de 0.4 */
   cardBack.style.background = rgbToRgba(bgRgb, 0.4);
-}
-
-// On va remplacer la valeur attendue de la db.json
-// Et on transforme le 'rgb' en 'rgba'
-function rgbToRgba(rgb, alpha) {
-  return rgb.replace("rgb(", "rgba(").replace(")", `, ${alpha})`);
 }

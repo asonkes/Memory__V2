@@ -52,18 +52,25 @@
           <div class="card_wrapper container flex flex_center direction_column align_center">
             <!-- partie pour le timer -->
             <div class="timerParent">
-              <h2 class="text_center" aria-label="chronomètre">
-                Jouez, attention le chronomètre commence ⏳​⏳​⏳​ !!!
-              </h2>
-
               <div class="timer flex">
-                <!-- Bouton mute pour arrêter le son si carte les mêmes ok -->
-                <div class="button_sound"></div>
-
+                <div class="buttonMuteSound">
+                  <!-- Bouton mute pour arrêter le son si carte les mêmes ok -->
+                  <div class="button_mute"></div>
+                  <!-- Bouton mute pour arrêter le son si carte les mêmes ok -->
+                  <div class="button_sound"></div>
+                </div>
+                <div class="buttonBreakPlay">
+                  <!-- Bouton pour arrêter le timer -->
+                  <div class="button_break"></div>
+                  <!-- Bouton pour remettre le timer (play) -->
+                  <div class="button_play"></div>
+                </div>
+                <h2 class="text_center" aria-label="chronomètre">
+                  Jouez, attention le chronomètre commence ⏳​⏳​⏳​ !!!
+                </h2>
                 <div class="counter" id="counter">00 : 00 : 00</div>
-
-                <!-- Bouton mute pour arrêter le son si carte les mêmes ok -->
-                <div class="button_mute"></div>
+                <!-- Bouton pour sortir du jeu -->
+                <a href="/index.html" class="button_exit"></a>
               </div>
             </div>
 
