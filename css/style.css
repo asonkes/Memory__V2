@@ -40,6 +40,9 @@
 /* import page home bouton 'mute' */
 @import "./views/game/button_timer.css";
 
+/* import page error 404 */
+@import "./views/error404/error404.css";
+
 /*******************************************/
 /* Lien vers fichiers fonts dans le projet */
 /*******************************************/

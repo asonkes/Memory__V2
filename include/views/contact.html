@@ -35,7 +35,7 @@
         <div class="contact flex direction_column align_center">
           <h1 class="text_center">Contactez-nous.</h1>
           <!-- novalidate => permet de désactiver la validation native pour contrôler les champs et afficher un message d'erreur -->
-          <form action="/" method="post" id="form" novalidate>
+          <form method="post" id="form" novalidate>
             <div class="block1 flex">
               <div class="name flex direction_column">
                 <label for="name">Nom :</label>
@@ -53,12 +53,16 @@
               </div>
               <div class="password flex direction_column">
                 <label for="password">Mot de passe :</label>
-                <input
-                  name="password"
-                  id="password"
-                  type="password"
-                  placeholder="mot de passe"
-                  autocomplete="new-password" />
+                <div class="iconsContainer">
+                  <input
+                    name="password"
+                    id="password"
+                    type="password"
+                    placeholder="mot de passe"
+                    autocomplete="new-password" />
+                  <i class="fa-solid fa-eye iconEye"></i>
+                  <i class="fa-solid fa-eye-slash iconEyeCash"></i>
+                </div>
               </div>
             </div>
             <div class="message flex direction_column align_center">

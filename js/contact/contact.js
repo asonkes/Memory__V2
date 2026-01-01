@@ -14,6 +14,7 @@ export function contact() {
   let input_email = document.getElementById("email");
   let input_password = document.getElementById("password");
   let textarea_message = document.getElementById("message");
+  
   /** On fait un tableau des champs du formulaire */
   const contactFields = [
     {item: input_name, cls: "errorName", message: "Votre nom est manquant !" },
@@ -79,13 +80,39 @@ export function contact() {
 
       /** Mais pour pouvoir envoyer ses données au serveur, il faut les transformer en json */
       await contactInformations(data); // <-- on envoie les données ici
-      /** On vide les champos du formulaire */
+
+      /** On vide les champs du formulaire */
       form.reset();
-      input_email.value = "";
-      input_password.value = "";
-      console.log("Message envoyé !");
+
+      /** On va faire en sorte qu'un message s'affiche si formulaire envoyé */
+      const contact = document.querySelector(".contact");
+      const messageInfo = document.querySelector(".messageInfo");
+
+      if(!messageInfo) {
+          const messageInfo = document.createElement("p");
+          messageInfo.classList.add("messageInfo");
+          messageInfo.textContent = `Votre message a bien été envoyé`;
+          contact.appendChild(messageInfo);
+      }
     }
   });
+
+  // Permet de cacher les icones "eye" pour mot de passe 
+  const iconEye = document.querySelector(".iconEye");
+  const iconEyeCash = document.querySelector(".iconEyeCash");
+  const inputPassword = document.getElementById("password"); 
+
+  iconEye.addEventListener("click", () => {
+    iconEye.classList.add("active");
+    iconEyeCash.classList.add("active");
+    inputPassword.type = "text";
+  })
+
+  iconEyeCash.addEventListener("click", () => {
+    iconEye.classList.remove("active");
+    iconEyeCash.classList.remove("active");
+    inputPassword.type = "password";
+  })
 }
 
 contact();
