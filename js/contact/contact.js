@@ -36,6 +36,8 @@ export function contact() {
     },
   ];
 
+  //todo : enlever le async ici et ne faire que le prevent.default et mettre tout le reste dans une fonction qui elle sera async
+
   /** On met 'async' pour faire fonctionner le 'await' */
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
