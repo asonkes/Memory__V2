@@ -29,24 +29,93 @@
       }
     }
 
-    .title {
-      text-decoration: underline;
+    table {
+      margin: 100px auto;
+      border-collapse: collapse;
+      color: var(--color_primary);
+
+      @media (max-width: 830px) {
+        margin: 0 var(--margin_reg);
+      }
+
+      @media (max-width: 500px) {
+        margin: 0 auto;
+      }
+
+      thead {
+
+        @media (max-width: 830px) {
+          display: none;
+        }
+
+        tr {
+          .no_text {
+            border: none;
+          }
+
+          .text {
+            background: linear-gradient(-39deg, #bf953f, #fcf6ba, #c4932a, #f5efb6, #aa771c);
+            padding: 20px 40px;
+            border: 2px solid var(--color_primary);
+
+            @media (max-width: 1000px) {
+              padding: var(--padding_md) 30px;
+            }
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          th {
+            text-align: start;
+            padding: var(--padding_md) var(--padding_xxl);
+            border: 2px solid var(--color_primary);
+            background: linear-gradient(-39deg, #bf953f, #fcf6ba, #c4932a, #f5efb6, #aa771c);
+            text-decoration: underline;
+
+            @media (max-width: 1000px) {
+              padding: 20px;
+            }
+          }
+
+          td {
+            text-align: center;
+            padding: var(--padding_s);
+            border: 2px solid var(--color_primary);
+          }
+        }
+      }
     }
 
-    .trophy_dora,
-    .trophy_patPatrouille,
-    .trophy_dino {
-      max-width: var(--width_full);
-      font-family: var(--font_secondary);
-      font-size: var(--fontSize_s);
-      padding: var(--fontSize_md);
+    table, thead, tbody, tr, th, td, .no_text, text {
+      
+      @media (max-width: 830px) {
+        display: block;
+        padding: var(--padding_reg) 0;
 
-      p {
-        padding: var(--padding_xs);
+          td {
+            position: relative;
+            padding-left: 150px;
+            margin-top: -2px;
 
-        span:first-child {
-          text-decoration: underline;
-        }
+            &:before {
+              content: attr(data-label);
+              position: absolute;
+              width: 150px;
+              height: var(--height_full);
+              display: flex;
+              align-items: center;
+              top: 0; 
+              left: 0;
+              padding: 0 var(--padding_s);
+              background: linear-gradient(-39deg, #bf953f, #fcf6ba, #c4932a, #f5efb6, #aa771c);
+
+              @media (max-width: 500px) {
+                width: 110px;
+              }
+            }
+          }
       }
     }
 

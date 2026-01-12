@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="../../css/style.css" />
 
     <!-- Lien vers le fichier JS -->
-    <script src="/js/main.js" type="module"></script>
-    <script src="/js/scores/scores.js" type="module"></script>
+    <script src="/js/main.js" type="module" defer></script>
+    <script src="/js/scores/scores.js" type="module" defer></script>
+    <script src="/js/utils/responsiveTable.js" type="module" defer></script>
 
     <!-- Lien vers 'fontawesome' -->
     <script src="https://kit.fontawesome.com/2cbf82340f.js" crossorigin="anonymous"></script>
@@ -33,7 +34,41 @@
     <main class="flex" id="main_trophy">
       <div class="container">
         <div class="trophy">
-          <h1 class="text_center">Découvrez vos scores !</h1>
+          <h1 class="text_center">Découvrez le nombre de parties gagnées !</h1>
+          <table class="table-responsive">
+            <thead>
+              <tr>
+                <th class="no_text"></th>
+                <th class="text">Facile</th>
+                <th class="text">Moyen</th>
+                <th class="text">Difficile</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="scoreDora">
+                <th>Thème Dora :</th>
+                <td class="easy">0</td>
+                <td class="medium">0</td>
+                <td class="hard">0</td>
+              </tr>
+              <tr class="scorePatPatrouille">
+                <th>Thème Pat Patrouille :</th>
+                <td class="easy">0</td>
+                <td class="medium">0</td>
+                <td class="hard">0</td>
+              </tr>
+              <tr class="scoreDino">
+                <th>Thème Dinosaures :</th>
+                <td class="easy">0</td>
+                <td class="medium">0</td>
+                <td class="hard">0</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+          <!--
           <div class="trophy_dora flex direction_column">
             <p class="title">Thème Dora :</p>
             <p>
@@ -91,6 +126,7 @@
               <span>0</span>
             </p>
           </div>
+          -->
 
           <div class="button flex direction_column align_center">
             <button id="buttonScore">Réinitialiser</button>

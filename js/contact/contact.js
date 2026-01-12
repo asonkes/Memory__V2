@@ -7,22 +7,34 @@ import { contactInformations } from "/js/utils/jsonFunction.js";
 export function contact() {
   /** Récupérer les variables dont on a besoin */
   const form = document.getElementById("form");
-  if(!form) return;
+  if (!form) return;
 
   let input_name = document.getElementById("name");
   let input_lastName = document.getElementById("lastname");
   let input_email = document.getElementById("email");
   let input_password = document.getElementById("password");
   let textarea_message = document.getElementById("message");
-  
+
   /** On fait un tableau des champs du formulaire */
   const contactFields = [
-    {item: input_name, cls: "errorName", message: "Votre nom est manquant !" },
-    {item: input_lastName, cls: "errorLastname", message: "Votre prénom est manquant !"},
-    {item: input_email, cls: "errorEmail", message: "E-mail non valide !"},
-    {item: input_password, cls: "errorPassword", message: "Votre mot de passe est manquant !" },
-    {item: textarea_message, cls: "errorMessage", message: "Votre message est manquant !"}
-  ]
+    { item: input_name, cls: "errorName", message: "Votre nom est manquant !" },
+    {
+      item: input_lastName,
+      cls: "errorLastname",
+      message: "Votre prénom est manquant !",
+    },
+    { item: input_email, cls: "errorEmail", message: "E-mail non valide !" },
+    {
+      item: input_password,
+      cls: "errorPassword",
+      message: "Votre mot de passe est manquant !",
+    },
+    {
+      item: textarea_message,
+      cls: "errorMessage",
+      message: "Votre message est manquant !",
+    },
+  ];
 
   /** On met 'async' pour faire fonctionner le 'await' */
   form.addEventListener("submit", async (event) => {
@@ -35,8 +47,8 @@ export function contact() {
     /** cls = class */
     const removeError = (cls) => {
       const err = document.querySelector(`.${cls}`);
-      if(err) err.remove();
-    }
+      if (err) err.remove();
+    };
 
     /** On va créer le message d'erreur s'il n'existe pas */
     const showError = (item, cls, message) => {
@@ -44,16 +56,16 @@ export function contact() {
 
       let err = document.querySelector(`.${cls}`);
 
-      if(!err) {
+      if (!err) {
         err = document.createElement("span");
         err.classList.add("error", cls);
         err.textContent = message;
         item.insertAdjacentElement("beforebegin", err);
       }
-    }
+    };
 
-    contactFields.forEach(element => {
-      if(element.item.value != "") {
+    contactFields.forEach((element) => {
+      if (element.item.value != "") {
         removeError(element.cls);
       } else {
         showError(element.item, element.cls, element.message);
@@ -61,12 +73,16 @@ export function contact() {
     });
 
     /** Définir la longueur pour le textarea */
-    if(textarea_message.value.length > 255) {
-      showError(textarea_message, "errorTextarea", "Votre message ne peut dépasser 255 caractères.");
+    if (textarea_message.value.length > 255) {
+      showError(
+        textarea_message,
+        "errorTextarea",
+        "Votre message ne peut dépasser 255 caractères."
+      );
     } else {
       removeError("errorTextarea");
     }
-    
+
     /** Si tout est valide, on envoie les données */
     if (isValid) {
       /** On va récupérer les données de mon formulaires, les mettre dans un objet JS */
@@ -88,31 +104,14 @@ export function contact() {
       const contact = document.querySelector(".contact");
       const messageInfo = document.querySelector(".messageInfo");
 
-      if(!messageInfo) {
-          const messageInfo = document.createElement("p");
-          messageInfo.classList.add("messageInfo");
-          messageInfo.textContent = `Votre message a bien été envoyé`;
-          contact.appendChild(messageInfo);
+      if (!messageInfo) {
+        const messageInfo = document.createElement("p");
+        messageInfo.classList.add("messageInfo");
+        messageInfo.textContent = `Votre message a bien été envoyé`;
+        contact.appendChild(messageInfo);
       }
     }
   });
-
-  // Permet de cacher les icones "eye" pour mot de passe 
-  const iconEye = document.querySelector(".iconEye");
-  const iconEyeCash = document.querySelector(".iconEyeCash");
-  const inputPassword = document.getElementById("password"); 
-
-  iconEye.addEventListener("click", () => {
-    iconEye.classList.add("active");
-    iconEyeCash.classList.add("active");
-    inputPassword.type = "text";
-  })
-
-  iconEyeCash.addEventListener("click", () => {
-    iconEye.classList.remove("active");
-    iconEyeCash.classList.remove("active");
-    inputPassword.type = "password";
-  })
 }
 
 contact();
