@@ -36,12 +36,7 @@ export function contact() {
     },
   ];
 
-  //todo : enlever le async ici et ne faire que le prevent.default et mettre tout le reste dans une fonction qui elle sera async
-
-  /** On met 'async' pour faire fonctionner le 'await' */
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
-
+  async function sendInformationsForm() {
     /** On va vider les input d'abord */
     let isValid = true;
 
@@ -113,6 +108,13 @@ export function contact() {
         contact.appendChild(messageInfo);
       }
     }
+  }
+
+  /** On met 'async' pour faire fonctionner le 'await' */
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    await sendInformationsForm();
   });
 }
 

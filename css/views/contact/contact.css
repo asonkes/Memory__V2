@@ -150,6 +150,12 @@
         padding: var(--padding_xs) 0;
       }
     }
+
+    .messageInfo {
+      font-family: var(--font_secondary);
+      font-size: var(--fontSize_s);
+      color: var(--color_quinary);
+    }
   }
 }
 
