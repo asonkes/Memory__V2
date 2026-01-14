@@ -49,12 +49,6 @@
       }
     }
   }
-
-  .card {
-    @media (prefers-color-scheme: dark) {
-      background-color: rgba(46, 64, 87, 0.2);
-    }
-  }
 }
 
 /** Thème dark */
@@ -64,9 +58,5 @@ body.dark #main_game {
 
   h1 {
     color: var(--color_secondary);
-  }
-
-  .card {
-    background-color: rgba(46, 64, 87, 0.2);
   }
 }

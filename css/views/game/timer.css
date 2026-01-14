@@ -9,6 +9,10 @@
     font-size: var(--fontSize_reg);
     padding-bottom: var(--padding_xxl);
     color: var(--color_secondary);
+
+    @media (max-width: 1218px) {
+      font-size: var(--fontSize_s);
+    }
   }
 
   .buttonMuteSound,
