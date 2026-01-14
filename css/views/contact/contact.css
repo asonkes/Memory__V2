@@ -167,6 +167,11 @@
         font-size: var(--fontSize_s);
         color: var(--color_quinary);
         padding: var(--padding_xs) 0;
+
+        @media (prefers-color-scheme: dark) {
+          color: #f43b3b;
+          font-weight: 400;
+        }
       }
     }
 
@@ -174,6 +179,11 @@
       font-family: var(--font_secondary);
       font-size: var(--fontSize_s);
       color: var(--color_quinary);
+
+      @media (prefers-color-scheme: dark) {
+        color: #f43b3b;
+        font-weight: 400;
+      }
     }
   }
 }

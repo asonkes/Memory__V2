@@ -41,7 +41,6 @@
         flex-wrap: wrap;
         list-style: none;
         gap: 0.5rem;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
         @media (max-width: 500px) {
           gap: 1rem;
