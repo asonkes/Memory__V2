@@ -1,4 +1,8 @@
 #main_game {
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--color_primary);
+  }
+
   .section_game {
     max-width: var(--width_full);
 
@@ -39,6 +43,30 @@
       font-size: var(--fontSize_md_xl);
       color: var(--color_primary);
       padding: var(--padding_xxxl) 0 var(--padding_xxl) 0;
+
+      @media (prefers-color-scheme: dark) {
+        color: var(--color_secondary);
+      }
     }
+  }
+
+  .card {
+    @media (prefers-color-scheme: dark) {
+      background-color: rgba(46, 64, 87, 0.2);
+    }
+  }
+}
+
+/** Thème dark */
+
+body.dark #main_game {
+  background-color: var(--color_primary);
+
+  h1 {
+    color: var(--color_secondary);
+  }
+
+  .card {
+    background-color: rgba(46, 64, 87, 0.2);
   }
 }

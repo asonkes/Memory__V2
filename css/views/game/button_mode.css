@@ -29,7 +29,7 @@
     border: none;
     cursor: pointer;
 
-    @media (prefers-color-scheme: light) {
+    @media (prefers-color-scheme: dark) {
       background-color: var(--color_secondary);
       color: var(--color_primary);
       border: 2px solid var(--color_primary);
@@ -39,8 +39,10 @@
       background-color: var(--color_tertiary);
       transform: scale(1.02);
 
-      @media (prefers-color-scheme: light) {
+      @media (prefers-color-scheme: dark) {
         background-color: rgba(62, 114, 178, 0.4);
+        color: var(--color_secondary);
+        border: 2px solid white;
       }
     }
 
@@ -50,9 +52,10 @@
   }
 }
 
-/* Thème Light */
+/* Thème dark */
 
-body.light .chooseMode {
+body.dark .chooseMode {
+
   #easy,
   #medium,
   #hard {
@@ -62,6 +65,8 @@ body.light .chooseMode {
 
     &:hover {
       background-color: rgba(62, 114, 178, 0.4);
+      color: var(--color_secondary);
+      border: 2px solid white;
     }
   }
 }

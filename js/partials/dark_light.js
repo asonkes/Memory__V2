@@ -5,25 +5,25 @@
 /** Header variables pour changer 'dark' en 'light' */
 
 export function darkLight() {
-    const dark = document.getElementById("dark");
-    const light = document.getElementById("light");
-    const body = document.querySelector("body");
+  const dark = document.getElementById("dark");
+  const light = document.getElementById("light");
+  const body = document.querySelector("body");
 
-    light.addEventListener("click", (event) => {
-        event.preventDefault();
+  light.addEventListener("click", (event) => {
+    event.preventDefault();
 
-        dark.classList.add("active");
-        light.classList.add("active");
+    dark.classList.add("active");
+    light.classList.add("active");
 
-        body.classList.add("light");
-    })
+    body.classList.add("dark");
+  });
 
-    dark.addEventListener("click", (event) => {
-        event.preventDefault();
+  dark.addEventListener("click", (event) => {
+    event.preventDefault();
 
-        dark.classList.remove("active");
-        light.classList.remove("active");
+    dark.classList.remove("active");
+    light.classList.remove("active");
 
-        body.classList.remove("light");
-    })
+    body.classList.remove("dark");
+  });
 }

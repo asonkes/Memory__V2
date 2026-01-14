@@ -6,6 +6,10 @@
   background-position: center;
   background-size: cover;
 
+  @media (prefers-color-scheme: dark) {
+    background-color: rgba(46, 64, 87, 0.8);
+  }
+
   .contact {
     max-width: 80%;
     min-height: 70vh;
@@ -16,6 +20,11 @@
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 50px;
 
+    @media (prefers-color-scheme: dark) {
+      background-color: rgba(46, 64, 87, 0.8);
+      border: 2px solid var(--color_secondary);
+    }
+
     @media (max-width: 680px) {
       max-width: var(--width_full);
     }
@@ -23,6 +32,10 @@
     h1 {
       padding: var(--fontSize_md);
       font-size: var(--fontSize_xl);
+
+      @media (prefers-color-scheme: dark) {
+        color: var(--color_secondary);
+      }
 
       @media (max-width: 680px) {
         font-size: var(--fontSize_l);
@@ -34,6 +47,7 @@
     }
 
     form {
+
       .block1,
       .block2 {
         max-width: var(--width_full);
@@ -114,24 +128,29 @@
         border: none;
         cursor: pointer;
 
-        @media (prefers-color-scheme: light) {
+        @media (prefers-color-scheme: dark) {
           background-color: var(--color_secondary);
           color: var(--color_primary);
-          border: 2px solid var(--color_primary);
         }
 
         &:hover {
           background-color: var(--color_tertiary);
           transform: scale(1.02);
 
-          @media (prefers-color-scheme: light) {
+          @media (prefers-color-scheme: dark) {
             background-color: rgba(62, 114, 178, 0.4);
+            border: 2px solid var(--color_secondary);
+            color: var(--color_secondary);
           }
         }
       }
 
       label {
         text-decoration: underline;
+
+        @media (prefers-color-scheme: dark) {
+          color: var(--color_secondary);
+        }
       }
 
       input {
@@ -159,17 +178,29 @@
   }
 }
 
-/* Thème light */
-body.light #main_contact {
+/* Thème dark */
+body.dark #main_contact {
   .contact {
+    background-color: rgba(46, 64, 87, 0.8);
+    border: 2px solid var(--color_secondary);
+
+    h1,
+    label {
+      color: var(--color_secondary);
+    }
+
     button {
-      background-color: var(--color_secondary);
-      color: var(--color_primary);
-      border: 2px solid var(--color_primary);
+      border: 2px solid var(--color_secondary);
 
       &:hover {
         background-color: rgba(62, 114, 178, 0.4);
       }
+    }
+
+    .error,
+    .messageInfo {
+      color: #f43b3b;
+      font-weight: 400;
     }
   }
 }

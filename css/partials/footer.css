@@ -3,13 +3,12 @@ footer {
   max-width: var(--width_full);
   background-color: var(--color_primary);
 
-  &.game {
-    display: none;
+  @media (prefers-color-scheme: dark) {
+    border-top: 2px solid var(--color_secondary);
   }
 
-  @media (prefers-color-scheme: light) {
-    background-color: var(--color_secondary);
-    border: 2px solid var(--color_primary);
+  &.game {
+    display: none;
   }
 
   p {
@@ -17,22 +16,11 @@ footer {
     color: var(--color_secondary);
     font-family: var(--font_primary);
     font-size: var(--fontSize_xs);
-
-    @media (prefers-color-scheme: light) {
-      color: var(--color_primary);
-      font-weight: bold;
-    }
   }
 }
 
-/* Thème light */
+/* Thème dark */
 
-body.light footer {
-  background-color: var(--color_secondary);
-  border: 2px solid var(--color_primary);
-
-  p {
-    color: var(--color_primary);
-    font-weight: bold;
-  }
+body.dark footer {
+  border-top: 2px solid var(--color_secondary);
 }
