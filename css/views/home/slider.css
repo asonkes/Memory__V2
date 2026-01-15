@@ -60,7 +60,7 @@
     cursor: pointer;
 
     &:hover {
-      color: white;
+      color: var(--color_secondary);
     }
   }
 
@@ -71,7 +71,7 @@
 
   /* fonctionnalités pour les border */
   .border_blue {
-    border: 10px solid #2e4057;
+    border: 10px solid var(--color_primary);
   }
 }
 

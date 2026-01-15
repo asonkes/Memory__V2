@@ -2,9 +2,9 @@
   min-height: var(--heightVH);
   background-color: var(--color_secondary);
 
-    @media (prefers-color-scheme: dark) {
-      background-color: var(--color_primary);
-    }
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--color_primary);
+  }
 
   .home_image {
     max-width: var(--width_full);
@@ -54,9 +54,9 @@
       font-weight: bold;
       font-size: var(--fontSize_xl);
       padding: var(--padding_xxl);
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: var(--color_secondary05);
       border-radius: 20px;
-      border: 2px solid white;
+      border: 2px solid var(--color_secondary);
 
       @media (max-width: 680px) {
         font-size: var(--fontSize_l);
@@ -86,7 +86,7 @@
 
   #home_slider--text {
     h2 {
-          color: var(--color_secondary);
+      color: var(--color_secondary);
     }
   }
 }

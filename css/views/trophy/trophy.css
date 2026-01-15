@@ -13,11 +13,11 @@
     padding: var(--padding_md);
     font-family: var(--font_primary);
     font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--color_secondary08);
     border-radius: 50px;
 
     @media (prefers-color-scheme: dark) {
-      background-color: rgba(46, 64, 87, 0.8);
+      background-color: var(--color_primary08);
       border: 2px solid var(--color_secondary);
     }
 
@@ -62,11 +62,13 @@
           }
 
           .text {
-            background: linear-gradient(-39deg, #bf953f, #fcf6ba, #c4932a, #f5efb6, #aa771c);
             padding: 20px 40px;
+            color: var(--color_secondary);
+            background-color: var(--color_octonary06);
             border: 2px solid var(--color_primary);
 
             @media (prefers-color-scheme: dark) {
+              background-color: var(--color_secondary05);
               border: 2px solid var(--color_secondary);
             }
 
@@ -83,10 +85,12 @@
             text-align: start;
             padding: var(--padding_md) var(--padding_xxl);
             border: 2px solid var(--color_primary);
-            background: linear-gradient(-39deg, #bf953f, #fcf6ba, #c4932a, #f5efb6, #aa771c);
             text-decoration: underline;
+            background-color: var(--color_octonary06);
+            color: var(--color_secondary);
 
             @media (prefers-color-scheme: dark) {
+              background-color: var(--color_secondary05);
               border: 2px solid var(--color_secondary);
             }
 
@@ -137,7 +141,6 @@
             top: 0;
             left: 0;
             padding: 0 var(--padding_s);
-            background: linear-gradient(-39deg, #bf953f, #fcf6ba, #c4932a, #f5efb6, #aa771c);
 
             @media (max-width: 500px) {
               width: 110px;
@@ -150,12 +153,12 @@
     .button {
       .warning_text {
         font-family: var(--font_secondary);
-        color: var(--color_quinary);
+        color: var(--color_sexary);
         font-size: var(--fontSize_s);
 
         @media (prefers-color-scheme: dark) {
           font-weight: 400;
-          color: #f43b3b;
+          color: var(--color_sexary);
         }
       }
 
@@ -182,7 +185,7 @@
           transform: scale(1.02);
 
           @media (prefers-color-scheme: dark) {
-            background-color: rgba(62, 114, 178, 0.4);
+            background-color: var(--color_octonary);
             color: var(--color_secondary);
             border: 2px solid var(--color_secondary)
           }
@@ -196,7 +199,7 @@
 body.dark #main_trophy {
 
   .trophy {
-    background-color: rgba(46, 64, 87, 0.8);
+    background-color: var(--color_primary08);
     border: 2px solid var(--color_secondary);
 
     h1 {
@@ -207,6 +210,7 @@ body.dark #main_trophy {
       thead {
         tr {
           .text {
+            background-color: var(--color_secondary05);
             border: 2px solid var(--color_secondary);
           }
         }
@@ -215,6 +219,7 @@ body.dark #main_trophy {
       tbody {
         tr {
           th {
+            background-color: var(--color_secondary05);
             border: 2px solid var(--color_secondary);
           }
 
@@ -233,7 +238,7 @@ body.dark #main_trophy {
       color: var(--color_primary);
 
       &:hover {
-        background-color: rgba(62, 114, 178, 0.4);
+        background-color: var(--color_octonary);
         border: 2px solid var(--color_secondary);
         color: var(--color_secondary);
       }
@@ -242,6 +247,6 @@ body.dark #main_trophy {
 
   .warning_text {
     font-weight: 400;
-    color: #f43b3b;
+    color: var(--color_sexary);
   }
 }

@@ -7,7 +7,7 @@
   background-size: cover;
 
   @media (prefers-color-scheme: dark) {
-    background-color: rgba(46, 64, 87, 0.8);
+    background-color: var(--color_primary08);
   }
 
   .contact {
@@ -17,11 +17,11 @@
     padding: var(--padding_md);
     font-family: var(--font_primary);
     font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--secondary08);
     border-radius: 50px;
 
     @media (prefers-color-scheme: dark) {
-      background-color: rgba(46, 64, 87, 0.8);
+      background-color: var(--color_primary08);
       border: 2px solid var(--color_secondary);
     }
 
@@ -138,7 +138,7 @@
           transform: scale(1.02);
 
           @media (prefers-color-scheme: dark) {
-            background-color: rgba(62, 114, 178, 0.4);
+            background-color: var(--color_octonary);
             border: 2px solid var(--color_secondary);
             color: var(--color_secondary);
           }
@@ -165,11 +165,11 @@
       .error {
         font-family: var(--font_secondary);
         font-size: var(--fontSize_s);
-        color: var(--color_quinary);
+        color: var(--color_septenary);
         padding: var(--padding_xs) 0;
 
         @media (prefers-color-scheme: dark) {
-          color: #f43b3b;
+          color: var(--color_septenary);
           font-weight: 400;
         }
       }
@@ -178,10 +178,10 @@
     .messageInfo {
       font-family: var(--font_secondary);
       font-size: var(--fontSize_s);
-      color: var(--color_quinary);
+      color: var(--color_septenary);
 
       @media (prefers-color-scheme: dark) {
-        color: #f43b3b;
+        color: var(--color_septenary);
         font-weight: 400;
       }
     }
@@ -191,7 +191,7 @@
 /* Thème dark */
 body.dark #main_contact {
   .contact {
-    background-color: rgba(46, 64, 87, 0.8);
+    background-color: var(--color_primary08);
     border: 2px solid var(--color_secondary);
 
     h1,
@@ -203,13 +203,13 @@ body.dark #main_contact {
       border: 2px solid var(--color_secondary);
 
       &:hover {
-        background-color: rgba(62, 114, 178, 0.4);
+        background-color: var(--color_octonary);
       }
     }
 
     .error,
     .messageInfo {
-      color: #f43b3b;
+      color: var(--color_septenary);
       font-weight: 400;
     }
   }

@@ -34,14 +34,14 @@
         padding: 8px;
         display: flex;
         flex-direction: column;
-        border: 8px solid rgb(255, 255, 255);
+        border: 8px solid var(--color_secondary);
         box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 
         .persoEnfant {
           flex: 1;
           width: 100%;
           border-radius: 20px;
-          background-color: rgba(255, 255, 255, 0.5);
+          background-color: var(--color_secondary05);
 
           .title {
             font-family: var(--font_primary);
@@ -52,7 +52,7 @@
             margin: var(--margin_s);
             color: var(--color_primary);
             background: linear-gradient(-39deg, #bf953f, #fcf6ba, #c4932a, #f5efb6, #aa771c);
-            border: 1px solid rgb(46, 64, 87);
+            border: 1px solid var(--color_primary);
           }
 
           .block_image {
@@ -127,7 +127,7 @@
         transform: scale(1.02);
 
         @media (prefers-color-scheme: dark) {
-          background-color: rgba(62, 114, 178, 0.4);
+          background-color: var(--color_octonary);
           color: var(--color_secondary);
           border: 1px solid var(--color_secondary);
         }
@@ -148,7 +148,7 @@ body.dark #home_personnages {
     border: 2px solid var(--color_primary);
 
     &:hover {
-      background-color: rgba(62, 114, 178, 0.4);
+      background-color: var(--color_octonary);
       color: var(--color_secondary);
       border: 1px solid var(--color_secondary);
     }

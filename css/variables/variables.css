@@ -7,21 +7,37 @@
 
   /* color */
   --color_primary: #2e4057;
+  --color_primary08: rgba(46, 64, 87, 0.8);
   --color_secondary: #ffffff;
+  --color_secondary05: rgba(255, 255, 255, 0.5);
+  --color_secondary08: rgba(255, 255, 255, 0.8);
   --color_tertiary: #3e72b2;
   --color_quaternary: #eebfa5;
   --color_quinary: #a90000;
+  --color_sexary: rgb(84, 234, 114);
+  --color_septenary: rgb(244, 215, 59);
+  --color_octonary: rgba(62, 114, 178, 0.4);
+  --color_octonary06: rgba(62, 114, 178, 0.6);
 
   /* font-size (en rem) */
-  --fontSize_xxl: 2rem; /* 32px */
-  --fontSize_xl: 1.75rem; /* 28px*/
-  --fontSize_l: 1.625rem; /* 26px*/
-  --fontSize_md_xl: 1.5rem; /* 24px */
-  --fontSize_md_l: 1.375rem; /* 24px */
-  --fontSize_md: 1.25rem; /* 20px */
-  --fontSize_reg: 1.125rem; /* 18px */
-  --fontSize_s: 1rem; /* 16px */
-  --fontSize_xs: 0.875rem; /* 14px */
+  --fontSize_xxl: 2rem;
+  /* 32px */
+  --fontSize_xl: 1.75rem;
+  /* 28px*/
+  --fontSize_l: 1.625rem;
+  /* 26px*/
+  --fontSize_md_xl: 1.5rem;
+  /* 24px */
+  --fontSize_md_l: 1.375rem;
+  /* 24px */
+  --fontSize_md: 1.25rem;
+  /* 20px */
+  --fontSize_reg: 1.125rem;
+  /* 18px */
+  --fontSize_s: 1rem;
+  /* 16px */
+  --fontSize_xs: 0.875rem;
+  /* 14px */
 
   /* width en % */
   --width_full: 100%;
@@ -33,17 +49,28 @@
   --height_full: 100%;
 
   /* padding */
-  --padding_xxxxl: 5rem; /* 80px */
-  --padding_xxxl: 3.75rem; /* 60px */
-  --padding_xxl: 2.5rem; /* 40px */
-  --padding_md: 1.25rem; /* 20px */
-  --padding_reg: 1rem; /* 16px */
-  --padding_s: 0.625rem; /* 10px */
-  --padding_xs: 0.313rem; /* 5px */
+  --padding_xxxxl: 5rem;
+  /* 80px */
+  --padding_xxxl: 3.75rem;
+  /* 60px */
+  --padding_xxl: 2.5rem;
+  /* 40px */
+  --padding_md: 1.25rem;
+  /* 20px */
+  --padding_reg: 1rem;
+  /* 16px */
+  --padding_s: 0.625rem;
+  /* 10px */
+  --padding_xs: 0.313rem;
+  /* 5px */
 
   /* margin */
-  --margin_med: 2.5rem; /* 40px */
-  --margin_reg: 1.25rem; /* 20px */
-  --margin_s: 0.625rem; /* 10px */
-  --margin_xs: 0.313rem; /* 5px */
+  --margin_med: 2.5rem;
+  /* 40px */
+  --margin_reg: 1.25rem;
+  /* 20px */
+  --margin_s: 0.625rem;
+  /* 10px */
+  --margin_xs: 0.313rem;
+  /* 5px */
 }
