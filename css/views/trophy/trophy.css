@@ -16,11 +16,6 @@
     background-color: var(--color_secondary08);
     border-radius: 50px;
 
-    @media (prefers-color-scheme: dark) {
-      background-color: var(--color_primary08);
-      border: 2px solid var(--color_secondary);
-    }
-
     @media (max-width: 680px) {
       max-width: var(--width_full);
     }
@@ -28,10 +23,6 @@
     h1 {
       padding: var(--fontSize_md);
       font-size: var(--fontSize_xl);
-
-      @media (prefers-color-scheme: dark) {
-        color: var(--color_secondary);
-      }
 
       @media (max-width: 680px) {
         font-size: var(--fontSize_l);
@@ -67,11 +58,6 @@
             background-color: var(--color_octonary06);
             border: 2px solid var(--color_primary);
 
-            @media (prefers-color-scheme: dark) {
-              background-color: var(--color_secondary05);
-              border: 2px solid var(--color_secondary);
-            }
-
             @media (max-width: 1000px) {
               padding: var(--padding_md) 30px;
             }
@@ -89,11 +75,6 @@
             background-color: var(--color_octonary06);
             color: var(--color_secondary);
 
-            @media (prefers-color-scheme: dark) {
-              background-color: var(--color_secondary05);
-              border: 2px solid var(--color_secondary);
-            }
-
             @media (max-width: 1000px) {
               padding: 20px;
             }
@@ -103,11 +84,6 @@
             text-align: center;
             padding: var(--padding_s);
             border: 2px solid var(--color_primary);
-
-            @media (prefers-color-scheme: dark) {
-              border: 2px solid var(--color_secondary);
-              color: var(--color_secondary);
-            }
           }
         }
       }
@@ -155,11 +131,6 @@
         font-family: var(--font_secondary);
         color: var(--color_sexary);
         font-size: var(--fontSize_s);
-
-        @media (prefers-color-scheme: dark) {
-          font-weight: 400;
-          color: var(--color_sexary);
-        }
       }
 
       button {
@@ -175,20 +146,9 @@
         border: none;
         cursor: pointer;
 
-        @media (prefers-color-scheme: dark) {
-          background-color: var(--color_secondary);
-          color: var(--color_primary);
-        }
-
         &:hover {
           background-color: var(--color_tertiary);
           transform: scale(1.02);
-
-          @media (prefers-color-scheme: dark) {
-            background-color: var(--color_octonary);
-            color: var(--color_secondary);
-            border: 2px solid var(--color_secondary)
-          }
         }
       }
     }

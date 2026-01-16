@@ -2,10 +2,6 @@
   min-height: var(--heightVH);
   background-color: var(--color_secondary);
 
-  @media (prefers-color-scheme: dark) {
-    background-color: var(--color_primary);
-  }
-
   .home_image {
     max-width: var(--width_full);
     height: 55vh;
@@ -73,10 +69,6 @@
     .home_description--text {
       font-size: var(--fontSize_md_l);
       padding: var(--padding_xs) 0;
-
-      @media (prefers-color-scheme: dark) {
-        color: var(--color_secondary);
-      }
 
       @media (max-width: 500px) {
         font-size: var(--fontSize_md);

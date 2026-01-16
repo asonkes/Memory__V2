@@ -29,21 +29,9 @@
     border: none;
     cursor: pointer;
 
-    @media (prefers-color-scheme: dark) {
-      background-color: var(--color_secondary);
-      color: var(--color_primary);
-      border: 2px solid var(--color_primary);
-    }
-
     &:hover {
       background-color: var(--color_tertiary);
       transform: scale(1.02);
-
-      @media (prefers-color-scheme: dark) {
-        background-color: var(--color_octonary);
-        color: var(--color_secondary);
-        border: 2px solid white;
-      }
     }
 
     @media (max-width: 680px) {

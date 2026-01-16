@@ -3,10 +3,6 @@ footer {
   max-width: var(--width_full);
   background-color: var(--color_primary);
 
-  @media (prefers-color-scheme: dark) {
-    border-top: 2px solid var(--color_secondary);
-  }
-
   &.game {
     display: none;
   }

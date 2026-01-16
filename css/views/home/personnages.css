@@ -8,10 +8,6 @@
     color: var(--color_primary);
     padding: var(--padding_xxl);
 
-    @media (prefers-color-scheme: dark) {
-      color: var(--color_secondary);
-    }
-
     .title1 {
       text-decoration: underline;
     }
@@ -116,21 +112,9 @@
       border: none;
       cursor: pointer;
 
-      @media (prefers-color-scheme: dark) {
-        background-color: var(--color_secondary);
-        color: var(--color_primary);
-        border: 2px solid var(--color_primary);
-      }
-
       &:hover {
         background-color: var(--color_tertiary);
         transform: scale(1.02);
-
-        @media (prefers-color-scheme: dark) {
-          background-color: var(--color_octonary);
-          color: var(--color_secondary);
-          border: 1px solid var(--color_secondary);
-        }
       }
 
       &.active {
