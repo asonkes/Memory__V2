@@ -116,6 +116,44 @@ header {
         }
 
         #light {
+          width: 0;
+          height: 0;
+          opacity: 0;
+
+          &.active {
+            width: var(--width_full);
+            height: var(--height_full);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease-in-out;
+          }
+
+          @media (prefers-color-scheme: dark) {
+            width: var(--width_full);
+            height: var(--height_full);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease-in-out;
+
+            &.active {
+              width: 0;
+              height: 0;
+              opacity: 0;
+            }
+          }
+        }
+
+        #dark {
           width: var(--width_full);
           height: var(--height_full);
           position: absolute;
@@ -132,24 +170,24 @@ header {
             height: 0;
             opacity: 0;
           }
-        }
 
-        #dark {
-          width: 0;
-          height: 0;
-          opacity: 0;
+          @media (prefers-color-scheme: dark) {
+            width: 0;
+            height: 0;
+            opacity: 0;
 
-          &.active {
-            width: var(--width_full);
-            height: var(--height_full);
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.5s ease-in-out;
+            &.active {
+              width: var(--width_full);
+              height: var(--height_full);
+              position: absolute;
+              top: 0;
+              left: 0;
+              opacity: 1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: all 0.5s ease-in-out;
+            }
           }
         }
       }

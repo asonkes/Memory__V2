@@ -9,21 +9,48 @@ export function darkLight() {
   const light = document.getElementById("light");
   const body = document.querySelector("body");
 
-  light.addEventListener("click", (event) => {
-    event.preventDefault();
+  /** Lien pour voir quel mode l'utilisateur a choisit sur le serveur */
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+  console.log(prefersDark);
 
-    dark.classList.add("active");
-    light.classList.add("active");
+  if (!prefersDark.matches) {
+    /** Ici on a choisit le mode clair */
+    console.log("mode clair");
 
-    body.classList.add("dark");
-  });
+    dark.addEventListener("click", (event) => {
+      event.preventDefault();
 
-  dark.addEventListener("click", (event) => {
-    event.preventDefault();
+      dark.classList.add("active");
+      light.classList.add("active");
 
-    dark.classList.remove("active");
-    light.classList.remove("active");
+      body.classList.add("dark");
+    });
 
-    body.classList.remove("dark");
-  });
+    light.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      dark.classList.remove("active");
+      light.classList.remove("active");
+
+      body.classList.remove("dark");
+    });
+  } else {
+    /** Ici on a choisit le mode sombre */
+    console.log("sombre");
+
+    light.addEventListener("click", (event) => {
+      console.log("j'ai cliqué sur le bouton");
+      event.preventDefault();
+
+      dark.classList.add("active");
+      light.classList.add("active");
+    });
+
+    dark.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      dark.classList.remove("active");
+      light.classList.remove("active");
+    });
+  }
 }
