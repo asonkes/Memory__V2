@@ -126,6 +126,10 @@
 
 /* Thème dark */
 body.dark #home_personnages {
+    h2 {
+    color: var(--color_secondary);
+  }
+
   button {
     background-color: var(--color_secondary);
     color: var(--color_primary);

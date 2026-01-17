@@ -9,31 +9,44 @@ export function darkLight() {
   const light = document.getElementById("light");
   const body = document.querySelector("body");
 
-  /**
-   * Lien pour voir quel mode l'utilisateur a choisit sur le navigateur
-   * Pas avec le JS
-   * */
+  /** On récupère le mode choisit par l'utilisateur */
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
-  console.log(prefersDark);
 
-  /*  if (!prefersDark.matches) */
-  /** Maintenant détecté par JS quel mode on a choisit et là enlever ou mettre la classe sur le body !!!  */
-
-  dark.addEventListener("click", (event) => {
-    event.preventDefault();
-
+  /** Mode clair */
+  if(!prefersDark) {
+    body.classList.remove("dark");
+  } else {
+    /** Par défaut je mets le mode 'sombre' sans évènement au click */
+    body.classList.add("dark");
+    /** On doit changer les icônes du menu header */
     dark.classList.add("active");
     light.classList.add("active");
+  }
 
-    body.classList.add("dark");
+  /** Réaction au changement du système (sans reload) */
+  prefersDark.addEventListener("change", (event) => {
+    if(event.maches) {
+      body.classList.add("dark");
+      dark.classList.add("active");
+      light.classList.add("active");
+    } else {
+      body.classList.remove("dark");
+      /** On doit changer les icônes du menu header */
+      dark.classList.remove("active");
+      light.classList.remove("active");
+    }
   });
 
-  light.addEventListener("click", (event) => {
-    event.preventDefault();
+  /** Réaction au click */
+  dark.addEventListener("click", () => {
+    body.classList.add("dark");
+    dark.classList.add("active");
+    light.classList.add("active");
+  });
 
+  light.addEventListener("click", () => {
+    body.classList.remove("dark");
     dark.classList.remove("active");
     light.classList.remove("active");
-
-    body.classList.remove("dark");
   });
 }
