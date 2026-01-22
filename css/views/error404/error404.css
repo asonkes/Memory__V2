@@ -1,8 +1,8 @@
 #error404 {
-  width: var(--width_full);
-  height: var(--heightVH);
+  max-width: var(--width_full);
+  min-height: var(--heightVH);
   background-image: url("/images/error/error.png");
   background-repeat: no-repeat;
-  background-position-y: bottom -100px;
+  background-position: center;
   background-size: cover;
 }

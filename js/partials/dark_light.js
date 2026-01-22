@@ -16,29 +16,35 @@ export function darkLight() {
     body.classList.remove("dark");
     dark.classList.remove("active");
     light.classList.remove("active");
-    localStorage.setItem("modeServeurChoose", "");
+    localStorage.setItem("localStorage", "");
   };
 
   const darkMode = () => {
     body.classList.add("dark");
     dark.classList.add("active");
     light.classList.add("active");
-    localStorage.setItem("modeServeurChoose", "dark");
+    localStorage.setItem("localStorage", "dark");
   };
 
   /** On récupère l'information au chargement */
   window.addEventListener("load", () => {
-    if (prefersDark.matches) {
+    let localStorageTheme = localStorage.getItem("localStorage");
+
+    if(localStorageTheme === "dark") {
       darkMode();
+    } else if (localStorageTheme === "") {
+      lightMode();
+    } else {
+      prefersDark.matches ? darkMode() : lightMode();
     }
   });
 
   /** Réaction si on a déjà chargé sa page et qu'on change de mode (sombre ou clair) */
   prefersDark.addEventListener("change", (event) => {
-    if (event.matches) {
-      darkMode();
-    } else {
-      lightMode();
+    let localStorageTheme = localStorage.getItem("localStorage");
+
+    if (!localStorageTheme) {
+      event.matches ? darkMode() : lightMode();
     }
   });
 

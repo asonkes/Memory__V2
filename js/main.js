@@ -33,3 +33,5 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   loadHTML("footer", "/include/partials/footer.html");
 });
+
+
