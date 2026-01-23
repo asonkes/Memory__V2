@@ -30,7 +30,7 @@ export function darkLight() {
   window.addEventListener("load", () => {
     let localStorageTheme = localStorage.getItem("localStorage");
 
-    if(localStorageTheme === "dark") {
+    if (localStorageTheme === "dark") {
       darkMode();
     } else if (localStorageTheme === "") {
       lightMode();
@@ -43,8 +43,12 @@ export function darkLight() {
   prefersDark.addEventListener("change", (event) => {
     let localStorageTheme = localStorage.getItem("localStorage");
 
-    if (!localStorageTheme) {
-      event.matches ? darkMode() : lightMode();
+    if (localStorageTheme === "dark") {
+      darkMode();
+    } else if (localStorageTheme === "") {
+      lightMode();
+    } else {
+      prefersDark.matches ? darkMode() : lightMode();
     }
   });
 

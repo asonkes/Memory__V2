@@ -45,6 +45,10 @@
         @media (max-width: 500px) {
           gap: 1rem;
         }
+
+        @media (max-width: 860px) {
+          gap: 0.2rem;
+        }
       }
 
       &.finish {
@@ -60,16 +64,6 @@
         background-color: var(--color_secondary08);
         border: 1px solid rgba(46, 64, 87, 0.6);
 
-        @media (max-width: 1218px) {
-          width: 120px;
-          height: 120px;
-        }
-
-        @media (max-width: 1130px) {
-          width: 110px;
-          height: 110px;
-        }
-
         &.disabled {
           pointer-events: none;
         }
@@ -80,6 +74,21 @@
           /* perspective se met sur les enfants */
           transform-style: preserve-3d;
           transition: all 0.5s ease-in-out;
+
+          @media (max-width: 1218px) {
+            width: 120px;
+            height: 120px;
+          }
+
+          @media (max-width: 960px) {
+            width: 80px;
+            height: 80px;
+          }
+
+          @media (max-width: 746px) {
+            width: 70px;
+            height: 70px;
+          }
         }
 
         &.returnCard {

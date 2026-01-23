@@ -23,15 +23,14 @@ function loadHTML(selector, url, callback) {
     })
     .catch((error) => {
       console.log(error);
+      window.location.replace("http://127.0.0.1:5501/index.html");
     });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   loadHTML("header", "/include/partials/header.html", () => {
-    initBurger()
-    darkLight()
+    initBurger();
+    darkLight();
   });
   loadHTML("footer", "/include/partials/footer.html");
 });
-
-
