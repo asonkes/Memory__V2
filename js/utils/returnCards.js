@@ -135,11 +135,16 @@ export function returnCards() {
           /** Partie gagnées +1 */
           isWin++;
 
+          /** Ici on récupère les niveaux de difficultés */
+          let level = localStorage.getItem("levelGame"); 
+          /** Dans la key on enregistre le niveau de difficulté + le theme*/
+          let key = `${theme}_${level}`;                
+
           /** S'il y a déjà un nombre enregistré en localstorage pour ce thème */
           // On transforme en 'nombre' car localStorage stocke sous forme de 'string' 
           let score = Number(localStorage.getItem(theme)) || 0;
           // Et donc on peut faire 1 + 1 ==> puisque nombre
-          localStorage.setItem(theme, score + 1);
+          localStorage.setItem(key, score + 1);
         }
 
         /** On récupère le bouton pour rejouer pour le faire apparaitre */

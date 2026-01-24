@@ -6,27 +6,22 @@ function scores() {
   // key = la clé utilisée dans le localStorage pour récupérer la donnée
   // selector = pour récupérer le 'span' dans lequel on doit aller mettre le score
   const scoresConfig = [
-    { key: "theme1", selector: ".scoreDora td" },
-    { key: "theme2", selector: ".scorePatPatrouille td" },
-    { key: "theme3", selector: ".scoreDino td" },
+    { key: "theme1", selector: ".scoreDora" },
+    { key: "theme2", selector: ".scorePatPatrouille" },
+    { key: "theme3", selector: ".scoreDino" },
   ];
 
-  const level = ["easy", "medium", "hard"];
+  const levels = ["easy", "medium", "hard"];
+
+  if (!levels) return;
 
   scoresConfig.forEach(({ key, selector }) => {
-    const value = localStorage.getItem(key) || 0;
-
-    const level = localStorage.getItem("levelGame");
-    console.log("level :", level);
-
-    const td = document.querySelector(selector);
-    console.log("le td :", td);
-
-    /** Pour récupérer une classe ==> ASTUCE (directement aller chercher la classe avec classname) */
-    if (td.classname === level) {
-      td.textContent = value;
-    }
+    levels.forEach(level => {
+      const td = document.querySelector(`${selector} .${level}`);
+      if (td) td.textContent = localStorage.getItem(`${key}_${level}`) || 0;
+    });
   });
+
 
   /** On récupère le bouton */
   const buttonScore = document.getElementById("buttonScore");
