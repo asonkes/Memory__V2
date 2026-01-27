@@ -16,7 +16,7 @@ export function darkLight() {
     body.classList.remove("dark");
     dark.classList.remove("active");
     light.classList.remove("active");
-    localStorage.setItem("localStorage", "");
+    localStorage.setItem("localStorage", "light");
   };
 
   const darkMode = () => {
@@ -30,26 +30,28 @@ export function darkLight() {
   window.addEventListener("load", () => {
     let localStorageTheme = localStorage.getItem("localStorage");
 
-    if (localStorageTheme === "dark") {
-      darkMode();
-    } else if (localStorageTheme === "") {
-      lightMode();
-    } else {
+    if (!localStorageTheme) {
       prefersDark.matches ? darkMode() : lightMode();
+    } else {
+      if (localStorageTheme === "dark") {
+        darkMode();
+      } else {
+        lightMode();
+      }
     }
   });
 
   /** Réaction si on a déjà chargé sa page et qu'on change de mode (sombre ou clair) */
   prefersDark.addEventListener("change", (event) => {
-    let localStorageTheme = localStorage.getItem("localStorage");
+    // let localStorageTheme = localStorage.getItem("localStorage");
 
-    if (localStorageTheme === "dark") {
-      darkMode();
-    } else if (localStorageTheme === "") {
-      lightMode();
-    } else {
-      prefersDark.matches ? darkMode() : lightMode();
-    }
+    // if (localStorageTheme === "dark") {
+    //   darkMode();
+    // } else if (localStorageTheme === "") {
+    //   lightMode();
+    // } else {
+    prefersDark.matches ? darkMode() : lightMode();
+    // }
   });
 
   /** Réaction au click sur les icônes */
