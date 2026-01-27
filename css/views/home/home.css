@@ -78,7 +78,7 @@
 
   #home_slider--text {
     h2 {
-      color: var(--color_secondary);
+      color: var(--color_primary);
     }
   }
 }
