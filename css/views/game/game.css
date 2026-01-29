@@ -38,7 +38,7 @@
       font-family: var(--font_primary);
       font-size: var(--fontSize_md_xl);
       color: var(--color_primary);
-      padding: var(--padding_xxxl) 0 var(--padding_xxl) 0;
+      padding: var(--padding_xxxl) var(--padding_xs) var(--padding_xxl) var(--padding_xs);
     }
   }
 }

@@ -33,6 +33,12 @@
   .timer {
     justify-content: space-around;
 
+    @media (max-width: 585px) {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
     .counter {
       display: flex;
       align-items: center;
@@ -47,6 +53,10 @@
         font-size: var(--fontSize_reg);
         margin: 0;
         padding: var(--padding_xs);
+      }
+
+      @media (max-width: 585px) {
+        align-self: center;
       }
     }
   }

@@ -58,11 +58,35 @@
     transition: transform 1s ease-in-out;
     margin: 0 var(--margin_s);
 
+    @media (max-width: 746px) {
+      width: 40px;
+      height: 40px;
+    }
+
     &:hover {
       transform: scale(1.1);
     }
   }
 }
+
+.button_exit {
+  @media (max-width: 585px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.button_break,
+.button_play {
+  @media (max-width: 585px) {
+    position: absolute;
+    top: 0;
+    right: 50px;
+  }
+}
+
+
 
 .button_mute {
   background-image: url("/images/bouton/button_mute.png");
