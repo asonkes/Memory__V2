@@ -4,6 +4,9 @@ import { returnCards } from "/js/utils/returnCards.js";
 import { startTimer, stopTimer } from "/js/utils/timer.js";
 import { stopPlaySound, reactiveSound } from "/js/utils/playSound.js";
 import { rgbToRgba } from "/js/utils/rgbToRgba.js";
+import { isLandscapeBlocked } from "../utils/paysageOrientation.js";
+import { showOrientationBlock } from "../utils/paysageOrientation.js";
+import { hideOrientationBlock } from "../utils/paysageOrientation.js";
 
 /*****************************************************/
 /******* En fonction du mode, quantité de cards ******/
@@ -54,9 +57,8 @@ buttonsMode.forEach(element => {
 /** Evenement sur le bouton PLAY */
 /*********************************/
 
-/** Evenement au click sur le bouton 'GO' */
-if (button) {
-  button.addEventListener("click", () => {
+function startGame() {
+
     /** On reprend le h1 */
     const title = document.getElementById("title");
     /** On supprime le titre */
@@ -152,8 +154,32 @@ if (button) {
     /** On va supprimer le footer */
     const footer = document.querySelector("footer");
     footer.classList.add("game");
-  });
 }
+
+/** Evenement au click sur le bouton 'GO' */
+// Fonction qui essaye de lancer le jeu
+function tryStartGame() {
+  if (isLandscapeBlocked()) {
+    showOrientationBlock();
+    setTimeout(tryStartGame, 1000); // retente automatiquement chaque seconde
+    return;
+  }
+  hideOrientationBlock();
+  startGame();
+}
+
+// Event listener sur le bouton GO
+if (button) {
+  button.addEventListener("click", tryStartGame);
+}
+
+// Event listeners pour cacher l'overlay quand l'utilisateur tourne l'écran
+window.addEventListener("orientationchange", () => {
+  if (!isLandscapeBlocked()) hideOrientationBlock();
+});
+window.addEventListener("resize", () => {
+  if (!isLandscapeBlocked()) hideOrientationBlock();
+});
 
 /*************************************************************/
 /** Fonction qui permet de globaliser la création d'éléments */
