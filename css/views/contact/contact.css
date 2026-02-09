@@ -34,7 +34,6 @@
     }
 
     form {
-
       .block1,
       .block2 {
         max-width: var(--width_full);
@@ -148,7 +147,7 @@
       color: var(--color_septenary);
 
       @media (prefers-color-scheme: dark) {
-        color: var(--color_septenary);
+        color: var(--color_quinary);
         font-weight: 400;
       }
     }

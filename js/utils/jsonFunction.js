@@ -30,7 +30,7 @@ export async function contactInformations(data) {
   } catch (error) {
     console.log(
       "Erreur survenue lors de l'envoi des données du formulaire",
-      error
+      error,
     );
   }
 }
