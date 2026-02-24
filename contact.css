@@ -1,0 +1,182 @@
+#main_contact {
+  max-width: var(--width_full);
+  min-height: var(--heightVH);
+  background-image: url("/images/background/site/background.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .contact {
+    max-width: 80%;
+    min-height: 70vh;
+    margin: var(--padding_md) auto;
+    padding: var(--padding_md);
+    font-family: var(--font_primary);
+    font-weight: bold;
+    background-color: var(--color_secondary08);
+    border-radius: 50px;
+
+    @media (max-width: 680px) {
+      max-width: var(--width_full);
+    }
+
+    h1 {
+      padding: var(--fontSize_md);
+      font-size: var(--fontSize_xl);
+
+      @media (max-width: 680px) {
+        font-size: var(--fontSize_l);
+      }
+
+      @media (max-width: 450px) {
+        font-size: var(--fontSize_md_xl);
+      }
+    }
+
+    form {
+      .block1,
+      .block2 {
+        max-width: var(--width_full);
+
+        @media (max-width: 600px) {
+          flex-direction: column;
+        }
+      }
+
+      .name,
+      .lastname,
+      .email,
+      .password {
+        padding: var(--padding_reg);
+      }
+
+      .password {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .message {
+        max-width: var(--width_full);
+        padding: var(--padding_s) 0;
+
+        textarea {
+          width: var(--width_full);
+          margin-top: var(--padding_reg);
+          padding: var(--padding_s);
+          border-radius: var(--padding_s);
+          border: 1px solid rgba(0, 0, 0, 0.4);
+          resize: none;
+          background-color: var(--color_quaternary);
+        }
+      }
+
+      .iconsContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .iconEye {
+          position: absolute;
+          bottom: 5px;
+          right: 5px;
+          display: block;
+          cursor: pointer;
+
+          &.active {
+            display: none;
+          }
+        }
+
+        .iconEyeCash {
+          display: none;
+
+          &.active {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            display: block;
+            cursor: pointer;
+          }
+        }
+      }
+
+      button {
+        width: 150px;
+        font-family: var(--font_primary);
+        font-size: var(--fontSize_s);
+        font-weight: bold;
+        background-color: var(--color_primary);
+        color: var(--color_secondary);
+        margin: var(--margin_reg);
+        padding: var(--padding_s);
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--color_tertiary);
+          transform: scale(1.02);
+        }
+      }
+
+      label {
+        text-decoration: underline;
+      }
+
+      input {
+        margin-top: var(--margin_s);
+        background-color: var(--color_quaternary);
+        padding: var(--padding_xs);
+        border-radius: var(--margin_s);
+        border: 1px solid rgba(0, 0, 0, 0.4);
+      }
+
+      /* Si message d'erreur */
+      .error {
+        font-family: var(--font_secondary);
+        font-size: var(--fontSize_s);
+        color: var(--color_septenary);
+        padding: var(--padding_xs) 0;
+      }
+    }
+
+    .messageInfo {
+      font-family: var(--font_secondary);
+      font-size: var(--fontSize_s);
+      color: var(--color_septenary);
+
+      @media (prefers-color-scheme: dark) {
+        color: var(--color_quinary);
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+/* Thème dark */
+body.dark #main_contact {
+  .contact {
+    background-color: var(--color_primary08);
+    border: 2px solid var(--color_secondary);
+
+    h1,
+    label {
+      color: var(--color_secondary);
+    }
+
+    button {
+      border: 2px solid var(--color_secondary);
+
+      &:hover {
+        background-color: var(--color_octonary);
+      }
+    }
+
+    .error,
+    .messageInfo {
+      color: var(--color_septenary);
+      font-weight: 400;
+    }
+  }
+}
